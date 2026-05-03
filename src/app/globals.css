@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────────
+   PREMIUM ART STUDIO DESIGN SYSTEM
+   Philosophy: Confident contrast, soft elegant gold accent, clear hierarchy.
+   Museum-grade whitespace. Structured but warm.
+──────────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── Surface System ─────────────────────────────── */
+  --background:        #FFFFFF;   /* Pure white — base */
+  --surface:           #FFFFFF;   /* Pure white — card faces */
+  --surface-raised:    #FDFCF9;   /* Barely lifted — overlapping panels */
+  --surface-alt:       #F7F5F2;   /* Alternate section — clearly distinct from base */
+  --surface-dark:      #1A1A1A;   /* Dark exhibition panels */
+  --surface-dark-alt:  #2B2B2B;   /* Slightly lighter dark */
+
+  /* ── Text Hierarchy (strong, readable) ──────────────── */
+  --foreground:        #1A1A1A;   /* Strong near-black — headings, key text */
+  --foreground-muted:  #6B6B6B;   /* Secondary text — body copy */
+  --foreground-faint:  #7A7A7A;   /* Tertiary text — captions, labels */
+  --foreground-ultra:  #A0A0A0;   /* Lightest text — decorative only */
+
+  /* ── Gold Accent Palette ────────────────────────── */
+  --accent:            #C8A96A;   /* Soft elegant gold — primary CTA */
+  --accent-hover:      #B89658;   /* Deeper gold — hover state */
+  --accent-light:      #E6D3A3;   /* Very light tint — hover fills */
+  --on-accent:         #FFFFFF;   /* Text on filled gold — pure white */
+
+  /* Gold aliases */
+  --gold-deep:         #B89658;   /* Deep gold */
+  --gold-primary:      #C8A96A;   /* Primary gold */
+  --gold-champagne:    #E6D3A3;   /* Champagne tint */
+  --gold-whisper:      #F0E8D0;   /* Barely-there tint */
+
+  /* Neutral palette */
+  --cream:             var(--surface-alt);
+  --warm-grey:         #C8C4BE;
+  --border:            #E5E1DC;   /* Subtle warm gray border */
+  --border-light:      #EDEAE6;
+  --border-gold:       rgba(200, 169, 106, 0.30);
+  --border-gold-deep:  rgba(184, 150, 88, 0.50);
+
+  /* ── Warm Shadow System ──────────────────────────────── */
+  --shadow-xs:   0 1px 2px rgba(26, 26, 26, 0.05);
+  --shadow-sm:   0 2px 6px rgba(26, 26, 26, 0.07),
+                 0 1px 2px rgba(26, 26, 26, 0.04);
+  --shadow-md:   0 4px 16px rgba(26, 26, 26, 0.09),
+                 0 2px 6px  rgba(26, 26, 26, 0.04);
+  --shadow-lg:   0 16px 48px rgba(26, 26, 26, 0.10),
+                 0 4px  16px rgba(26, 26, 26, 0.05);
+  --shadow-xl:   0 28px 72px rgba(26, 26, 26, 0.12),
+                 0 8px  24px rgba(26, 26, 26, 0.06);
+  --shadow-paper: 0 1px 3px rgba(0, 0, 0, 0.04),
+                  0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-gold:  0 0 0 1px rgba(200, 169, 106, 0.22),
+                  0 8px 40px rgba(200, 169, 106, 0.10);
+}
+
+/* ─── Tailwind custom properties ────────────────────────────── */
+@theme inline {
+  /* Font families — override Tailwind defaults */
+  --font-family-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-family-sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --color-background:        var(--background);
+  --color-surface:           var(--surface);
+  --color-surface-raised:    var(--surface-raised);
+  --color-surface-alt:       var(--surface-alt);
+  --color-surface-dark:      var(--surface-dark);
+  --color-foreground:        var(--foreground);
+  --color-foreground-muted:  var(--foreground-muted);
+  --color-foreground-faint:  var(--foreground-faint);
+  --color-foreground-ultra:  var(--foreground-ultra);
+  --color-accent:            var(--accent);
+  --color-accent-hover:      var(--accent-hover);
+  --color-accent-light:      var(--accent-light);
+  --color-on-accent:         var(--on-accent);
+  --color-gold-deep:         var(--gold-deep);
+  --color-gold-primary:      var(--gold-primary);
+  --color-gold-champagne:    var(--gold-champagne);
+  --color-gold-whisper:      var(--gold-whisper);
+  --color-cream:             var(--cream);
+  --color-warm-grey:         var(--warm-grey);
+  --color-border:            var(--border);
+  --color-border-light:      var(--border-light);
+}
+
+/* ─── Base Reset ─────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.70;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  letter-spacing: 0.015em;
+  line-height: 1.18;
+  color: var(--foreground);
+}
+
+p { color: var(--foreground-muted); line-height: 1.85; font-weight: 400; }
+
+/* ─── Typography Scale ───────────────────────────────────────── */
+
+/*
+  Display — hero title, main statement.
+  Stronger, more dominant, clearly premium.
+*/
+.text-display {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2rem, 3vw + 1rem, 3.2rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0.016em;
+}
+
+/* Heading 1 — section titles */
+.text-heading-1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.6rem, 2vw + 0.5rem, 2.4rem);
+  font-weight: 400;
+  line-height: 1.20;
+  letter-spacing: 0.012em;
+}
+
+/* Heading 2 — card titles, subsection titles */
+.text-heading-2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.45rem, 1.8vw + 0.35rem, 2rem);
+  font-weight: 400;
+  line-height: 1.24;
+  letter-spacing: 0.008em;
+}
+
+/* Eyebrow label — accent, spaced, refined */
+.text-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.60rem;
+  font-weight: 500;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Caption-style metadata */
+.text-caption {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.70rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: var(--foreground-faint);
+}
+
+/* ─── Ebru Texture System ────────────────────────────────────── */
+.ebru-texture {
+  position: relative;
+  isolation: isolate;
+}
+
+.ebru-texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    radial-gradient(ellipse 65% 55% at 12% 20%, rgba(200, 169, 106, 0.04) 0%, transparent 70%),
+    radial-gradient(ellipse 55% 65% at 88% 78%, rgba(200, 169, 106, 0.03) 0%, transparent 70%),
+    radial-gradient(ellipse 75% 45% at 50% 50%, rgba(184, 150, 88, 0.015) 0%, transparent 80%);
+}
+
+.ebru-texture > * { position: relative; z-index: 1; }
+
+/* Animated organic swirl — slow drift, very low opacity */
+.ebru-swirl {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.ebru-swirl::before,
+.ebru-swirl::after {
+  content: '';
+  position: absolute;
+  border-radius: 42% 58% 58% 42% / 48% 42% 58% 52%;
+  filter: blur(60px);
+}
+
+.ebru-swirl::before {
+  width: 60%;
+  height: 70%;
+  top: -12%;
+  left: -8%;
+  background: radial-gradient(circle, rgba(200, 169, 106, 0.50) 0%, transparent 70%);
+  opacity: 0.040;
+  animation: drift 32s ease-in-out infinite alternate;
+}
+
+.ebru-swirl::after {
+  width: 48%;
+  height: 58%;
+  bottom: -12%;
+  right: -8%;
+  background: radial-gradient(circle, rgba(184, 150, 88, 0.55) 0%, transparent 70%);
+  opacity: 0.028;
+  animation: drift 42s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes drift {
+  0%   { transform: translate(0,   0)   scale(1.00) rotate(0deg);  }
+  33%  { transform: translate(2.5%, 2%) scale(1.03) rotate(1.5deg); }
+  66%  { transform: translate(-1.5%, 3.5%) scale(0.98) rotate(-1deg); }
+  100% { transform: translate(1%, -2.5%) scale(1.02) rotate(2deg);  }
+}
+
+/* .ebru-divider removed — no visible section dividers */
+.ebru-divider {
+  display: none;
+}
+
+/* ─── Art Placeholder (image stand-in) ──────────────────────── */
+.art-placeholder {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(148deg, var(--surface-alt) 0%, var(--surface) 60%, var(--surface-alt) 100%);
+}
+
+/* Layered warm bloom */
+.art-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 72% 62% at 28% 38%, rgba(200, 169, 106, 0.20) 0%, transparent 65%),
+    radial-gradient(ellipse 58% 72% at 72% 66%, rgba(184, 150, 88, 0.12) 0%, transparent 65%),
+    radial-gradient(ellipse 52% 52% at 18% 82%, rgba(90, 90, 90, 0.06) 0%, transparent 60%);
+  animation: art-flow 14s ease-in-out infinite alternate;
+}
+
+.art-placeholder::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 42% 42% at 76% 28%, rgba(200, 169, 106, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 62% 32% at 50% 86%, rgba(90, 90, 90, 0.04) 0%, transparent 55%);
+  animation: art-flow 18s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes art-flow {
+  0%   { transform: scale(1)    translate(0, 0);       }
+  50%  { transform: scale(1.04) translate(1%, -1.2%);  }
+  100% { transform: scale(0.97) translate(-1.2%, 1%);  }
+}
+
+/* Slow conic swirl overlay */
+.art-placeholder .art-swirl {
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(
+    from 0deg at 50% 50%,
+    transparent               0deg,
+    rgba(200, 169, 106, 0.012) 2.5deg,
+    transparent               5deg
+  );
+  animation: art-rotate 80s linear infinite;
+  opacity: 0.45;
+}
+
+@keyframes art-rotate {
+  from { transform: rotate(0deg);   }
+  to   { transform: rotate(360deg); }
+}
+
+/* ─── Animation utilities ────────────────────────────────────── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Scroll-triggered section reveal */
+@keyframes section-reveal {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up  { animation: fade-up  0.75s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.animate-fade-in  { animation: fade-in  0.65s ease both; }
+
+.delay-100 { animation-delay: 0.10s; }
+.delay-200 { animation-delay: 0.20s; }
+.delay-300 { animation-delay: 0.32s; }
+.delay-400 { animation-delay: 0.44s; }
+.delay-500 { animation-delay: 0.56s; }
+
+/* ─── Scroll reveal — Intersection Observer driven ───────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.55s ease-out, transform 0.55s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Image hover zoom — applied to parent container ─────────── */
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+.img-hover-zoom > * {
+  transition: transform 0.35s ease;
+}
+
+.img-hover-zoom:hover > * {
+  transform: scale(1.03);
+}
+
+/* ─── Interactive element base ───────────────────────────────── */
+a, button { cursor: pointer; }
+
+/* ─── Focus & Interaction ────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: rgba(200, 169, 106, 0.15);
+  color: var(--foreground);
+}
+
+/* ─── Scrollbar ──────────────────────────────────────────────── */
+::-webkit-scrollbar              { width: 5px; }
+::-webkit-scrollbar-track        { background: var(--surface-alt); }
+::-webkit-scrollbar-thumb        { background: var(--warm-grey); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover  { background: var(--foreground-ultra); }

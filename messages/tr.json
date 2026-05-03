@@ -1,0 +1,417 @@
+{
+  "site": {
+    "name": "Sanata Münhasır",
+    "tagline": "Geleneksel Türk Ebru Sanatı",
+    "description": "Konya Meram'da geleneksel Ebru sanatı atölyesi. Yüz yüze ve online dersler ile Ebru'nun sırrına yolculuk."
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "gallery": "Galeri",
+    "courses": "Eğitimler",
+    "enrollment": "Ders Kayıt",
+    "shop": "Mağaza",
+    "contact": "İletişim"
+  },
+  "footer": {
+    "copyright": "© {year} Sanata Münhasır",
+    "address": "Melikşah Mahallesi Yenice Sokak No:32 Meram, Konya",
+    "email": "info@sanatamunhasir.com",
+    "phone": "+90 533 653 14 33",
+    "followUs": "Bizi Takip Edin",
+    "contactUs": "İletişime Geçin",
+    "artNotes": "Sanat Notları",
+    "pages": "Sayfalar",
+    "studioTagline": "Meram, Konya"
+  },
+  "home": {
+    "hero": {
+      "title": "Suyun Üzerinde\nSanata Yolculuk",
+      "subtitle": "Konya Meram'da, rengin suyla buluştuğu geleneksel bir Ebru atölyesi.",
+      "cta": {
+        "explore": "Atölyeyi Keşfet",
+        "whatsapp": "WhatsApp ile Yazın"
+      }
+    },
+    "ebruIntro": {
+      "label": "Ebru Sanatı",
+      "quote": "Ebru yapılmaz — kendiliğinden ortaya çıkar.",
+      "body": "Her desen, boyaların suyun yüzeyinde serbestçe yayıldığı eşsiz bir buluşmadır. İki Ebru eseri birbirine hiçbir zaman benzemez; tıpkı iki anın birbirine benzememesi gibi."
+    },
+    "studioIntro": {
+      "eyebrow": "Atölye",
+      "title": "Gelenekle örülmüş bir pratik",
+      "body": "Atölye Sanata Münhasır, Türk Ebru sanatının yaşayan geleneğini korumak amacıyla Konya Meram'da kuruldu. Bu bir kurs programı değil; disiplin, sabır ve sessizlik üzerine kurulu çok yıllık bir pratiktir. Her seans; odaklanma, yaratma ve içsel sessizlik üzerine kurulur.",
+      "cta": "Atölye hakkında →"
+    },
+    "courses": {
+      "eyebrow": "Eğitim",
+      "title": "Kendi hızınızda, kendi yolunuzda",
+      "items": [
+        {
+          "key": "beginner",
+          "level": "Başlangıç",
+          "desc": "Ebru'nun temel malzemeleri, hazırlık ritüeli ve ilk desen denemeleri. Boş bir kağıdın, suyla dolu bir tekneyle nasıl bir esere dönüştüğünü keşfediyorsunuz.",
+          "cta": "Kayıt Ol"
+        },
+        {
+          "key": "advanced",
+          "level": "İleri Seviye",
+          "desc": "Bülbül yuvası, Hatip ve gelişmiş kompozisyon teknikleri. Bu aşamada her desen, bir ustanın imzasına yaklaşır.",
+          "cta": "Kayıt Ol"
+        },
+        {
+          "key": "online",
+          "level": "Online Dersler",
+          "desc": "Türkiye'nin her şehrinden ve dünyadan öğrencilerle çalışıyoruz. Birebir video seans desteğiyle kendi evinizde bir Ebru köşesi oluşturabilirsiniz.",
+          "cta": "WhatsApp ile Danışın"
+        },
+        {
+          "key": "workshop",
+          "level": "Workshop & Etkinlikler",
+          "desc": "Okul grupları, kurumsal ekipler ve özel organizasyonlar için tasarlanmış atölye deneyimleri. İletişime geçin.",
+          "cta": "Bilgi Alın"
+        }
+      ],
+      "viewAll": "Tüm Eğitim Detayları →"
+    },
+    "workshops": {
+      "eyebrow": "Workshoplar & İşbirlikleri",
+      "partA": {
+        "label": "Workshoplar",
+        "title": "Gruplar ve Özel Organizasyonlar",
+        "body": "Okul grupları, yetişkin etkinlikleri ve kurumsal ekipler için özel Ebru workshop'ları düzenliyoruz. Her yaşa ve deneyim seviyesine uygun içeriklerle, Ebru'yu bir arada keşfetmek mümkün.",
+        "items": [
+          "Okul ve üniversite grupları",
+          "Kurumsal ekip etkinlikleri"
+        ],
+        "cta": "WhatsApp ile İletişime Geçin"
+      },
+      "partB": {
+        "label": "Kurumsal İşbirlikleri",
+        "title": "Okullar ve Organizasyonlar",
+        "body": "Konya'daki okullar, kültür merkezleri ve STK'larla kalıcı işbirlikleri kuruyoruz. Ebru sanatını müfredatın bir parçası haline getirmek veya kurumsal etkinliklerinizi zenginleştirmek için bize ulaşın.",
+        "cta": "Teklif İsteyin"
+      }
+    },
+    "gallery": {
+      "eyebrow": "Koleksiyon",
+      "title": "Atölyeden izler",
+      "viewAll": "Tüm Galeriyi Görüntüle",
+      "collections": [
+        { "key": "student", "label": "Öğrenci Çalışmaları" },
+        { "key": "master", "label": "Usta Eserleri" },
+        { "key": "atelier", "label": "Atölye Yaşamı" }
+      ]
+    },
+    "dualLearning": {
+      "eyebrow": "Erişim",
+      "title": "Nerede olursanız olun",
+      "inPerson": {
+        "label": "Yüz Yüze",
+        "title": "Konya Atölyesi",
+        "body": "Melikşah Mahallesi'nde, geleneksel bir atölye ortamında ders alın. Kitre teknesi, özel boyalar ve usta gözetiminde hazırlanmış bir çalışma alanı sizi bekliyor. Her seans; odaklanma, yaratma ve sessizlik üzerine kurulur.",
+        "cta": "Kayıt Formu"
+      },
+      "online": {
+        "label": "Çevrimiçi",
+        "title": "Uzaktan Atölye",
+        "body": "Türkiye'nin her şehrinden ve dünyadan öğrencilerle çalışıyoruz. Malzeme listesi, hazırlık rehberi ve birebir video seans desteğiyle kendi evinizde bir Ebru köşesi oluşturabilirsiniz.",
+        "cta": "WhatsApp ile Danışın"
+      }
+    },
+    "instagram": {
+      "eyebrow": "Instagram",
+      "title": "@sanatamunhasir",
+      "cta": "Instagram'da Takip Edin"
+    },
+    "finalCta": {
+      "eyebrow": "Davet",
+      "title": "Ebru sanatını hemen öğrenmeye başlamak ister misiniz?",
+      "body": "Bir sorunuz mu var? Bir derse başlamak mı istiyorsunuz? Bize yazın — en kısa sürede dönüş yapalım.",
+      "whatsapp": "WhatsApp ile Ulaşın",
+      "enrollment": "Kayıt Formu"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Hikâyemiz",
+      "title": "Gelenekten Geleceğe\nEbru Yolculuğu",
+      "subtitle": "Konya Meram'dan dünyaya uzanan bir sanat pratiği."
+    },
+    "instructor": {
+      "eyebrow": "Eğitmen",
+      "name": "Sema Baranok Yılmaz",
+      "bio": "Konya doğumlu Sema Baranok Yılmaz, 19 yılı aşkın süredir Ebru sanatının inceliklerini öğreniyor ve öğretiyor. Geleneksel teknikleri koruyarak modern yorumlar geliştiren Sema Hoca, yüzlerce öğrenciye bu kadim sanatı aktardı. Çalışmaları yurt içi ve yurt dışı sergilerde yer almış, Ebru sanatının yaşayan bir temsilcisi olarak tanınmaktadır.",
+      "credentials": [
+        "19+ yıl Ebru pratiği",
+        "Yüzlerce mezun öğrenci",
+        "Yurt içi ve uluslararası sergiler",
+        "Okul ve kurum workshopları"
+      ],
+      "yearsLabel": "Yıl Deneyim"
+    },
+    "philosophy": {
+      "eyebrow": "Yaklaşımımız",
+      "title": "Sanat Felsefemiz",
+      "body": "Ebru öğretiminde amacımız yalnızca teknik aktarmak değil; suyun diline kulak vermeyi, sabırla bekleyebilmeyi ve sonucu bırakabilmeyi paylaşmaktır. Her öğrencinin kendi özgün sesini bulması için alan açıyoruz.",
+      "values": [
+        { "title": "Geleneğe Bağlılık", "desc": "Yüzyıllık Osmanlı Ebru tekniklerini özüne sadık kalarak öğretiyoruz." },
+        { "title": "Bireysel Yolculuk", "desc": "Her öğrenci kendi ritminde, kendi yolunda ilerler. Karşılaştırma yoktur." },
+        { "title": "Sabır ve Sessizlik", "desc": "Ebru, acelesi olan için değildir. Her seans bir meditasyon pratiğidir." },
+        { "title": "Yaşayan Gelenek", "desc": "Kadim bilgeliği modern dünyaya aktarmak, atölyemizin temel amacıdır." }
+      ]
+    },
+    "atelier": {
+      "eyebrow": "Atölye Ortamı",
+      "title": "Poyraz ve Pera ile birlikte",
+      "body": "Melikşah Mahallesi'ndeki atölyemiz; kitre teknesi, özel Ebru boyaları, poyraz fırçaları ve geleneksel malzemelerle donatılmış sıcak bir çalışma alanıdır. Atölyemizin iki sevilen sakini: Poyraz (papağanımız) ve Pera (balığımız), her dersin sessiz tanıklarıdır.",
+      "cta": "Atölyeye Gel"
+    },
+    "teaching": {
+      "eyebrow": "Öğretim Yaklaşımı",
+      "title": "Teknikten önce dil",
+      "body": "Derslerimizde önce suyun davranışını gözlemlemeyi öğretiyoruz. Boyaların yüzeye yayılışını anlamak, doğru fırça baskısını hissetmek, tarak hareketinin ritmine kulak vermek — bunlar teknikten önce gelir. Teori ve pratik, her derste iç içe geçer.",
+      "steps": [
+        { "num": "01", "title": "Malzeme tanıma ve hazırlık", "desc": "Kitre, boyalar ve tekne ile tanışma." },
+        { "num": "02", "title": "Suyun dili", "desc": "Yüzey gerilimi ve boya yayılımını gözlemleme." },
+        { "num": "03", "title": "İlk desenler", "desc": "Battal ve taraklı Ebru ile ilk denemeler." },
+        { "num": "04", "title": "Derinleşme", "desc": "Çiçekli, şal ve ileri seviye teknikler." }
+      ]
+    }
+  },
+  "courses": {
+    "hero": {
+      "eyebrow": "Eğitim Programları",
+      "title": "Ebru'ya giden her yol\nburada başlar",
+      "subtitle": "Başlangıçtan ileri seviyeye, yüz yüzeden online'a — kendi yolunuzu seçin."
+    },
+    "system": {
+      "eyebrow": "Nasıl Çalışıyoruz",
+      "title": "Esnek, kişiye özel model",
+      "items": [
+        { "title": "48 Saat Önceden Bildirim", "desc": "Her ders randevusu en az 48 saat önceden planlanır. Bu, hem öğrenciye hem de eğitmene hazırlık süresi tanır." },
+        { "title": "Aylık Devam Modeli", "desc": "Dersler aylık planlama sistemiyle yürütülür. Esnek program, kişisel hızınıza göre ilerlemenize imkân tanır." },
+        { "title": "Küçük Gruplar", "desc": "Maksimum 4-6 kişilik gruplarda ders verilir. Her öğrenciye bireysel ilgi ve kişisel geri bildirim." },
+        { "title": "Fiyat Görüşmesi", "desc": "Fiyatlar için WhatsApp veya iletişim formundan bize ulaşın. Size özel bilgi verelim." }
+      ]
+    },
+    "types": {
+      "eyebrow": "Ders Türleri",
+      "items": [
+        {
+          "key": "beginner",
+          "badge": "Başlangıç",
+          "title": "Başlangıç Atölyesi",
+          "desc": "Ebru'nun temel malzemeleri, hazırlık ritüeli ve ilk desen denemeleri. Kitre teknesi, boyalar ve fırçalarla tanışma. Battal Ebru ve basit taraklı desenler.",
+          "format": "Yüz Yüze / Konya",
+          "group": "Bireysel veya küçük grup",
+          "cta": "Kayıt Formu"
+        },
+        {
+          "key": "advanced",
+          "badge": "İleri Seviye",
+          "title": "İleri Seviye Atölye",
+          "desc": "Taraklı, şal, çiçekli teknikler. Bülbül yuvası ve Hatip Ebru. Kendi özgün kompozisyonlarınızı geliştirme aşaması. Her desen, bir ustanın imzasına yaklaşır.",
+          "format": "Yüz Yüze / Konya",
+          "group": "Bireysel veya küçük grup",
+          "cta": "Kayıt Formu"
+        },
+        {
+          "key": "onlinePrivate",
+          "badge": "Online Birebir",
+          "title": "Online Birebir Ders",
+          "desc": "Konum fark etmeksizin, birebir video seans. Malzeme listesi ve hazırlık rehberi dahil. Kendi evinizde bir Ebru köşesi kurabilirsiniz.",
+          "format": "Çevrimiçi / Video",
+          "group": "Birebir",
+          "cta": "WhatsApp ile Danışın"
+        },
+        {
+          "key": "onlineGroup",
+          "badge": "Online Grup",
+          "title": "Online Grup Dersi",
+          "desc": "Küçük gruplarla yürütülen online oturumlar. Topluluk desteği, interaktif öğrenme ve birlikte yaratma deneyimi.",
+          "format": "Çevrimiçi / Video",
+          "group": "En fazla 6 kişi",
+          "cta": "WhatsApp ile Danışın"
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Başlamaya Hazır mısınız?",
+      "title": "İlk adımı atın",
+      "body": "Hangi ders türünün size uygun olduğunu bilmiyorsanız bize sorun. Deneyiminizi ve hedeflerinizi paylaşın, size en uygun programı birlikte belirleyelim.",
+      "whatsapp": "WhatsApp ile Danışın",
+      "enrollment": "Kayıt Formu"
+    }
+  },
+  "gallery": {
+    "hero": {
+      "eyebrow": "Koleksiyon",
+      "title": "Atölyeden izler",
+      "subtitle": "Suyun yüzeyinde şekillenen her eser, eşsiz bir andır."
+    },
+    "categories": {
+      "all": "Tümü",
+      "student": "Öğrenci Çalışmaları",
+      "master": "Usta Eserleri",
+      "atelier": "Atölye Yaşamı"
+    },
+    "lightbox": {
+      "close": "Kapat",
+      "prev": "Önceki",
+      "next": "Sonraki"
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "İletişim",
+      "title": "Bize Ulaşın",
+      "subtitle": "Sorularınız, ders kaydınız veya işbirliği teklifleriniz için."
+    },
+    "info": {
+      "address": "Adres",
+      "email": "E-posta",
+      "phone": "Telefon / WhatsApp",
+      "hours": "Çalışma Saatleri",
+      "hoursValue": "Pzt–Cmt · 09:00–19:00"
+    },
+    "form": {
+      "eyebrow": "Mesaj Gönderin",
+      "name": "Ad Soyad",
+      "phone": "Telefon",
+      "email": "E-posta",
+      "message": "Mesajınız",
+      "interest": "İlgi Alanınız",
+      "interestPlaceholder": "— Seçiniz —",
+      "interests": {
+        "beginner": "Başlangıç Dersi",
+        "advanced": "İleri Seviye Ders",
+        "online": "Online Ders",
+        "workshop": "Workshop / Etkinlik",
+        "collaboration": "Kurumsal İşbirliği",
+        "other": "Diğer"
+      },
+      "submit": "Mesaj Gönder",
+      "submitting": "Gönderiliyor...",
+      "success": "Mesajınız iletildi! En kısa sürede size dönüş yapacağız.",
+      "error": "Bir hata oluştu. Lütfen tekrar deneyin veya WhatsApp ile yazın."
+    },
+    "validation": {
+      "nameRequired": "Ad soyad gereklidir",
+      "emailRequired": "E-posta gereklidir",
+      "emailInvalid": "Geçerli bir e-posta adresi girin",
+      "messageRequired": "Mesaj gereklidir"
+    },
+    "map": "Konum"
+  },
+  "enrollment": {
+    "hero": {
+      "eyebrow": "Ders Kaydı",
+      "title": "Ebru yolculuğunuza\nbugün başlayın",
+      "subtitle": "Yeni öğrenci kaydı veya mevcut öğrenci ders randevusu için aşağıdaki formu kullanın."
+    },
+    "tabs": {
+      "newStudent": "Yeni Öğrenci",
+      "existingStudent": "Mevcut Öğrenci"
+    },
+    "newStudent": {
+      "title": "Yeni Öğrenci Kaydı",
+      "desc": "Ebru'ya yeni başlayanlar veya atölyeye katılmak isteyenler için kayıt formu.",
+      "form": {
+        "name": "Ad Soyad",
+        "phone": "Telefon",
+        "email": "E-posta",
+        "city": "Şehir",
+        "courseType": "Ders Türü",
+        "courseTypePlaceholder": "— Seçiniz —",
+        "courseTypes": {
+          "beginner": "Başlangıç Atölyesi (Yüz Yüze)",
+          "advanced": "İleri Seviye (Yüz Yüze)",
+          "onlinePrivate": "Online Birebir",
+          "onlineGroup": "Online Grup",
+          "workshop": "Workshop / Etkinlik"
+        },
+        "message": "Mesajınız (isteğe bağlı)",
+        "submit": "Kayıt Talebini Gönder",
+        "submitting": "Gönderiliyor...",
+        "success": "Kaydınız alındı! En kısa sürede size dönüş yapacağız.",
+        "error": "Bir hata oluştu. Lütfen WhatsApp ile yazın."
+      }
+    },
+    "existingStudent": {
+      "title": "Ders Randevusu",
+      "desc": "Mevcut öğrenciler için ders tarihi ve saati planlama.",
+      "form": {
+        "name": "Ad Soyad",
+        "phone": "Telefon",
+        "preferredDate": "Tercih Ettiğiniz Tarih",
+        "preferredTime": "Tercih Ettiğiniz Saat",
+        "note": "Not (isteğe bağlı)",
+        "submit": "Randevu Talebi Gönder",
+        "submitting": "Gönderiliyor...",
+        "success": "Randevu talebiniz alındı! Onay için sizi arayacağız.",
+        "error": "Bir hata oluştu. Lütfen WhatsApp ile yazın."
+      }
+    },
+    "validation": {
+      "nameRequired": "Ad soyad gereklidir",
+      "phoneRequired": "Telefon numarası gereklidir",
+      "emailRequired": "E-posta gereklidir",
+      "emailInvalid": "Geçerli bir e-posta adresi girin",
+      "courseTypeRequired": "Ders türü seçmelisiniz",
+      "cityRequired": "Şehir gereklidir"
+    }
+  },
+  "shop": {
+    "hero": {
+      "eyebrow": "Mağaza",
+      "title": "Ebru Eserleri & Malzemeler",
+      "subtitle": "Özgün Ebru baskıları ve başlangıç malzeme setleri için Shopier mağazamızı ziyaret edin."
+    },
+    "redirect": {
+      "title": "Shopier Mağazamız",
+      "body": "Tüm ürünlerimiz ve özgün Ebru eserlerimiz Shopier platformunda yer almaktadır. Satın almak, sipariş vermek veya toplu alım hakkında bilgi almak için aşağıdaki butona tıklayın veya WhatsApp ile bize yazın.",
+      "cta": "Mağazayı Ziyaret Et",
+      "whatsapp": "WhatsApp ile Sorun"
+    }
+  },
+  "artNotes": {
+    "hero": {
+      "eyebrow": "Sanat Notları",
+      "title": "Ebru üzerine\ndüşünceler",
+      "subtitle": "Sanatın, tarihin ve atölye yaşamının izleri."
+    },
+    "readMore": "Devamını Oku →",
+    "posts": [
+      {
+        "key": "what-is-ebru",
+        "title": "Ebru Sanatı Nedir?",
+        "excerpt": "Su üzerinde boya ve tarak hareketleriyle oluşturulan geleneksel Türk kağıt süsleme sanatı Ebru'nun köklerine ve tekniklerine dair bir giriş.",
+        "date": "2025-04-01",
+        "category": "Tarih"
+      },
+      {
+        "key": "ebru-konya",
+        "title": "Konya'da Ebru Eğitimi",
+        "excerpt": "Mevlâna'nın şehrinde geleneksel sanatların yaşatılması. Konya'daki Ebru pratiğinin tarihi ve günümüzdeki yeri.",
+        "date": "2025-03-15",
+        "category": "Atölye"
+      },
+      {
+        "key": "online-ebru",
+        "title": "Online Ebru Dersi Mümkün mü?",
+        "excerpt": "Dokunuşa dayalı bir sanatı dijital ortamda öğretmek — zorluklar, çözümler ve uzaktan Ebru deneyimi.",
+        "date": "2025-02-28",
+        "category": "Eğitim"
+      },
+      {
+        "key": "where-to-start",
+        "title": "Ebru Öğrenmeye Nereden Başlanır?",
+        "excerpt": "Malzemeler, beklentiler ve ilk adımlar. Ebru'ya yeni başlayanlar için kapsamlı bir rehber.",
+        "date": "2025-02-01",
+        "category": "Başlangıç"
+      }
+    ]
+  }
+}

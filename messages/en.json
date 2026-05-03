@@ -1,0 +1,417 @@
+{
+  "site": {
+    "name": "Sanata Münhasır",
+    "tagline": "Traditional Turkish Marbling Art",
+    "description": "Traditional Ebru marbling art studio in Meram, Konya. In-person and online classes for students in Turkey and worldwide."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "gallery": "Gallery",
+    "courses": "Classes",
+    "enrollment": "Enrol",
+    "shop": "Shop",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "© {year} Sanata Münhasır",
+    "address": "Melikşah Mahallesi Yenice Sokak No:32 Meram, Konya, Turkey",
+    "email": "info@sanatamunhasir.com",
+    "phone": "+90 533 653 14 33",
+    "followUs": "Follow Us",
+    "contactUs": "Contact",
+    "artNotes": "Art Notes",
+    "pages": "Pages",
+    "studioTagline": "Meram, Konya"
+  },
+  "home": {
+    "hero": {
+      "title": "A Journey into\nArt on Water",
+      "subtitle": "A traditional Ebru studio in Meram, Konya — where colour meets water.",
+      "cta": {
+        "explore": "Explore the Studio",
+        "whatsapp": "Write on WhatsApp"
+      }
+    },
+    "ebruIntro": {
+      "label": "Ebru Art",
+      "quote": "Ebru is not made — it reveals itself.",
+      "body": "Every pattern is the product of a unique meeting — pigments spreading freely on the surface of water. No two works of Ebru are ever alike, just as no two moments are ever the same."
+    },
+    "studioIntro": {
+      "eyebrow": "The Studio",
+      "title": "A practice rooted in tradition",
+      "body": "Atölye Sanata Münhasır was founded to preserve the living tradition of Turkish Ebru in Meram, Konya. This is not a course programme — it is a years-long practice built on discipline, patience, and stillness. Every session is built around focus, creation, and inner quiet.",
+      "cta": "About the studio →"
+    },
+    "courses": {
+      "eyebrow": "Classes",
+      "title": "At your own pace, on your own path",
+      "items": [
+        {
+          "key": "beginner",
+          "level": "Beginner",
+          "desc": "Materials, the preparation ritual, and first pattern experiments. Discover how a blank sheet of paper becomes a work of art in a water-filled tray.",
+          "cta": "Enrol"
+        },
+        {
+          "key": "advanced",
+          "level": "Advanced",
+          "desc": "Nightingale nest, Hatip, and advanced composition techniques. At this stage each design approaches the signature of a master.",
+          "cta": "Enrol"
+        },
+        {
+          "key": "online",
+          "level": "Online Classes",
+          "desc": "We work with students from across Turkey and around the world. One-to-one video sessions with a materials guide so you can build your own Ebru corner at home.",
+          "cta": "Enquire via WhatsApp"
+        },
+        {
+          "key": "workshop",
+          "level": "Workshops & Events",
+          "desc": "Tailored studio experiences for school groups, corporate teams, and private occasions. Get in touch to arrange yours.",
+          "cta": "Get in Touch"
+        }
+      ],
+      "viewAll": "Full Class Details →"
+    },
+    "workshops": {
+      "eyebrow": "Workshops & Collaborations",
+      "partA": {
+        "label": "Workshops",
+        "title": "Groups & Private Events",
+        "body": "We run bespoke Ebru workshops for school groups, adults, and corporate teams. Suitable for all ages and experience levels — discover Ebru together.",
+        "items": [
+          "School and university groups",
+          "Corporate team events"
+        ],
+        "cta": "Contact via WhatsApp"
+      },
+      "partB": {
+        "label": "Institutional Partnerships",
+        "title": "Schools & Organisations",
+        "body": "We build lasting partnerships with schools, cultural centres, and NGOs in Konya and beyond. Contact us to integrate Ebru into your curriculum or enrich your institutional events.",
+        "cta": "Request a Proposal"
+      }
+    },
+    "gallery": {
+      "eyebrow": "Collection",
+      "title": "Traces from the studio",
+      "viewAll": "View Full Gallery",
+      "collections": [
+        { "key": "student", "label": "Student Works" },
+        { "key": "master", "label": "Master Works" },
+        { "key": "atelier", "label": "Studio Life" }
+      ]
+    },
+    "dualLearning": {
+      "eyebrow": "Access",
+      "title": "Wherever you are",
+      "inPerson": {
+        "label": "In-Person",
+        "title": "Konya Studio",
+        "body": "Join us in the Melikşah Quarter for lessons in a traditional studio setting. A prepared kitre tray, specialist pigments, and a workspace refined under the guidance of a master. Every session is built around focus, creation, and stillness.",
+        "cta": "Enrolment Form"
+      },
+      "online": {
+        "label": "Online",
+        "title": "Remote Studio",
+        "body": "We work with students from across Turkey and around the world. With a materials list, preparation guide, and one-to-one video session support, you can build your own Ebru corner at home.",
+        "cta": "Enquire via WhatsApp"
+      }
+    },
+    "instagram": {
+      "eyebrow": "Instagram",
+      "title": "@sanatamunhasir",
+      "cta": "Follow on Instagram"
+    },
+    "finalCta": {
+      "eyebrow": "Invitation",
+      "title": "Would you like to start learning Ebru today?",
+      "body": "Do you have a question? Would you like to begin a course? Write to us — we will get back to you promptly.",
+      "whatsapp": "Contact via WhatsApp",
+      "enrollment": "Enrolment Form"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Our Story",
+      "title": "An Ebru Journey\nfrom Tradition to Future",
+      "subtitle": "A living art practice from Meram, Konya, reaching the world."
+    },
+    "instructor": {
+      "eyebrow": "Instructor",
+      "name": "Sema Baranok Yılmaz",
+      "bio": "Born in Konya, Sema Baranok Yılmaz has been learning and teaching the subtleties of Ebru art for over 19 years. Preserving traditional techniques while developing contemporary interpretations, she has passed on this ancient art to hundreds of students. Her works have appeared in exhibitions at home and abroad, and she is recognised as a living practitioner of the Ebru tradition.",
+      "credentials": [
+        "19+ years of Ebru practice",
+        "Hundreds of graduates",
+        "National and international exhibitions",
+        "School and institutional workshops"
+      ],
+      "yearsLabel": "Years' Experience"
+    },
+    "philosophy": {
+      "eyebrow": "Our Approach",
+      "title": "Our Artistic Philosophy",
+      "body": "Our aim in teaching Ebru is not merely to pass on technique — it is to share the art of listening to the language of water, of waiting patiently, and of releasing the outcome. We open space for each student to find their own voice.",
+      "values": [
+        { "title": "Fidelity to Tradition", "desc": "We teach centuries-old Ottoman Ebru techniques with faithful attention to their origins." },
+        { "title": "Individual Journey", "desc": "Each student advances at their own rhythm, in their own direction. There is no comparison." },
+        { "title": "Patience & Stillness", "desc": "Ebru is not for the hurried. Each session is a practice in meditation." },
+        { "title": "Living Tradition", "desc": "Bringing ancient wisdom into the modern world is the studio's founding purpose." }
+      ]
+    },
+    "atelier": {
+      "eyebrow": "The Studio",
+      "title": "Together with Poyraz and Pera",
+      "body": "Our studio in the Melikşah Quarter is a warm working space equipped with kitre trays, specialist Ebru pigments, poyraz brushes, and traditional materials. Our two beloved residents — Poyraz the parrot and Pera the fish — are the quiet witnesses of every lesson.",
+      "cta": "Visit the Studio"
+    },
+    "teaching": {
+      "eyebrow": "Teaching Approach",
+      "title": "Language before technique",
+      "body": "In our lessons, we first teach students to observe the behaviour of water. Understanding how pigments spread across the surface, feeling the correct brush pressure, listening to the rhythm of comb movement — these come before technique. Theory and practice are interwoven in every lesson.",
+      "steps": [
+        { "num": "01", "title": "Materials and preparation", "desc": "Meeting the kitre, pigments, and tray." },
+        { "num": "02", "title": "The language of water", "desc": "Observing surface tension and pigment behaviour." },
+        { "num": "03", "title": "First patterns", "desc": "First attempts with Battal and combed Ebru." },
+        { "num": "04", "title": "Deepening", "desc": "Floral, shawl, and advanced techniques." }
+      ]
+    }
+  },
+  "courses": {
+    "hero": {
+      "eyebrow": "Classes",
+      "title": "Every path to Ebru\nbegins here",
+      "subtitle": "From beginner to advanced, in-person to online — choose your own path."
+    },
+    "system": {
+      "eyebrow": "How We Work",
+      "title": "Flexible, personalised model",
+      "items": [
+        { "title": "48-Hour Notice", "desc": "Each lesson is booked at least 48 hours in advance. This gives both student and teacher proper preparation time." },
+        { "title": "Monthly Planning Model", "desc": "Lessons run on a monthly scheduling system. Flexible planning lets you progress at your own pace." },
+        { "title": "Small Groups", "desc": "Classes are held in groups of maximum 4–6. Every student receives individual attention and personal feedback." },
+        { "title": "Pricing on Enquiry", "desc": "For pricing, please contact us via WhatsApp or the contact form. We will provide tailored information." }
+      ]
+    },
+    "types": {
+      "eyebrow": "Class Types",
+      "items": [
+        {
+          "key": "beginner",
+          "badge": "Beginner",
+          "title": "Beginner Studio",
+          "desc": "Materials, the preparation ritual, and first pattern experiments. Introduction to the kitre tray, pigments, and brushes. Battal Ebru and simple combed patterns.",
+          "format": "In-Person / Konya",
+          "group": "Individual or small group",
+          "cta": "Enrolment Form"
+        },
+        {
+          "key": "advanced",
+          "badge": "Advanced",
+          "title": "Advanced Studio",
+          "desc": "Combed, shawl, and floral techniques. Nightingale nest and Hatip Ebru. Developing your own original compositions. Each design approaches a master's signature.",
+          "format": "In-Person / Konya",
+          "group": "Individual or small group",
+          "cta": "Enrolment Form"
+        },
+        {
+          "key": "onlinePrivate",
+          "badge": "Online Private",
+          "title": "Online Private Lesson",
+          "desc": "One-to-one video session regardless of location. Materials list and preparation guide included. Build your own Ebru corner at home.",
+          "format": "Online / Video",
+          "group": "One-to-one",
+          "cta": "Enquire via WhatsApp"
+        },
+        {
+          "key": "onlineGroup",
+          "badge": "Online Group",
+          "title": "Online Group Lesson",
+          "desc": "Online sessions conducted with small groups. Community support, interactive learning, and the shared experience of creating together.",
+          "format": "Online / Video",
+          "group": "Maximum 6 people",
+          "cta": "Enquire via WhatsApp"
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Ready to Begin?",
+      "title": "Take the first step",
+      "body": "If you are unsure which class type suits you, ask us. Share your experience and goals and we will work out the best programme for you together.",
+      "whatsapp": "Enquire via WhatsApp",
+      "enrollment": "Enrolment Form"
+    }
+  },
+  "gallery": {
+    "hero": {
+      "eyebrow": "Collection",
+      "title": "Traces from the studio",
+      "subtitle": "Every work shaped on water's surface is a singular moment."
+    },
+    "categories": {
+      "all": "All",
+      "student": "Student Works",
+      "master": "Master Works",
+      "atelier": "Studio Life"
+    },
+    "lightbox": {
+      "close": "Close",
+      "prev": "Previous",
+      "next": "Next"
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Get in Touch",
+      "subtitle": "For questions, class bookings, or collaboration enquiries."
+    },
+    "info": {
+      "address": "Address",
+      "email": "Email",
+      "phone": "Phone / WhatsApp",
+      "hours": "Studio Hours",
+      "hoursValue": "Mon–Sat · 09:00–19:00"
+    },
+    "form": {
+      "eyebrow": "Send a Message",
+      "name": "Full Name",
+      "phone": "Phone",
+      "email": "Email",
+      "message": "Your Message",
+      "interest": "Area of Interest",
+      "interestPlaceholder": "— Select —",
+      "interests": {
+        "beginner": "Beginner Class",
+        "advanced": "Advanced Class",
+        "online": "Online Class",
+        "workshop": "Workshop / Event",
+        "collaboration": "Institutional Partnership",
+        "other": "Other"
+      },
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success": "Your message has been received! We will get back to you shortly.",
+      "error": "An error occurred. Please try again or write to us on WhatsApp."
+    },
+    "validation": {
+      "nameRequired": "Full name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "messageRequired": "Message is required"
+    },
+    "map": "Location"
+  },
+  "enrollment": {
+    "hero": {
+      "eyebrow": "Enrolment",
+      "title": "Begin your Ebru\njourney today",
+      "subtitle": "Use the form below for new student enrolment or to book a lesson if you are already a student."
+    },
+    "tabs": {
+      "newStudent": "New Student",
+      "existingStudent": "Existing Student"
+    },
+    "newStudent": {
+      "title": "New Student Enrolment",
+      "desc": "Enrolment form for those new to Ebru or wishing to join the studio.",
+      "form": {
+        "name": "Full Name",
+        "phone": "Phone",
+        "email": "Email",
+        "city": "City",
+        "courseType": "Class Type",
+        "courseTypePlaceholder": "— Select —",
+        "courseTypes": {
+          "beginner": "Beginner Studio (In-Person)",
+          "advanced": "Advanced Studio (In-Person)",
+          "onlinePrivate": "Online Private",
+          "onlineGroup": "Online Group",
+          "workshop": "Workshop / Event"
+        },
+        "message": "Your Message (optional)",
+        "submit": "Submit Enrolment Request",
+        "submitting": "Submitting...",
+        "success": "Your enrolment has been received! We will get back to you soon.",
+        "error": "An error occurred. Please write to us on WhatsApp."
+      }
+    },
+    "existingStudent": {
+      "title": "Lesson Booking",
+      "desc": "For existing students to schedule a lesson date and time.",
+      "form": {
+        "name": "Full Name",
+        "phone": "Phone",
+        "preferredDate": "Preferred Date",
+        "preferredTime": "Preferred Time",
+        "note": "Note (optional)",
+        "submit": "Submit Booking Request",
+        "submitting": "Submitting...",
+        "success": "Your booking request has been received! We will call to confirm.",
+        "error": "An error occurred. Please write to us on WhatsApp."
+      }
+    },
+    "validation": {
+      "nameRequired": "Full name is required",
+      "phoneRequired": "Phone number is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "courseTypeRequired": "You must select a class type",
+      "cityRequired": "City is required"
+    }
+  },
+  "shop": {
+    "hero": {
+      "eyebrow": "Shop",
+      "title": "Ebru Artworks & Supplies",
+      "subtitle": "Visit our Shopier store for original Ebru prints and starter material sets."
+    },
+    "redirect": {
+      "title": "Our Shopier Store",
+      "body": "All our products and original Ebru artworks are listed on the Shopier platform. Click the button below to browse, or write to us on WhatsApp for bulk orders and enquiries.",
+      "cta": "Visit the Store",
+      "whatsapp": "Enquire via WhatsApp"
+    }
+  },
+  "artNotes": {
+    "hero": {
+      "eyebrow": "Art Notes",
+      "title": "Thoughts on Ebru",
+      "subtitle": "Traces of art, history, and studio life."
+    },
+    "readMore": "Read more →",
+    "posts": [
+      {
+        "key": "what-is-ebru",
+        "title": "What Is Ebru Art?",
+        "excerpt": "An introduction to the roots and techniques of Ebru — the traditional Turkish art of marbling paper with pigment and comb on water.",
+        "date": "2025-04-01",
+        "category": "History"
+      },
+      {
+        "key": "ebru-konya",
+        "title": "Learning Ebru in Konya",
+        "excerpt": "The preservation of traditional arts in the city of Mevlâna. The history and present-day significance of Ebru practice in Konya.",
+        "date": "2025-03-15",
+        "category": "Studio"
+      },
+      {
+        "key": "online-ebru",
+        "title": "Is Online Ebru Teaching Possible?",
+        "excerpt": "Teaching a tactile art in a digital environment — challenges, solutions, and the experience of remote Ebru learning.",
+        "date": "2025-02-28",
+        "category": "Education"
+      },
+      {
+        "key": "where-to-start",
+        "title": "Where Do I Begin with Ebru?",
+        "excerpt": "Materials, expectations, and first steps. A comprehensive guide for those new to Ebru.",
+        "date": "2025-02-01",
+        "category": "Beginner"
+      }
+    ]
+  }
+}
