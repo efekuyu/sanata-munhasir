@@ -11,12 +11,15 @@ const getResend = () => {
   return new Resend(apiKey);
 };
 
+const isValidEmail = (email: string) =>
+  /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
 export async function POST(request: Request) {
   try {
     const body = await request.json();
 
     const name = body.name || 'İsimsiz';
-    const email = body.email || 'E-mail belirtilmedi';
+    const email = body.email || '';
     const phone = body.phone || 'Telefon belirtilmedi';
     const interest = body.interest || 'Belirtilmedi';
     const message = body.message || 'Mesaj yok';
@@ -24,18 +27,18 @@ export async function POST(request: Request) {
 
     await getResend().emails.send({
       from: 'Atölye Sanata Münhasır <info@sanatamunhasir.com>',
-      to: 'info@sanatamunhasir.com',
-      replyTo: email,
-      subject: `Yeni Form Mesajı: ${formType}`,
+      to: ['info@sanatamunhasir.com'],
+      ...(isValidEmail(email) ? { replyTo: email } : {}),
+      subject: `Yeni Form Mesajı: ${formType} - ${name}`,
       html: `
         <h2>Yeni Form Mesajı</h2>
         <p><strong>Form:</strong> ${formType}</p>
         <p><strong>İsim:</strong> ${name}</p>
-        <p><strong>E-mail:</strong> ${email}</p>
+        <p><strong>E-mail:</strong> ${email || 'Belirtilmedi'}</p>
         <p><strong>Telefon:</strong> ${phone}</p>
         <p><strong>İlgi Alanı:</strong> ${interest}</p>
         <p><strong>Mesaj:</strong></p>
-        <p>${message}</p>
+        <p>${message.replace(/\n/g, '<br>')}</p>
       `,
     });
 
