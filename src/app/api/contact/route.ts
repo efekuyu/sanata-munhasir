@@ -124,6 +124,55 @@ export async function POST(request: Request) {
       `,
     });
 
+        if (isValidEmail(email)) {
+      await getResend().emails.send({
+        from: 'Atölye Sanata Münhasır <info@sanatamunhasir.com>',
+        to: [email],
+        subject: `${formType} talebiniz alındı`,
+        html: `
+          <div style="font-family: Arial, Helvetica, sans-serif; background:#f7f4ee; padding:36px;">
+            <div style="max-width:620px; margin:0 auto; background:#ffffff; border:1px solid #eadfca; border-radius:12px; overflow:hidden;">
+              <div style="padding:28px 30px; background:#111111; color:#ffffff;">
+                <div style="font-family: Georgia, 'Times New Roman', serif; font-size:22px;">
+                  Atölye Sanata Münhasır
+                </div>
+                <div style="margin-top:9px; color:#d8c39a; font-size:12px; letter-spacing:1.5px; text-transform:uppercase;">
+                  Talebiniz Alındı
+                </div>
+              </div>
+
+              <div style="padding:30px; color:#222; font-size:15px; line-height:1.8;">
+                <p style="margin-top:0;">Merhaba ${name},</p>
+
+                <p>
+                  ${formType} talebiniz başarıyla tarafımıza ulaştı.
+                  En kısa sürede sizinle iletişime geçeceğiz.
+                </p>
+
+                <div style="height:1px; background:#eadfca; margin:26px 0;"></div>
+
+                <p style="margin-bottom:8px; color:#9a8a6a; font-size:12px; letter-spacing:1.3px; text-transform:uppercase;">
+                  Gönderdiğiniz mesaj
+                </p>
+
+                <div style="background:#fbfaf7; border:1px solid #eadfca; border-radius:8px; padding:16px;">
+                  ${message.replace(/\n/g, '<br>')}
+                </div>
+
+                <p style="margin-top:24px;">
+                  Atölye Sanata Münhasır
+                </p>
+              </div>
+
+              <div style="padding:16px 30px; background:#fbfaf7; border-top:1px solid #eadfca; color:#9a8a6a; font-size:12px;">
+                Bu otomatik bilgilendirme mesajıdır · www.sanatamunhasir.com
+              </div>
+            </div>
+          </div>
+        `,
+      });
+    }
+
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error('Form email error:', error);
