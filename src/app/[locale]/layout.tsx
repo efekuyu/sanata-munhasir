@@ -8,7 +8,7 @@ import Footer from '@/components/layout/Footer';
 import '../globals.css';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
-const siteUrl = 'https://sanata-munhasir.vercel.app';
+const siteUrl = 'https://sanatamunhasir.com';
 
 export async function generateMetadata({
   params,
