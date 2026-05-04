@@ -26,6 +26,9 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL(siteUrl),
+    verification: {
+      google: 'XBoRIizj0OYxFbHruEVwfIhO2leAQyxa32wfkxlzB20',
+    },
     title: isTr
       ? 'Atölye Sanata Münhasır | Ebru Sanatı, Dersler ve Workshoplar'
       : 'Atölye Sanata Münhasır | Turkish Marbling Classes and Workshops',
