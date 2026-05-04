@@ -44,15 +44,42 @@ function NewStudentForm() {
     return Object.keys(e).length === 0;
   };
 
-  const handleSubmit = async (ev: React.FormEvent) => {
-    ev.preventDefault();
-    if (!validate()) return;
-    setSubmitting(true);
-    await new Promise(r => setTimeout(r, 1200));
-    setSubmitting(false);
-    setSubmitted(true);
-    setForm({ name: '', phone: '', email: '', city: '', courseType: '', message: '' });
-  };
+const handleSubmit = async (ev: React.FormEvent) => {
+  ev.preventDefault();
+  if (!validate()) return;
+
+  setSubmitting(true);
+
+  const res = await fetch('/api/contact', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      name: form.name,
+      email: form.email,
+      phone: form.phone,
+      interest: form.courseType,
+      message: `
+Şehir: ${form.city}
+
+Mesaj:
+${form.message}
+      `,
+      formType: 'Yeni Öğrenci Kaydı',
+    }),
+  });
+
+  setSubmitting(false);
+
+  if (!res.ok) {
+    alert('Mesaj gönderilemedi');
+    return;
+  }
+
+  setSubmitted(true);
+  setForm({ name: '', phone: '', email: '', city: '', courseType: '', message: '' });
+};
 
   const handleChange = (ev: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = ev.target;
@@ -152,15 +179,41 @@ function ExistingStudentForm() {
     return Object.keys(e).length === 0;
   };
 
-  const handleSubmit = async (ev: React.FormEvent) => {
-    ev.preventDefault();
-    if (!validate()) return;
-    setSubmitting(true);
-    await new Promise(r => setTimeout(r, 1200));
-    setSubmitting(false);
-    setSubmitted(true);
-    setForm({ name: '', phone: '', preferredDate: '', preferredTime: '', note: '' });
-  };
+const handleSubmit = async (ev: React.FormEvent) => {
+  ev.preventDefault();
+  if (!validate()) return;
+
+  setSubmitting(true);
+
+  const res = await fetch('/api/contact', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      name: form.name,
+      phone: form.phone,
+      message: `
+Tercih edilen tarih: ${form.preferredDate}
+Saat: ${form.preferredTime}
+
+Not:
+${form.note}
+      `,
+      formType: 'Mevcut Öğrenci Randevu',
+    }),
+  });
+
+  setSubmitting(false);
+
+  if (!res.ok) {
+    alert('Mesaj gönderilemedi');
+    return;
+  }
+
+  setSubmitted(true);
+  setForm({ name: '', phone: '', preferredDate: '', preferredTime: '', note: '' });
+};
 
   const handleChange = (ev: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = ev.target;
