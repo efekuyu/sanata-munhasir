@@ -198,6 +198,9 @@ const handleSubmit = async (ev: React.FormEvent) => {
       name: form.name,
       email: form.email,
       phone: form.phone,
+      preferredDate: form.preferredDate,
+      preferredTime: form.preferredTime,
+      note: form.note,
       message: `
 Tercih edilen tarih: ${form.preferredDate}
 Saat: ${form.preferredTime}
@@ -217,7 +220,14 @@ ${form.note}
   }
 
   setSubmitted(true);
-  setForm({ name: '', phone: '', email: '', preferredDate: '', preferredTime: '', note: '' });
+  setForm({
+    name: '',
+    phone: '',
+    email: '',
+    preferredDate: '',
+    preferredTime: '',
+    note: '',
+  });
 };
 
   const handleChange = (ev: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -263,7 +273,6 @@ ${form.note}
       </div>
     </div>
 
-    {/* ✅ EMAIL BURADA */}
     <div>
       <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2">
         E-posta

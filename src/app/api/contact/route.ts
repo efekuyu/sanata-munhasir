@@ -24,6 +24,9 @@ export async function POST(request: Request) {
     const interest = body.interest || 'Belirtilmedi';
     const message = body.message || 'Mesaj yok';
     const formType = body.formType || 'Website Formu';
+    const preferredDate = body.preferredDate || '';
+const preferredTime = body.preferredTime || '';
+const note = body.note || '';
 
     const now = new Intl.DateTimeFormat('tr-TR', {
       dateStyle: 'long',
@@ -128,7 +131,11 @@ export async function POST(request: Request) {
       await getResend().emails.send({
         from: 'Atölye Sanata Münhasır <info@sanatamunhasir.com>',
         to: [email],
-        subject: `${formType} talebiniz alındı`,
+        subject: formType === 'Mevcut Öğrenci Randevu'
+
+    ? 'Randevu Talebiniz Alındı - Atölye Sanata Münhasır'
+
+    : `${formType} talebiniz alındı`,
         html: `
           <div style="font-family: Arial, Helvetica, sans-serif; background:#f7f4ee; padding:36px;">
             <div style="max-width:620px; margin:0 auto; background:#ffffff; border:1px solid #eadfca; border-radius:12px; overflow:hidden;">
@@ -150,6 +157,22 @@ export async function POST(request: Request) {
                 </p>
 
                 <div style="height:1px; background:#eadfca; margin:26px 0;"></div>
+                
+                      <div style="background:#fbfaf7; border:1px solid #eadfca; border-radius:10px; padding:18px; margin:22px 0;">
+
+        <div style="color:#9a8a6a; font-size:12px; letter-spacing:1.3px; text-transform:uppercase; margin-bottom:12px;">
+
+          Randevu Talebi
+
+        </div>
+
+        <p style="margin:0 0 8px;"><strong>Tarih:</strong> ${preferredDate || 'Belirtilmedi'}</p>
+
+        <p style="margin:0 0 8px;"><strong>Saat:</strong> ${preferredTime || 'Belirtilmedi'}</p>
+
+        <p style="margin:0;"><strong>Not:</strong> ${note || 'Not belirtilmedi'}</p>
+
+      </div>
 
                 <p style="margin-bottom:8px; color:#9a8a6a; font-size:12px; letter-spacing:1.3px; text-transform:uppercase;">
                   Gönderdiğiniz mesaj
