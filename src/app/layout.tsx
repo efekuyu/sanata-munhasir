@@ -1,6 +1,13 @@
-import type { Metadata } from 'next';
-
 export const metadata: Metadata = {
+  icons: {
+    icon: [
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/site.webmanifest',
+
   title: 'Sanata Münhasır | Geleneksel Türk Ebru Sanatı',
   description:
     "Konya Meram'da geleneksel Ebru sanatı atölyesi. Yüz yüze ve online dersler ile Ebru'nun sırrına yolculuk.",
@@ -19,11 +26,3 @@ export const metadata: Metadata = {
     description: "Konya Meram'da geleneksel Ebru sanatı atölyesi. Yüz yüze ve online dersler.",
   },
 };
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="tr">
-      <body>{children}</body>
-    </html>
-  );
-}
