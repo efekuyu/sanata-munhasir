@@ -25,60 +25,98 @@ export async function POST(request: Request) {
     const message = body.message || 'Mesaj yok';
     const formType = body.formType || 'Website Formu';
 
+    const now = new Intl.DateTimeFormat('tr-TR', {
+      dateStyle: 'long',
+      timeStyle: 'short',
+      timeZone: 'Europe/Istanbul',
+    }).format(new Date());
+
+    const cleanPhone = phone.replace(/\D/g, '');
+    const whatsappUrl = cleanPhone ? `https://wa.me/${cleanPhone}` : '';
+    const phoneUrl = cleanPhone ? `tel:+${cleanPhone}` : '';
+    const emailUrl = isValidEmail(email) ? `mailto:${email}` : '';
+
     await getResend().emails.send({
       from: 'Atölye Sanata Münhasır <info@sanatamunhasir.com>',
       to: ['info@sanatamunhasir.com'],
       ...(isValidEmail(email) ? { replyTo: email } : {}),
-      subject: `Yeni Form Mesajı: ${formType} - ${name}`,
+      subject: `${formType} - ${name}`,
       html: `
-        <div style="font-family: Arial, Helvetica, sans-serif; background:#f7f4ee; padding:32px;">
-          <div style="max-width:620px; margin:0 auto; background:#ffffff; border:1px solid #eadfca; border-radius:10px; overflow:hidden;">
-            
-            <div style="padding:24px 28px; background:#111111; color:#ffffff;">
-              <div style="font-family: Georgia, 'Times New Roman', serif; font-size:22px; letter-spacing:0.3px;">
+        <div style="font-family: Arial, Helvetica, sans-serif; background:#f7f4ee; padding:36px;">
+          <div style="max-width:620px; margin:0 auto; background:#ffffff; border:1px solid #eadfca; border-radius:12px; overflow:hidden;">
+
+            <div style="padding:28px 30px; background:#111111; color:#ffffff;">
+              <div style="font-family: Georgia, 'Times New Roman', serif; font-size:22px; line-height:1.3;">
                 Atölye Sanata Münhasır
               </div>
-              <div style="margin-top:8px; color:#d8c39a; font-size:13px; letter-spacing:1px;">
-                Yeni Form Mesajı
+              <div style="margin-top:9px; color:#d8c39a; font-size:12px; letter-spacing:1.5px; text-transform:uppercase;">
+                ${formType}
               </div>
             </div>
 
-            <div style="padding:28px;">
-              <h2 style="margin:0 0 20px; font-family: Georgia, 'Times New Roman', serif; font-size:21px; font-weight:400; color:#111;">
-                ${formType}
-              </h2>
+            <div style="padding:30px;">
+              <div style="margin-bottom:26px;">
+                <div style="color:#9a8a6a; font-size:12px; letter-spacing:1.3px; text-transform:uppercase; margin-bottom:12px;">
+                  Mesaj
+                </div>
+                <div style="font-size:15px; line-height:1.8; color:#222;">
+                  ${message.replace(/\n/g, '<br>')}
+                </div>
+              </div>
 
-              <table cellpadding="0" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px; color:#333;">
+              <div style="height:1px; background:#eadfca; margin:26px 0;"></div>
+
+              <table cellpadding="0" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px; color:#222;">
                 <tr>
-                  <td style="padding:10px 0; color:#8a7a5c; width:130px;">İsim</td>
-                  <td style="padding:10px 0; color:#111;"><strong>${name}</strong></td>
+                  <td style="padding:9px 0; color:#9a8a6a; width:180px;">İsim</td>
+                  <td style="padding:9px 0;"><strong>${name}</strong></td>
                 </tr>
                 <tr>
-                  <td style="padding:10px 0; color:#8a7a5c;">E-mail</td>
-                  <td style="padding:10px 0; color:#111;">${email || 'Belirtilmedi'}</td>
+                  <td style="padding:9px 0; color:#9a8a6a;">E-mail</td>
+                  <td style="padding:9px 0;">${email || 'Belirtilmedi'}</td>
                 </tr>
                 <tr>
-                  <td style="padding:10px 0; color:#8a7a5c;">Telefon</td>
-                  <td style="padding:10px 0; color:#111;">${phone}</td>
+                  <td style="padding:9px 0; color:#9a8a6a;">Telefon</td>
+                  <td style="padding:9px 0;">${phone}</td>
                 </tr>
                 <tr>
-                  <td style="padding:10px 0; color:#8a7a5c;">İlgi Alanı</td>
-                  <td style="padding:10px 0; color:#111;">${interest}</td>
+                  <td style="padding:9px 0; color:#9a8a6a;">İlgi Alanı</td>
+                  <td style="padding:9px 0;">${interest}</td>
+                </tr>
+                <tr>
+                  <td style="padding:9px 0; color:#9a8a6a;">Gönderim Tarihi</td>
+                  <td style="padding:9px 0;">${now}</td>
                 </tr>
               </table>
 
-              <div style="height:1px; background:#eadfca; margin:22px 0;"></div>
+              <div style="height:1px; background:#eadfca; margin:26px 0;"></div>
 
-              <div style="margin-bottom:8px; color:#8a7a5c; font-size:14px;">
-                Mesaj
+              <div style="color:#9a8a6a; font-size:12px; letter-spacing:1.3px; text-transform:uppercase; margin-bottom:14px;">
+                Hızlı İletişim
               </div>
 
-              <div style="background:#fbfaf7; border:1px solid #eee5d6; border-radius:8px; padding:18px; color:#222; font-size:14px; line-height:1.8;">
-                ${message.replace(/\n/g, '<br>')}
+              <div>
+                ${
+                  emailUrl
+                    ? `<a href="${emailUrl}" style="display:inline-block; margin:0 8px 10px 0; padding:11px 15px; background:#111111; color:#ffffff; text-decoration:none; border-radius:6px; font-size:13px;">E-posta ile Yanıtla</a>`
+                    : ''
+                }
+
+                ${
+                  phoneUrl
+                    ? `<a href="${phoneUrl}" style="display:inline-block; margin:0 8px 10px 0; padding:11px 15px; background:#fbfaf7; color:#111111; text-decoration:none; border:1px solid #eadfca; border-radius:6px; font-size:13px;">Telefonla Ara</a>`
+                    : ''
+                }
+
+                ${
+                  whatsappUrl
+                    ? `<a href="${whatsappUrl}" style="display:inline-block; margin:0 8px 10px 0; padding:11px 15px; background:#fbfaf7; color:#111111; text-decoration:none; border:1px solid #eadfca; border-radius:6px; font-size:13px;">WhatsApp’tan Yaz</a>`
+                    : ''
+                }
               </div>
             </div>
 
-            <div style="padding:16px 28px; background:#fbfaf7; border-top:1px solid #eadfca; color:#9a8a6a; font-size:12px;">
+            <div style="padding:16px 30px; background:#fbfaf7; border-top:1px solid #eadfca; color:#9a8a6a; font-size:12px;">
               Bu mesaj web sitesi formu üzerinden gönderildi · www.sanatamunhasir.com
             </div>
           </div>
