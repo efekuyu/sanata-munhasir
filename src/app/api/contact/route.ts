@@ -31,14 +31,58 @@ export async function POST(request: Request) {
       ...(isValidEmail(email) ? { replyTo: email } : {}),
       subject: `Yeni Form Mesajı: ${formType} - ${name}`,
       html: `
-        <h2>Yeni Form Mesajı</h2>
-        <p><strong>Form:</strong> ${formType}</p>
-        <p><strong>İsim:</strong> ${name}</p>
-        <p><strong>E-mail:</strong> ${email || 'Belirtilmedi'}</p>
-        <p><strong>Telefon:</strong> ${phone}</p>
-        <p><strong>İlgi Alanı:</strong> ${interest}</p>
-        <p><strong>Mesaj:</strong></p>
-        <p>${message.replace(/\n/g, '<br>')}</p>
+        <div style="font-family: Arial, Helvetica, sans-serif; background:#f7f4ee; padding:32px;">
+          <div style="max-width:620px; margin:0 auto; background:#ffffff; border:1px solid #eadfca; border-radius:10px; overflow:hidden;">
+            
+            <div style="padding:24px 28px; background:#111111; color:#ffffff;">
+              <div style="font-family: Georgia, 'Times New Roman', serif; font-size:22px; letter-spacing:0.3px;">
+                Atölye Sanata Münhasır
+              </div>
+              <div style="margin-top:8px; color:#d8c39a; font-size:13px; letter-spacing:1px;">
+                Yeni Form Mesajı
+              </div>
+            </div>
+
+            <div style="padding:28px;">
+              <h2 style="margin:0 0 20px; font-family: Georgia, 'Times New Roman', serif; font-size:21px; font-weight:400; color:#111;">
+                ${formType}
+              </h2>
+
+              <table cellpadding="0" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:14px; color:#333;">
+                <tr>
+                  <td style="padding:10px 0; color:#8a7a5c; width:130px;">İsim</td>
+                  <td style="padding:10px 0; color:#111;"><strong>${name}</strong></td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 0; color:#8a7a5c;">E-mail</td>
+                  <td style="padding:10px 0; color:#111;">${email || 'Belirtilmedi'}</td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 0; color:#8a7a5c;">Telefon</td>
+                  <td style="padding:10px 0; color:#111;">${phone}</td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 0; color:#8a7a5c;">İlgi Alanı</td>
+                  <td style="padding:10px 0; color:#111;">${interest}</td>
+                </tr>
+              </table>
+
+              <div style="height:1px; background:#eadfca; margin:22px 0;"></div>
+
+              <div style="margin-bottom:8px; color:#8a7a5c; font-size:14px;">
+                Mesaj
+              </div>
+
+              <div style="background:#fbfaf7; border:1px solid #eee5d6; border-radius:8px; padding:18px; color:#222; font-size:14px; line-height:1.8;">
+                ${message.replace(/\n/g, '<br>')}
+              </div>
+            </div>
+
+            <div style="padding:16px 28px; background:#fbfaf7; border-top:1px solid #eadfca; color:#9a8a6a; font-size:12px;">
+              Bu mesaj web sitesi formu üzerinden gönderildi · www.sanatamunhasir.com
+            </div>
+          </div>
+        </div>
       `,
     });
 
