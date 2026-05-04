@@ -1,7 +1,15 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const getResend = () => {
+  const apiKey = process.env.RESEND_API_KEY;
+
+  if (!apiKey) {
+    throw new Error('RESEND_API_KEY is not configured');
+  }
+
+  return new Resend(apiKey);
+};
 
 export async function POST(request: Request) {
   try {
@@ -10,10 +18,11 @@ export async function POST(request: Request) {
     const name = body.name || 'İsimsiz';
     const email = body.email || 'E-mail belirtilmedi';
     const phone = body.phone || 'Telefon belirtilmedi';
+    const interest = body.interest || 'Belirtilmedi';
     const message = body.message || 'Mesaj yok';
     const formType = body.formType || 'Website Formu';
 
-    await resend.emails.send({
+    await getResend().emails.send({
       from: 'Atölye Sanata Münhasır <info@sanatamunhasir.com>',
       to: 'info@sanatamunhasir.com',
       replyTo: email,
@@ -22,8 +31,9 @@ export async function POST(request: Request) {
         <h2>Yeni Form Mesajı</h2>
         <p><strong>Form:</strong> ${formType}</p>
         <p><strong>İsim:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>E-mail:</strong> ${email}</p>
         <p><strong>Telefon:</strong> ${phone}</p>
+        <p><strong>İlgi Alanı:</strong> ${interest}</p>
         <p><strong>Mesaj:</strong></p>
         <p>${message}</p>
       `,
