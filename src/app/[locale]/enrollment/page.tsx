@@ -166,7 +166,7 @@ ${form.message}
 function ExistingStudentForm() {
   const t = useTranslations('enrollment');
   const locale = useLocale() as 'tr' | 'en';
-  const [form, setForm] = useState({ name: '', phone: '', preferredDate: '', preferredTime: '', note: '' });
+  const [form, setForm] = useState({ name: '', phone: '', email: '', preferredDate: '', preferredTime: '', note: '' });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -196,6 +196,7 @@ const handleSubmit = async (ev: React.FormEvent) => {
     },
     body: JSON.stringify({
       name: form.name,
+      email: form.email,
       phone: form.phone,
       message: `
 Tercih edilen tarih: ${form.preferredDate}
@@ -216,7 +217,7 @@ ${form.note}
   }
 
   setSubmitted(true);
-  setForm({ name: '', phone: '', preferredDate: '', preferredTime: '', note: '' });
+  setForm({ name: '', phone: '', email: '', preferredDate: '', preferredTime: '', note: '' });
 };
 
   const handleChange = (ev: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -241,19 +242,41 @@ ${form.note}
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div>
-          <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2">{t('existingStudent.form.name')}</label>
-          <input type="text" name="name" value={form.name} onChange={handleChange} className={inputClass(errors.name)} />
-          {errors.name && <p className="mt-1 text-xs text-red-500">{errors.name}</p>}
-        </div>
-        <div>
-          <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2">{t('existingStudent.form.phone')}</label>
-          <input type="tel" name="phone" value={form.phone} onChange={handleChange} className={inputClass(errors.phone)} />
-          {errors.phone && <p className="mt-1 text-xs text-red-500">{errors.phone}</p>}
-        </div>
+  <form onSubmit={handleSubmit} className="space-y-5">
+
+    {/* isim + telefon */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div>
+        <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2">
+          {t('existingStudent.form.name')}
+        </label>
+        <input type="text" name="name" value={form.name} onChange={handleChange} className={inputClass(errors.name)} />
+        {errors.name && <p className="mt-1 text-xs text-red-500">{errors.name}</p>}
       </div>
+
+      <div>
+        <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2">
+          {t('existingStudent.form.phone')}
+        </label>
+        <input type="tel" name="phone" value={form.phone} onChange={handleChange} className={inputClass(errors.phone)} />
+        {errors.phone && <p className="mt-1 text-xs text-red-500">{errors.phone}</p>}
+      </div>
+    </div>
+
+    {/* ✅ EMAIL BURADA */}
+    <div>
+      <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2">
+        E-posta
+      </label>
+      <input
+        type="email"
+        name="email"
+        value={form.email}
+        onChange={handleChange}
+        className={inputClass()}
+        placeholder="İsteğe bağlı"
+      />
+    </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
