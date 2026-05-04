@@ -171,13 +171,17 @@ function ExistingStudentForm() {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const validate = () => {
-    const e: Record<string, string> = {};
-    if (!form.name.trim()) e.name = t('validation.nameRequired');
-    if (!form.phone.trim()) e.phone = t('validation.phoneRequired');
-    setErrors(e);
-    return Object.keys(e).length === 0;
-  };
+const validate = () => {
+  const e: Record<string, string> = {};
+
+  if (!form.name.trim()) e.name = t('validation.nameRequired');
+  if (!form.phone.trim()) e.phone = t('validation.phoneRequired');
+  if (!form.preferredDate) e.preferredDate = 'Tarih zorunlu';
+  if (!form.preferredTime) e.preferredTime = 'Saat zorunlu';
+
+  setErrors(e);
+  return Object.keys(e).length === 0;
+};
 
 const handleSubmit = async (ev: React.FormEvent) => {
   ev.preventDefault();
@@ -254,11 +258,13 @@ ${form.note}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2">{t('existingStudent.form.preferredDate')}</label>
-          <input type="date" name="preferredDate" value={form.preferredDate} onChange={handleChange} className={inputClass()} />
+          <input type="date" name="preferredDate" value={form.preferredDate} onChange={handleChange} className={inputClass(errors.preferredDate)} />
+{errors.preferredDate && <p className="mt-1 text-xs text-red-500">{errors.preferredDate}</p>}
         </div>
         <div>
           <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2">{t('existingStudent.form.preferredTime')}</label>
-          <input type="time" name="preferredTime" value={form.preferredTime} onChange={handleChange} className={inputClass()} />
+          <input type="time" name="preferredTime" value={form.preferredTime} onChange={handleChange} className={inputClass(errors.preferredTime)} />
+{errors.preferredTime && <p className="mt-1 text-xs text-red-500">{errors.preferredTime}</p>}
         </div>
       </div>
 
