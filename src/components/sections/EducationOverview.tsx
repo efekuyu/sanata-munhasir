@@ -1,4 +1,5 @@
 import Container from '@/components/ui/Container';
+import UpperText from '@/components/UpperText';
 
 interface EducationOverviewProps {
   locale: 'tr' | 'en';
@@ -142,7 +143,7 @@ export default function EducationOverview({ locale }: EducationOverviewProps) {
                   color: 'var(--accent)',
                 }}
               >
-                {label}
+                <UpperText>{label}</UpperText>
               </p>
               <div
                 aria-hidden="true"
@@ -265,7 +266,7 @@ export default function EducationOverview({ locale }: EducationOverviewProps) {
                           margin: 0,
                         }}
                       >
-                        {item.name}
+                        <UpperText>{item.name}</UpperText>
                       </h3>
                       <p
                         style={{

@@ -116,7 +116,7 @@ ${form.message}
           {errors.name && <p className="mt-1 text-xs text-red-500">{errors.name}</p>}
         </div>
         <div>
-          <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2">{t('newStudent.form.phone')}</label>
+          <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2"><UpperText>{t('newStudent.form.phone')}</UpperText></label>
           <input type="tel" name="phone" value={form.phone} onChange={handleChange} className={inputClass(errors.phone)} />
           {errors.phone && <p className="mt-1 text-xs text-red-500">{errors.phone}</p>}
         </div>
@@ -124,12 +124,12 @@ ${form.message}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2">{t('newStudent.form.email')}</label>
+          <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2"><UpperText>{t('newStudent.form.email')}</UpperText></label>
           <input type="email" name="email" value={form.email} onChange={handleChange} className={inputClass(errors.email)} />
           {errors.email && <p className="mt-1 text-xs text-red-500">{errors.email}</p>}
         </div>
         <div>
-          <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2">{t('newStudent.form.city')}</label>
+          <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2"><UpperText>{t('newStudent.form.city')}</UpperText></label>
           <input type="text" name="city" value={form.city} onChange={handleChange} className={inputClass(errors.city)} />
           {errors.city && <p className="mt-1 text-xs text-red-500">{errors.city}</p>}
         </div>
@@ -151,7 +151,7 @@ ${form.message}
       </div>
 
       <div>
-        <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2">{t('newStudent.form.message')}</label>
+        <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2"><UpperText>{t('newStudent.form.message')}</UpperText></label>
         <textarea name="message" value={form.message} onChange={handleChange} rows={4}
           className={inputClass()} style={{ resize: 'vertical', minHeight: '100px' }} />
       </div>
@@ -293,19 +293,19 @@ ${form.note}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2">{t('existingStudent.form.preferredDate')}</label>
+          <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2"><UpperText>{t('existingStudent.form.preferredDate')}</UpperText></label>
           <input type="date" name="preferredDate" value={form.preferredDate} onChange={handleChange} className={inputClass(errors.preferredDate)} />
 {errors.preferredDate && <p className="mt-1 text-xs text-red-500">{errors.preferredDate}</p>}
         </div>
         <div>
-          <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2">{t('existingStudent.form.preferredTime')}</label>
+          <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2"><UpperText>{t('existingStudent.form.preferredTime')}</UpperText></label>
           <input type="time" name="preferredTime" value={form.preferredTime} onChange={handleChange} className={inputClass(errors.preferredTime)} />
 {errors.preferredTime && <p className="mt-1 text-xs text-red-500">{errors.preferredTime}</p>}
         </div>
       </div>
 
       <div>
-        <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2">{t('existingStudent.form.note')}</label>
+        <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2"><UpperText>{t('existingStudent.form.note')}</UpperText></label>
         <textarea name="note" value={form.note} onChange={handleChange} rows={4}
           className={inputClass()} style={{ resize: 'vertical', minHeight: '100px' }} />
       </div>

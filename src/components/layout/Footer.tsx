@@ -4,6 +4,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import Container from '@/components/ui/Container';
 import Image from 'next/image';
+import UpperText from '@/components/UpperText';
 
 const WA_NUMBER = '905336531433';
 const IG_HANDLE = 'sanatamunhasir';
@@ -98,7 +99,9 @@ export default function Footer() {
 
           {/* Column 2 — Navigation */}
           <div>
-            <p className="text-label mb-4">{t('pages')}</p>
+            <p className="text-label mb-4">
+  <UpperText>{t('pages')}</UpperText>
+</p>
             <nav className="grid grid-cols-2 gap-x-8 gap-y-2">
               {pages.map((link) => (
                 <Link
@@ -115,14 +118,16 @@ export default function Footer() {
                 className="block text-sm transition-colors duration-200"
                 style={{ fontWeight: 400, color: 'var(--accent)' }}
               >
-                {t('artNotes')}
+                <UpperText>{t('artNotes')}</UpperText>
               </Link>
             </nav>
           </div>
 
           {/* Column 3 — Contact */}
           <div>
-            <p className="text-label mb-4">{t('contactUs')}</p>
+            <p className="text-label mb-4">
+  <UpperText>{t('contactUs')}</UpperText>
+</p>
             <div className="space-y-2.5 text-sm text-foreground-muted" style={{ fontWeight: 300 }}>
               <div className="flex items-start gap-2">
                 <svg className="w-4 h-4 flex-shrink-0 mt-0.5 opacity-60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
