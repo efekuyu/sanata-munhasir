@@ -130,10 +130,16 @@ const message = body.message || 'Mesaj yok';
                   <td style="padding:9px 0; color:#9a8a6a;">Telefon</td>
                   <td style="padding:9px 0;">${phone}</td>
                 </tr>
+${
+  city
+    ? `
       <tr>
         <td style="padding:9px 0; color:#9a8a6a;">Şehir</td>
         <td style="padding:9px 0;">${city}</td>
       </tr>
+    `
+    : ''
+}
 
                 <tr>
                   <td style="padding:9px 0; color:#9a8a6a;">İlgi Alanı</td>
