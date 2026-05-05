@@ -423,7 +423,16 @@ export default function HomePage() {
             {galleryCollections.slice(0, 3).map((col, i) => (
               <div key={col.key} className="group flex flex-col gap-3">
                 <Link href="/gallery">
-                  <ArtFrame ratio={i === 1 ? '4/5' : '3/4'} index={i + 1} />
+                  <div
+  className="relative overflow-hidden rounded-sm"
+  style={{ aspectRatio: i === 1 ? '4/5' : '3/4' }}
+>
+  <img
+    src={`/images/home/gallery-${i + 1}.jpg`}
+    alt={col.label}
+    className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-[1.03]"
+  />
+</div>
                 </Link>
                 <span className="text-foreground-muted group-hover:text-foreground transition-colors duration-300"
                   style={{ fontSize: '0.70rem', fontWeight: 300, letterSpacing: '0.08em' }}>
