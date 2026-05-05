@@ -25,114 +25,114 @@
     "studioTagline": "Meram, Konya"
   },
   "home": {
-    "hero": {
-      "title": "A Journey into\nArt on Water",
-      "subtitle": "A traditional Ebru studio in Meram, Konya — where colour meets water.",
-      "cta": {
-        "explore": "Explore the Studio",
-        "whatsapp": "Write on WhatsApp"
-      }
-    },
-    "ebruIntro": {
-      "label": "Ebru Art",
-      "quote": "Ebru is not made — it reveals itself.",
-      "body": "Every pattern is the product of a unique meeting — pigments spreading freely on the surface of water. No two works of Ebru are ever alike, just as no two moments are ever the same."
-    },
-    "studioIntro": {
-      "eyebrow": "The Studio",
-      "title": "A practice rooted in tradition",
-      "body": "Atölye Sanata Münhasır was founded to preserve the living tradition of Turkish Ebru in Meram, Konya. This is not a course programme — it is a years-long practice built on discipline, patience, and stillness. Every session is built around focus, creation, and inner quiet.",
-      "cta": "About the studio →"
-    },
-    "courses": {
-      "eyebrow": "Classes",
-      "title": "At your own pace, on your own path",
-      "items": [
-        {
-          "key": "beginner",
-          "level": "Beginner",
-          "desc": "Materials, the preparation ritual, and first pattern experiments. Discover how a blank sheet of paper becomes a work of art in a water-filled tray.",
-          "cta": "Enrol"
-        },
-        {
-          "key": "advanced",
-          "level": "Advanced",
-          "desc": "Nightingale nest, Hatip, and advanced composition techniques. At this stage each design approaches the signature of a master.",
-          "cta": "Enrol"
-        },
-        {
-          "key": "online",
-          "level": "Online Classes",
-          "desc": "We work with students from across Turkey and around the world. One-to-one video sessions with a materials guide so you can build your own Ebru corner at home.",
-          "cta": "Enquire via WhatsApp"
-        },
-        {
-          "key": "workshop",
-          "level": "Workshops & Events",
-          "desc": "Tailored studio experiences for school groups, corporate teams, and private occasions. Get in touch to arrange yours.",
-          "cta": "Get in Touch"
-        }
-      ],
-      "viewAll": "Full Class Details →"
-    },
-    "workshops": {
-      "eyebrow": "Workshops & Collaborations",
-      "partA": {
-        "label": "Workshops",
-        "title": "Groups & Private Events",
-        "body": "We run bespoke Ebru workshops for school groups, adults, and corporate teams. Suitable for all ages and experience levels — discover Ebru together.",
-        "items": [
-          "School and university groups",
-          "Corporate team events"
-        ],
-        "cta": "Contact via WhatsApp"
-      },
-      "partB": {
-        "label": "Institutional Partnerships",
-        "title": "Schools & Organisations",
-        "body": "We build lasting partnerships with schools, cultural centres, and NGOs in Konya and beyond. Contact us to integrate Ebru into your curriculum or enrich your institutional events.",
-        "cta": "Request a Proposal"
-      }
-    },
-    "gallery": {
-      "eyebrow": "Collection",
-      "title": "Traces from the studio",
-      "viewAll": "View Full Gallery",
-      "collections": [
-        { "key": "student", "label": "Student Works" },
-        { "key": "master", "label": "Master Works" },
-        { "key": "atelier", "label": "Studio Life" }
-      ]
-    },
-    "dualLearning": {
-      "eyebrow": "Access",
-      "title": "Wherever you are",
-      "inPerson": {
-        "label": "In-Person",
-        "title": "Konya Studio",
-        "body": "Join us in the Melikşah Quarter for lessons in a traditional studio setting. A prepared kitre tray, specialist pigments, and a workspace refined under the guidance of a master. Every session is built around focus, creation, and stillness.",
-        "cta": "Enrolment Form"
-      },
-      "online": {
-        "label": "Online",
-        "title": "Remote Studio",
-        "body": "We work with students from across Turkey and around the world. With a materials list, preparation guide, and one-to-one video session support, you can build your own Ebru corner at home.",
-        "cta": "Enquire via WhatsApp"
-      }
-    },
-    "instagram": {
-      "eyebrow": "Instagram",
-      "title": "@sanatamunhasir",
-      "cta": "Follow on Instagram"
-    },
-    "finalCta": {
-      "eyebrow": "Invitation",
-      "title": "Would you like to start learning Ebru today?",
-      "body": "Do you have a question? Would you like to begin a course? Write to us — we will get back to you promptly.",
-      "whatsapp": "Contact via WhatsApp",
-      "enrollment": "Enrolment Form"
+  "hero": {
+    "title": "A Journey into\nArt on Water",
+    "subtitle": "A traditional Ebru atelier in Meram, Konya — where colour meets water.",
+    "cta": {
+      "explore": "Explore the Atelier",
+      "whatsapp": "Message on WhatsApp"
     }
   },
+  "ebruIntro": {
+    "label": "Ebru Art",
+    "quote": "Ebru is a process that finds its own path on water.",
+    "body": "Each pattern emerges from the unique interaction of pigments spreading across the surface of water. No two works are ever the same — just as no two moments are alike."
+  },
+  "studioIntro": {
+    "eyebrow": "The Atelier",
+    "title": "A contemporary expression rooted in tradition",
+    "body": "Atölye Sanata Münhasır is a space where the depth of Ebru tradition meets a contemporary approach. This is not simply a course, but an ongoing practice shaped by attention, continuity, and making.",
+    "cta": "About the atelier →"
+  },
+  "courses": {
+    "eyebrow": "Classes",
+    "title": "Each student progresses with their own rhythm and approach",
+    "items": [
+      {
+        "key": "beginner",
+        "level": "Beginner",
+        "desc": "An introduction to materials, preparation, and first patterns. Discover the process of creating on water step by step.",
+        "cta": "Enrol"
+      },
+      {
+        "key": "advanced",
+        "level": "Advanced",
+        "desc": "Advanced compositional techniques and more in-depth studies, allowing personal expression to become increasingly defined.",
+        "cta": "Enrol"
+      },
+      {
+        "key": "online",
+        "level": "Online Classes",
+        "desc": "We work with participants from across Turkey and internationally. With guided content, you can establish your own working space and continue your practice.",
+        "cta": "Enquire via WhatsApp"
+      },
+      {
+        "key": "workshop",
+        "level": "Workshops & Events",
+        "desc": "We offer tailored atelier experiences for school groups, corporate teams, and private organisations. Please get in touch for further details and planning.",
+        "cta": "Get Information"
+      }
+    ],
+    "viewAll": "Full Class Details →"
+  },
+  "workshops": {
+    "eyebrow": "Workshops & Collaborations",
+    "partA": {
+      "label": "Workshops",
+      "title": "Groups & Private Events",
+      "body": "We organise bespoke Ebru workshops for school groups, children and adults, as well as corporate teams. With content tailored to different levels, Ebru can be experienced collectively.",
+      "items": [
+        "School and university groups",
+        "Corporate team events"
+      ],
+      "cta": "Contact via WhatsApp"
+    },
+    "partB": {
+      "label": "Institutional Partnerships",
+      "title": "Schools & Organisations",
+      "body": "We collaborate with schools, cultural centres, and non-profit organisations in Konya and beyond. Whether integrating Ebru into educational programmes or enriching institutional events, we would be pleased to assist.",
+      "cta": "Request a Proposal"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Collection",
+    "title": "Traces from the atelier",
+    "viewAll": "View Full Gallery",
+    "collections": [
+      { "key": "student", "label": "Student Works" },
+      { "key": "master", "label": "Master Works" },
+      { "key": "atelier", "label": "Atelier Life" }
+    ]
+  },
+  "dualLearning": {
+    "eyebrow": "Access",
+    "title": "Wherever you are",
+    "inPerson": {
+      "label": "In-Person",
+      "title": "Atelier Experience",
+      "body": "At our atelier in Konya Meram, you become part of a process shaped through traditional materials and refined practice. Each work develops through attention, rhythm, and craft.",
+      "cta": "Enrolment Form"
+    },
+    "online": {
+      "label": "Online",
+      "title": "Remote Atelier",
+      "body": "We work with participants from different cities and countries. With guided materials and structured support, you can experience the process within your own environment.",
+      "cta": "Enquire via WhatsApp"
+    }
+  },
+  "instagram": {
+    "eyebrow": "Instagram",
+    "title": "@sanatamunhasir",
+    "cta": "Follow on Instagram"
+  },
+  "finalCta": {
+    "eyebrow": "Invitation",
+    "title": "Would you like to experience Ebru?",
+    "body": "For further information about classes and atelier sessions, feel free to get in touch with us.",
+    "whatsapp": "Contact via WhatsApp",
+    "enrollment": "Enrolment Form"
+  }
+},
   "about": {
   "hero": {
     "eyebrow": "Our Story",
