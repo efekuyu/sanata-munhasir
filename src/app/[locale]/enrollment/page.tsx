@@ -313,6 +313,7 @@ const handleSubmit = async (ev: React.FormEvent) => {
 export default function EnrollmentPage() {
   const t = useTranslations('enrollment');
   const [tab, setTab] = useState<'new' | 'existing'>('new');
+  const locale = useLocale() as 'tr' | 'en';
 
   return (
     <>
@@ -392,12 +393,24 @@ export default function EnrollmentPage() {
 
             {/* WhatsApp fallback */}
             <div className="mt-10 pt-8 border-t border-border text-center">
-              <p className="text-foreground-muted mb-4"
-                style={{ fontSize: '0.83rem', fontWeight: 400 }}>
-                {tab === 'new'
-                  ? 'Formsuz kayıt için WhatsApp\'tan da ulaşabilirsiniz.'
-                  : 'Randevu için doğrudan WhatsApp\'tan da yazabilirsiniz.'}
-              </p>
+              <p className="text-foreground-muted mb-4">
+  {locale === 'tr'
+    ? tab === 'new'
+      ? 'Formsuz kayıt için WhatsApp\'tan da ulaşabilirsiniz.'
+      : 'Randevu için doğrudan WhatsApp\'tan da yazabilirsiniz.'
+    : tab === 'new'
+      ? 'You can also contact us via WhatsApp without filling out the form.'
+      : 'You can also message us directly on WhatsApp for appointments.'}
+</p>
+
+<a
+  href={`https://wa.me/${WA_NUMBER}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2 text-accent hover:text-accent transition-colors"
+>
+  {locale === 'tr' ? 'WhatsApp ile Yazın →' : 'Message on WhatsApp →'}
+</a>
               <a href={`https://wa.me/${WA_NUMBER}`} target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-accent hover:text-accent transition-colors"
                 style={{ fontSize: '0.8rem', letterSpacing: '0.05em', fontWeight: 400 }}>
