@@ -204,70 +204,82 @@
   }
 },
   "courses": {
-    "hero": {
-      "eyebrow": "Eğitim Programları",
-      "title": "Ebru'ya giden her yol\nburada başlar",
-      "subtitle": "Başlangıçtan ileri seviyeye, yüz yüzeden online'a — kendi yolunuzu seçin."
-    },
-    "system": {
-      "eyebrow": "Nasıl Çalışıyoruz",
-      "title": "Esnek, kişiye özel model",
-      "items": [
-        { "title": "48 Saat Önceden Bildirim", "desc": "Her ders randevusu en az 48 saat önceden planlanır. Bu, hem öğrenciye hem de eğitmene hazırlık süresi tanır." },
-        { "title": "Aylık Devam Modeli", "desc": "Dersler aylık planlama sistemiyle yürütülür. Esnek program, kişisel hızınıza göre ilerlemenize imkân tanır." },
-        { "title": "Küçük Gruplar", "desc": "Maksimum 4-6 kişilik gruplarda ders verilir. Her öğrenciye bireysel ilgi ve kişisel geri bildirim." },
-        { "title": "Fiyat Görüşmesi", "desc": "Fiyatlar için WhatsApp veya iletişim formundan bize ulaşın. Size özel bilgi verelim." }
-      ]
-    },
-    "types": {
-      "eyebrow": "Ders Türleri",
-      "items": [
-        {
-          "key": "beginner",
-          "badge": "Başlangıç",
-          "title": "Başlangıç Atölyesi",
-          "desc": "Ebru'nun temel malzemeleri, hazırlık ritüeli ve ilk desen denemeleri. Kitre teknesi, boyalar ve fırçalarla tanışma. Battal Ebru ve basit taraklı desenler.",
-          "format": "Yüz Yüze / Konya",
-          "group": "Bireysel veya küçük grup",
-          "cta": "Kayıt Formu"
-        },
-        {
-          "key": "advanced",
-          "badge": "İleri Seviye",
-          "title": "İleri Seviye Atölye",
-          "desc": "Taraklı, şal, çiçekli teknikler. Bülbül yuvası ve Hatip Ebru. Kendi özgün kompozisyonlarınızı geliştirme aşaması. Her desen, bir ustanın imzasına yaklaşır.",
-          "format": "Yüz Yüze / Konya",
-          "group": "Bireysel veya küçük grup",
-          "cta": "Kayıt Formu"
-        },
-        {
-          "key": "onlinePrivate",
-          "badge": "Online Birebir",
-          "title": "Online Birebir Ders",
-          "desc": "Konum fark etmeksizin, birebir video seans. Malzeme listesi ve hazırlık rehberi dahil. Kendi evinizde bir Ebru köşesi kurabilirsiniz.",
-          "format": "Çevrimiçi / Video",
-          "group": "Birebir",
-          "cta": "WhatsApp ile Danışın"
-        },
-        {
-          "key": "onlineGroup",
-          "badge": "Online Grup",
-          "title": "Online Grup Dersi",
-          "desc": "Küçük gruplarla yürütülen online oturumlar. Topluluk desteği, interaktif öğrenme ve birlikte yaratma deneyimi.",
-          "format": "Çevrimiçi / Video",
-          "group": "En fazla 6 kişi",
-          "cta": "WhatsApp ile Danışın"
-        }
-      ]
-    },
-    "cta": {
-      "eyebrow": "Başlamaya Hazır mısınız?",
-      "title": "İlk adımı atın",
-      "body": "Hangi ders türünün size uygun olduğunu bilmiyorsanız bize sorun. Deneyiminizi ve hedeflerinizi paylaşın, size en uygun programı birlikte belirleyelim.",
-      "whatsapp": "WhatsApp ile Danışın",
-      "enrollment": "Kayıt Formu"
-    }
+  "hero": {
+    "eyebrow": "Eğitim Programları",
+    "title": "Ebru Sanatına Açılan Bir Yol",
+    "subtitle": "Farklı seviyelere ve ihtiyaçlara yönelik, yüz yüze ve çevrimiçi eğitimlerle kendi pratiğinizi şekillendirebilirsiniz."
   },
+  "system": {
+    "eyebrow": "Nasıl Çalışıyoruz",
+    "title": "Esnek ve yapılandırılmış yaklaşım",
+    "items": [
+      {
+        "title": "48 Saat Önceden Bildirim",
+        "desc": "Her ders randevusu en az 48 saat önceden planlanır. Bu, hem öğrenciye hem de eğitmene hazırlık süresi tanır."
+      },
+      {
+        "title": "Aylık Devam Modeli",
+        "desc": "Dersler aylık planlama sistemiyle yürütülür. Esnek program, kişisel hızınıza göre ilerlemenize imkân tanır."
+      },
+      {
+        "title": "Odaklı Çalışma",
+        "desc": "Dersler, her katılımcının sürece aktif olarak dahil olabileceği dengeli gruplarla yürütülür. Bu yaklaşım, bireysel ilerlemeyi destekler."
+      },
+      {
+        "title": "Bilgilendirme",
+        "desc": "Ders içerikleri ve program detayları hakkında bilgi almak için bizimle iletişime geçebilirsiniz."
+      }
+    ]
+  },
+  "types": {
+    "eyebrow": "Ders Türleri",
+    "items": [
+      {
+        "key": "beginner",
+        "badge": "Başlangıç",
+        "title": "Başlangıç Atölyesi",
+        "desc": "Ebru sanatının temel malzemeleri, hazırlık süreci ve ilk desen uygulamaları ile sürece giriş yapılır. Katılımcılar, suyun yüzeyinde şekillenen bu üretim biçimini adım adım deneyimler.",
+        "format": "Yüz Yüze / Konya · Atölye ve Çevrimiçi seçenekler",
+        "group": "Atölye dersleri ve çevrimiçi seçenekler",
+        "cta": "Kayıt Formu"
+      },
+      {
+        "key": "advanced",
+        "badge": "İleri Seviye",
+        "title": "İleri Seviye Atölye",
+        "desc": "Gelişmiş teknikler ve kompozisyon çalışmaları ile kişisel ifade derinleşir. Bu aşamada üretim süreci daha özgün ve bütünlüklü bir yapı kazanır.",
+        "format": "Yüz Yüze / Konya · Atölye ve Çevrimiçi seçenekler",
+        "group": "Atölye dersleri ve çevrimiçi seçenekler",
+        "cta": "Kayıt Formu"
+      },
+      {
+        "key": "onlinePrivate",
+        "badge": "Online",
+        "title": "Online Dersler",
+        "desc": "Konumdan bağımsız olarak katılabileceğiniz çevrimiçi derslerde, rehberli içeriklerle kendi çalışma alanınızda üretim sürecini sürdürebilirsiniz.",
+        "format": "Çevrimiçi / Video",
+        "group": "Çevrimiçi katılım",
+        "cta": "Detaylı Bilgi"
+      },
+      {
+        "key": "onlineGroup",
+        "badge": "Online",
+        "title": "Online Grup Dersleri",
+        "desc": "Etkileşimli oturumlarla yürütülen derslerde, katılımcılar birlikte öğrenir ve üretim sürecini paylaşır.",
+        "format": "Çevrimiçi / Video",
+        "group": "Grup katılımı",
+        "cta": "Detaylı Bilgi"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Başlamaya Hazır mısınız?",
+    "title": "İlk adımı birlikte belirleyelim",
+    "body": "Sizin için en uygun eğitim modelini birlikte değerlendirmek için bizimle iletişime geçebilirsiniz.",
+    "whatsapp": "WhatsApp ile İletişime Geç",
+    "enrollment": "Kayıt Formu"
+  }
+},
   "gallery": {
     "hero": {
       "eyebrow": "Koleksiyon",

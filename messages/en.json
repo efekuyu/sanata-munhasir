@@ -27,7 +27,7 @@
   "home": {
   "hero": {
     "title": "A Journey into\nArt on Water",
-    "subtitle": "A traditional Ebru atelier in Meram, Konya — where colour meets water.",
+    "subtitle": "A traditional Ebru atelier in Meram, Konya - where colour meets water.",
     "cta": {
       "explore": "Explore the Atelier",
       "whatsapp": "Message on WhatsApp"
@@ -204,70 +204,82 @@
   }
 },
   "courses": {
-    "hero": {
-      "eyebrow": "Classes",
-      "title": "Every path to Ebru\nbegins here",
-      "subtitle": "From beginner to advanced, in-person to online — choose your own path."
-    },
-    "system": {
-      "eyebrow": "How We Work",
-      "title": "Flexible, personalised model",
-      "items": [
-        { "title": "48-Hour Notice", "desc": "Each lesson is booked at least 48 hours in advance. This gives both student and teacher proper preparation time." },
-        { "title": "Monthly Planning Model", "desc": "Lessons run on a monthly scheduling system. Flexible planning lets you progress at your own pace." },
-        { "title": "Small Groups", "desc": "Classes are held in groups of maximum 4–6. Every student receives individual attention and personal feedback." },
-        { "title": "Pricing on Enquiry", "desc": "For pricing, please contact us via WhatsApp or the contact form. We will provide tailored information." }
-      ]
-    },
-    "types": {
-      "eyebrow": "Class Types",
-      "items": [
-        {
-          "key": "beginner",
-          "badge": "Beginner",
-          "title": "Beginner Studio",
-          "desc": "Materials, the preparation ritual, and first pattern experiments. Introduction to the kitre tray, pigments, and brushes. Battal Ebru and simple combed patterns.",
-          "format": "In-Person / Konya",
-          "group": "Individual or small group",
-          "cta": "Enrolment Form"
-        },
-        {
-          "key": "advanced",
-          "badge": "Advanced",
-          "title": "Advanced Studio",
-          "desc": "Combed, shawl, and floral techniques. Nightingale nest and Hatip Ebru. Developing your own original compositions. Each design approaches a master's signature.",
-          "format": "In-Person / Konya",
-          "group": "Individual or small group",
-          "cta": "Enrolment Form"
-        },
-        {
-          "key": "onlinePrivate",
-          "badge": "Online Private",
-          "title": "Online Private Lesson",
-          "desc": "One-to-one video session regardless of location. Materials list and preparation guide included. Build your own Ebru corner at home.",
-          "format": "Online / Video",
-          "group": "One-to-one",
-          "cta": "Enquire via WhatsApp"
-        },
-        {
-          "key": "onlineGroup",
-          "badge": "Online Group",
-          "title": "Online Group Lesson",
-          "desc": "Online sessions conducted with small groups. Community support, interactive learning, and the shared experience of creating together.",
-          "format": "Online / Video",
-          "group": "Maximum 6 people",
-          "cta": "Enquire via WhatsApp"
-        }
-      ]
-    },
-    "cta": {
-      "eyebrow": "Ready to Begin?",
-      "title": "Take the first step",
-      "body": "If you are unsure which class type suits you, ask us. Share your experience and goals and we will work out the best programme for you together.",
-      "whatsapp": "Enquire via WhatsApp",
-      "enrollment": "Enrolment Form"
-    }
+  "hero": {
+    "eyebrow": "Classes",
+    "title": "A Refined Path into Ebru Art",
+    "subtitle": "Shape your own practice through in-person and online classes designed for different levels and needs."
   },
+  "system": {
+    "eyebrow": "How We Work",
+    "title": "A structured and flexible approach",
+    "items": [
+      {
+        "title": "48-Hour Notice",
+        "desc": "Each lesson is booked at least 48 hours in advance. This gives both student and instructor proper preparation time."
+      },
+      {
+        "title": "Monthly Planning Model",
+        "desc": "Lessons run on a monthly scheduling system. Flexible planning allows you to progress at your own pace."
+      },
+      {
+        "title": "Focused Learning",
+        "desc": "Classes are arranged in balanced groups where each participant can actively engage with the process. This approach supports individual progress."
+      },
+      {
+        "title": "Class Information",
+        "desc": "Please contact us for details about class content, programme structure and availability."
+      }
+    ]
+  },
+  "types": {
+    "eyebrow": "Class Types",
+    "items": [
+      {
+        "key": "beginner",
+        "badge": "Beginner",
+        "title": "Beginner Atelier",
+        "desc": "An introduction to Ebru materials, preparation and first pattern applications. Participants experience the process of creating on water step by step.",
+        "format": "In-Person / Konya · Atelier and online options",
+        "group": "Atelier classes and online options",
+        "cta": "Enrolment Form"
+      },
+      {
+        "key": "advanced",
+        "badge": "Advanced",
+        "title": "Advanced Atelier",
+        "desc": "Through advanced techniques and compositional studies, personal expression becomes more refined. At this stage, the creative process develops a more individual and cohesive character.",
+        "format": "In-Person / Konya · Atelier and online options",
+        "group": "Atelier classes and online options",
+        "cta": "Enrolment Form"
+      },
+      {
+        "key": "onlinePrivate",
+        "badge": "Online",
+        "title": "Online Classes",
+        "desc": "Online classes allow you to continue the process regardless of location, with guided content and support for working in your own space.",
+        "format": "Online / Video",
+        "group": "Online participation",
+        "cta": "More Information"
+      },
+      {
+        "key": "onlineGroup",
+        "badge": "Online",
+        "title": "Online Group Classes",
+        "desc": "Interactive online sessions where participants learn together and share the creative process.",
+        "format": "Online / Video",
+        "group": "Group participation",
+        "cta": "More Information"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Ready to Begin?",
+    "title": "Let’s find the right first step",
+    "body": "Please contact us so we can help you choose the class format that best suits your interests and level.",
+    "whatsapp": "Contact via WhatsApp",
+    "enrollment": "Enrolment Form"
+  }
+},
   "gallery": {
     "hero": {
       "eyebrow": "Collection",
