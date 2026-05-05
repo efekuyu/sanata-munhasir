@@ -25,114 +25,114 @@
     "studioTagline": "Meram, Konya"
   },
   "home": {
-    "hero": {
-      "title": "Suyun Üzerinde\nSanata Yolculuk",
-      "subtitle": "Konya Meram'da, rengin suyla buluştuğu geleneksel bir Ebru atölyesi.",
-      "cta": {
-        "explore": "Atölyeyi Keşfet",
-        "whatsapp": "WhatsApp ile Yazın"
-      }
-    },
-    "ebruIntro": {
-      "label": "Ebru Sanatı",
-      "quote": "Ebru yapılmaz — kendiliğinden ortaya çıkar.",
-      "body": "Her desen, boyaların suyun yüzeyinde serbestçe yayıldığı eşsiz bir buluşmadır. İki Ebru eseri birbirine hiçbir zaman benzemez; tıpkı iki anın birbirine benzememesi gibi."
-    },
-    "studioIntro": {
-      "eyebrow": "Atölye",
-      "title": "Gelenekle örülmüş bir pratik",
-      "body": "Atölye Sanata Münhasır, Türk Ebru sanatının yaşayan geleneğini korumak amacıyla Konya Meram'da kuruldu. Bu bir kurs programı değil; disiplin, sabır ve sessizlik üzerine kurulu çok yıllık bir pratiktir. Her seans; odaklanma, yaratma ve içsel sessizlik üzerine kurulur.",
-      "cta": "Atölye hakkında →"
-    },
-    "courses": {
-      "eyebrow": "Eğitim",
-      "title": "Kendi hızınızda, kendi yolunuzda",
-      "items": [
-        {
-          "key": "beginner",
-          "level": "Başlangıç",
-          "desc": "Ebru'nun temel malzemeleri, hazırlık ritüeli ve ilk desen denemeleri. Boş bir kağıdın, suyla dolu bir tekneyle nasıl bir esere dönüştüğünü keşfediyorsunuz.",
-          "cta": "Kayıt Ol"
-        },
-        {
-          "key": "advanced",
-          "level": "İleri Seviye",
-          "desc": "Bülbül yuvası, Hatip ve gelişmiş kompozisyon teknikleri. Bu aşamada her desen, bir ustanın imzasına yaklaşır.",
-          "cta": "Kayıt Ol"
-        },
-        {
-          "key": "online",
-          "level": "Online Dersler",
-          "desc": "Türkiye'nin her şehrinden ve dünyadan öğrencilerle çalışıyoruz. Birebir video seans desteğiyle kendi evinizde bir Ebru köşesi oluşturabilirsiniz.",
-          "cta": "WhatsApp ile Danışın"
-        },
-        {
-          "key": "workshop",
-          "level": "Workshop & Etkinlikler",
-          "desc": "Okul grupları, kurumsal ekipler ve özel organizasyonlar için tasarlanmış atölye deneyimleri. İletişime geçin.",
-          "cta": "Bilgi Alın"
-        }
-      ],
-      "viewAll": "Tüm Eğitim Detayları →"
-    },
-    "workshops": {
-      "eyebrow": "Workshoplar & İşbirlikleri",
-      "partA": {
-        "label": "Workshoplar",
-        "title": "Gruplar ve Özel Organizasyonlar",
-        "body": "Okul grupları, yetişkin etkinlikleri ve kurumsal ekipler için özel Ebru workshop'ları düzenliyoruz. Her yaşa ve deneyim seviyesine uygun içeriklerle, Ebru'yu bir arada keşfetmek mümkün.",
-        "items": [
-          "Okul ve üniversite grupları",
-          "Kurumsal ekip etkinlikleri"
-        ],
-        "cta": "WhatsApp ile İletişime Geçin"
-      },
-      "partB": {
-        "label": "Kurumsal İşbirlikleri",
-        "title": "Okullar ve Organizasyonlar",
-        "body": "Konya'daki okullar, kültür merkezleri ve STK'larla kalıcı işbirlikleri kuruyoruz. Ebru sanatını müfredatın bir parçası haline getirmek veya kurumsal etkinliklerinizi zenginleştirmek için bize ulaşın.",
-        "cta": "Teklif İsteyin"
-      }
-    },
-    "gallery": {
-      "eyebrow": "Koleksiyon",
-      "title": "Atölyeden izler",
-      "viewAll": "Tüm Galeriyi Görüntüle",
-      "collections": [
-        { "key": "student", "label": "Öğrenci Çalışmaları" },
-        { "key": "master", "label": "Usta Eserleri" },
-        { "key": "atelier", "label": "Atölye Yaşamı" }
-      ]
-    },
-    "dualLearning": {
-      "eyebrow": "Erişim",
-      "title": "Nerede olursanız olun",
-      "inPerson": {
-        "label": "Yüz Yüze",
-        "title": "Konya Atölyesi",
-        "body": "Melikşah Mahallesi'nde, geleneksel bir atölye ortamında ders alın. Kitre teknesi, özel boyalar ve usta gözetiminde hazırlanmış bir çalışma alanı sizi bekliyor. Her seans; odaklanma, yaratma ve sessizlik üzerine kurulur.",
-        "cta": "Kayıt Formu"
-      },
-      "online": {
-        "label": "Çevrimiçi",
-        "title": "Uzaktan Atölye",
-        "body": "Türkiye'nin her şehrinden ve dünyadan öğrencilerle çalışıyoruz. Malzeme listesi, hazırlık rehberi ve birebir video seans desteğiyle kendi evinizde bir Ebru köşesi oluşturabilirsiniz.",
-        "cta": "WhatsApp ile Danışın"
-      }
-    },
-    "instagram": {
-      "eyebrow": "Instagram",
-      "title": "@sanatamunhasir",
-      "cta": "Instagram'da Takip Edin"
-    },
-    "finalCta": {
-      "eyebrow": "Davet",
-      "title": "Ebru sanatını hemen öğrenmeye başlamak ister misiniz?",
-      "body": "Bir sorunuz mu var? Bir derse başlamak mı istiyorsunuz? Bize yazın — en kısa sürede dönüş yapalım.",
-      "whatsapp": "WhatsApp ile Ulaşın",
-      "enrollment": "Kayıt Formu"
+  "hero": {
+    "title": "Suyun Üzerinde\nSanata Yolculuk",
+    "subtitle": "Konya Meram'da, rengin suyla buluştuğu geleneksel bir Ebru atölyesi.",
+    "cta": {
+      "explore": "Atölyeyi Keşfet",
+      "whatsapp": "WhatsApp ile Yazın"
     }
   },
+  "ebruIntro": {
+    "label": "Ebru Sanatı",
+    "quote": "Ebru, suyun üzerinde kendine yol bulan bir sanattır.",
+    "body": "Her desen, boyaların suyun yüzeyinde serbestçe yayıldığı eşsiz bir buluşmadır. İki Ebru eseri birbirine hiçbir zaman benzemez; tıpkı iki anın birbirine benzememesi gibi."
+  },
+  "studioIntro": {
+    "eyebrow": "Atölye",
+    "title": "Gelenekten beslenen, çağdaş bir ifade alanı",
+    "body": "Atölye Sanata Münhasır, Ebru sanatının köklü birikimini günümüzle buluşturan bir çalışma alanıdır. Bu süreç; dikkat, süreklilik ve üretim üzerine kurulu bir yolculuktur.",
+    "cta": "Atölye hakkında →"
+  },
+  "courses": {
+    "eyebrow": "Eğitim",
+    "title": "Her öğrenci kendi ritmi ve yaklaşımıyla ilerler",
+    "items": [
+      {
+        "key": "beginner",
+        "level": "Başlangıç",
+        "desc": "Ebru'nun temel malzemeleri, hazırlık süreci ve ilk desen denemeleri. Suyun üzerinde şekillenen bu süreci adım adım keşfedersiniz.",
+        "cta": "Kayıt Ol"
+      },
+      {
+        "key": "advanced",
+        "level": "İleri Seviye",
+        "desc": "Gelişmiş kompozisyon teknikleri ve daha derinlikli çalışmalarla, kişisel ifade giderek belirginleşir.",
+        "cta": "Kayıt Ol"
+      },
+      {
+        "key": "online",
+        "level": "Online Dersler",
+        "desc": "Türkiye’nin farklı şehirlerinden ve dünyanın çeşitli noktalarından katılımcılarla çalışıyoruz. Rehberli içeriklerle kendi çalışma alanınızı oluşturabilirsiniz.",
+        "cta": "WhatsApp ile Danışın"
+      },
+      {
+        "key": "workshop",
+        "level": "Workshop & Etkinlikler",
+        "desc": "Okul grupları, kurumsal ekipler ve özel organizasyonlar için tasarlanmış atölye deneyimleri sunuyoruz. Detaylı bilgi ve planlama için bizimle iletişime geçebilirsiniz.",
+        "cta": "Bilgi Alın"
+      }
+    ],
+    "viewAll": "Tüm Eğitim Detayları →"
+  },
+  "workshops": {
+    "eyebrow": "Workshoplar & İşbirlikleri",
+    "partA": {
+      "label": "Workshoplar",
+      "title": "Gruplar ve Özel Organizasyonlar",
+      "body": "Okul grupları, çocuk ve yetişkin etkinlikleri ile kurumsal ekipler için özel Ebru workshop’ları düzenliyoruz. Her seviyeye uygun içeriklerle, Ebru’yu birlikte deneyimlemek mümkün.",
+      "items": [
+        "Okul ve üniversite grupları",
+        "Kurumsal ekip etkinlikleri"
+      ],
+      "cta": "WhatsApp ile İletişime Geçin"
+    },
+    "partB": {
+      "label": "Kurumsal İşbirlikleri",
+      "title": "Okullar ve Organizasyonlar",
+      "body": "Konya’daki okullar, kültür merkezleri ve sivil toplum kuruluşlarıyla iş birlikleri yürütüyoruz. Ebru sanatını eğitim programlarına dahil etmek veya etkinliklerinizi zenginleştirmek için bizimle iletişime geçebilirsiniz.",
+      "cta": "Teklif İsteyin"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Koleksiyon",
+    "title": "Atölyeden izler",
+    "viewAll": "Tüm Galeriyi Görüntüle",
+    "collections": [
+      { "key": "student", "label": "Öğrenci Çalışmaları" },
+      { "key": "master", "label": "Usta Eserleri" },
+      { "key": "atelier", "label": "Atölye Yaşamı" }
+    ]
+  },
+  "dualLearning": {
+    "eyebrow": "Erişim",
+    "title": "Nerede olursanız olun",
+    "inPerson": {
+      "label": "Yüz Yüze",
+      "title": "Atölye Deneyimi",
+      "body": "Konya Meram’daki atölyemizde, geleneksel malzemelerle hazırlanmış bir ortamda üretim sürecine dahil olursunuz. Her çalışma, dikkat, ritim ve ustalıkla şekillenir.",
+      "cta": "Kayıt Formu"
+    },
+    "online": {
+      "label": "Çevrimiçi",
+      "title": "Uzaktan Atölye",
+      "body": "Farklı şehirlerden ve ülkelerden katılımcılarla çalışıyoruz. Rehberli içerikler ve yönlendirmelerle kendi ortamınızda üretim sürecini deneyimleyebilirsiniz.",
+      "cta": "WhatsApp ile Danışın"
+    }
+  },
+  "instagram": {
+    "eyebrow": "Instagram",
+    "title": "@sanatamunhasir",
+    "cta": "Instagram'da Takip Edin"
+  },
+  "finalCta": {
+    "eyebrow": "Davet",
+    "title": "Ebru sanatını deneyimlemek ister misiniz?",
+    "body": "Dersler ve atölye çalışmaları hakkında bilgi almak için bizimle iletişime geçebilirsiniz.",
+    "whatsapp": "WhatsApp ile Ulaşın",
+    "enrollment": "Kayıt Formu"
+  }
+},
   "about": {
   "hero": {
     "eyebrow": "Hikâyemiz",
