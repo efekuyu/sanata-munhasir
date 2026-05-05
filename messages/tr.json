@@ -134,52 +134,75 @@
     }
   },
   "about": {
-    "hero": {
-      "eyebrow": "Hikâyemiz",
-      "title": "Gelenekten Geleceğe\nEbru Yolculuğu",
-      "subtitle": "Konya Meram'dan dünyaya uzanan bir sanat pratiği."
-    },
-    "instructor": {
-      "eyebrow": "Eğitmen",
-      "name": "Sema Baranok Yılmaz",
-      "bio": "Konya doğumlu Sema Baranok Yılmaz, 19 yılı aşkın süredir Ebru sanatının inceliklerini öğreniyor ve öğretiyor. Geleneksel teknikleri koruyarak modern yorumlar geliştiren Sema Hoca, yüzlerce öğrenciye bu kadim sanatı aktardı. Çalışmaları yurt içi ve yurt dışı sergilerde yer almış, Ebru sanatının yaşayan bir temsilcisi olarak tanınmaktadır.",
-      "credentials": [
-        "19+ yıl Ebru pratiği",
-        "Yüzlerce mezun öğrenci",
-        "Yurt içi ve uluslararası sergiler",
-        "Okul ve kurum workshopları"
-      ],
-      "yearsLabel": "Yıl Deneyim"
-    },
-    "philosophy": {
-      "eyebrow": "Yaklaşımımız",
-      "title": "Sanat Felsefemiz",
-      "body": "Ebru öğretiminde amacımız yalnızca teknik aktarmak değil; suyun diline kulak vermeyi, sabırla bekleyebilmeyi ve sonucu bırakabilmeyi paylaşmaktır. Her öğrencinin kendi özgün sesini bulması için alan açıyoruz.",
-      "values": [
-        { "title": "Geleneğe Bağlılık", "desc": "Yüzyıllık Osmanlı Ebru tekniklerini özüne sadık kalarak öğretiyoruz." },
-        { "title": "Bireysel Yolculuk", "desc": "Her öğrenci kendi ritminde, kendi yolunda ilerler. Karşılaştırma yoktur." },
-        { "title": "Sabır ve Sessizlik", "desc": "Ebru, acelesi olan için değildir. Her seans bir meditasyon pratiğidir." },
-        { "title": "Yaşayan Gelenek", "desc": "Kadim bilgeliği modern dünyaya aktarmak, atölyemizin temel amacıdır." }
-      ]
-    },
-    "atelier": {
-      "eyebrow": "Atölye Ortamı",
-      "title": "Poyraz ve Pera ile birlikte",
-      "body": "Melikşah Mahallesi'ndeki atölyemiz; kitre teknesi, özel Ebru boyaları, poyraz fırçaları ve geleneksel malzemelerle donatılmış sıcak bir çalışma alanıdır. Atölyemizin iki sevilen sakini: Poyraz (papağanımız) ve Pera (balığımız), her dersin sessiz tanıklarıdır.",
-      "cta": "Atölyeye Gel"
-    },
-    "teaching": {
-      "eyebrow": "Öğretim Yaklaşımı",
-      "title": "Teknikten önce dil",
-      "body": "Derslerimizde önce suyun davranışını gözlemlemeyi öğretiyoruz. Boyaların yüzeye yayılışını anlamak, doğru fırça baskısını hissetmek, tarak hareketinin ritmine kulak vermek — bunlar teknikten önce gelir. Teori ve pratik, her derste iç içe geçer.",
-      "steps": [
-        { "num": "01", "title": "Malzeme tanıma ve hazırlık", "desc": "Kitre, boyalar ve tekne ile tanışma." },
-        { "num": "02", "title": "Suyun dili", "desc": "Yüzey gerilimi ve boya yayılımını gözlemleme." },
-        { "num": "03", "title": "İlk desenler", "desc": "Battal ve taraklı Ebru ile ilk denemeler." },
-        { "num": "04", "title": "Derinleşme", "desc": "Çiçekli, şal ve ileri seviye teknikler." }
-      ]
-    }
+  "hero": {
+    "eyebrow": "Hikâyemiz",
+    "title": "Gelenekten Geleceğe\nEbru Yolculuğu",
+    "subtitle": "Konya Meram’da başlayan bu yolculuk, suyun üzerinde şekillenen kadim bir sanatın bugüne uzanan sessiz anlatımıdır."
   },
+  "instructor": {
+    "eyebrow": "Eğitmen",
+    "name": "Sema Baranok Yılmaz",
+    "bio": "",
+    "credentials": [],
+    "yearsLabel": "Yıl Deneyim"
+  },
+  "philosophy": {
+    "eyebrow": "Yaklaşımımız",
+    "title": "Sanat Felsefemiz",
+    "body": "Ebru öğretiminde amacımız yalnızca teknik aktarmak değil; suyun dilini anlamayı, sabırla ilerlemeyi ve sürecin kendisini deneyimlemeyi paylaşmaktır. Her öğrencinin kendi özgün sesini bulması için alan açıyoruz.",
+    "values": [
+      {
+        "title": "Geleneğe Bağlılık",
+        "desc": "Ebru sanatının köklü tekniklerini özüne sadık kalarak, çağdaş bir yaklaşımla aktarıyoruz."
+      },
+      {
+        "title": "Bireysel Yolculuk",
+        "desc": "Her öğrenci kendi ritminde, kendi yolunda ilerler. Karşılaştırma yoktur."
+      },
+      {
+        "title": "Sabır ve Sessizlik",
+        "desc": "Ebru, aceleye gelmeyen bir sanattır. Her çalışma, dikkat ve dinginlik içinde şekillenen bir süreçtir."
+      },
+      {
+        "title": "Yaşayan Gelenek",
+        "desc": "Kadim bilgeliği bugünün dünyasında yaşatmak ve aktarmak atölyemizin temel yaklaşımıdır."
+      }
+    ]
+  },
+  "atelier": {
+    "eyebrow": "Atölye Ortamı",
+    "title": "Atölye Deneyimi",
+    "body": "Atölyemiz; kitre teknesi, özel boyalar ve geleneksel araçlarla donatılmış sakin ve odaklı bir çalışma alanıdır. Bu alanda yalnızca sanat değil, zamanın akışı da farklı hissedilir.\n\nAtölyenin iki karakteristik sakini Poyraz ve Pera ise bu sürece kendi enerjilerini katar - bazen sessiz bir eşlikçi, bazen de ortamın en dikkat çeken figürü olarak.",
+    "cta": "Atölyeyi Keşfet"
+  },
+  "teaching": {
+    "eyebrow": "Öğretim Yaklaşımı",
+    "title": "Teknikten önce dil",
+    "body": "Derslerimizde önce suyun davranışını gözlemlemeyi öğretiyoruz. Boyaların yüzeye yayılışını anlamak, doğru fırça baskısını hissetmek ve hareketin ritmini kavramak — bunlar teknikten önce gelir. Teori ve pratik, her derste iç içe ilerler.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Malzeme tanıma ve hazırlık",
+        "desc": "Kitre, boyalar ve tekne ile tanışma."
+      },
+      {
+        "num": "02",
+        "title": "Suyun dili",
+        "desc": "Yüzey gerilimi ve boya yayılımını gözlemleme."
+      },
+      {
+        "num": "03",
+        "title": "İlk desenler",
+        "desc": "Battal ve taraklı Ebru ile ilk denemeler."
+      },
+      {
+        "num": "04",
+        "title": "Derinleşme",
+        "desc": "Çiçekli, şal ve ileri seviye teknikler."
+      }
+    ]
+  }
+},
   "courses": {
     "hero": {
       "eyebrow": "Eğitim Programları",
