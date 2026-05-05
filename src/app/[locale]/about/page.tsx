@@ -102,10 +102,26 @@ export default function AboutPage() {
                 style={{ fontStyle: 'italic' }}>
                 {t('instructor.name')}
               </h2>
-              <p className="text-foreground-muted mb-8"
-                style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 2.0, letterSpacing: '0.006em' }}>
-                {t('instructor.bio')}
-              </p>
+              <div
+  className="text-foreground-muted mb-8 space-y-4"
+  style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 2.0, letterSpacing: '0.006em' }}
+>
+  {locale === 'tr' ? (
+    <>
+      <p>Sema Baranok Yılmaz, Ebru Sanatı'na 2007 yılında Destegül Güzel Sanatlar Merkezi’nde, Sadreddin Özçimi’den aldığı Geleneksel Türk Sanatları eğitimi ile adım atmıştır.</p>
+      <p>2011 yılında Fevzi Günüç’ten Hüsn-i Hat dersleri alarak sanat yolculuğunu farklı bir boyuta taşımıştır.</p>
+      <p>Destegül Güzel Sanatlar Merkezi’nde eğitmen olarak devam eden sanatçı, 2017 yılında icazetini almış; 2021 yılı Ocak ayında Atölye Sanata Münhasır’ı kurmuştur.</p>
+      <p>Bugün Konya Meram’daki atölyesinde yüz yüze dersler, online eğitimler, sergiler ve workshoplar ile ebru sanatını aktarmaya devam etmektedir.</p>
+    </>
+  ) : (
+    <>
+      <p>Sema Baranok Yılmaz began her journey in Ebru art in 2007 at Destegül Fine Arts Centre, studying traditional Turkish arts under Sadreddin Özçimi.</p>
+      <p>In 2011, she expanded her artistic perspective by studying Hüsn-i Hat, Islamic calligraphy, with Fevzi Günüç.</p>
+      <p>She later continued as an instructor at Destegül Fine Arts Centre, received her traditional certification in 2017, and founded Atölye Sanata Münhasır in January 2021.</p>
+      <p>Today, she continues to teach Ebru through in-person classes in Konya Meram, online lessons, exhibitions and workshops.</p>
+    </>
+  )}
+</div>
               <ul className="space-y-3 mb-10">
                 {credentials.map((c: string, i: number) => (
                   <li key={i} className="flex items-center gap-3 text-foreground-muted"
