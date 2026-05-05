@@ -183,9 +183,13 @@ export default function HomePage() {
           </ScrollReveal>
         </Container>
       </section>
+        
+        <div className="flex justify-center mb-4 mt-2">
+  <div className="w-8 h-px" style={{ background: 'rgba(0,0,0,0.08)' }} />
+</div>
 
         {/* SEO TEXT BLOCK */}
-<section style={{ paddingTop: '2rem', paddingBottom: '2rem', background: '#FFFFFF' }}>
+<section style={{ paddingTop: '1rem', paddingBottom: '1.5rem', background: '#FFFFFF' }}>
   <Container>
     <div className="max-w-xl mx-auto text-center">
 
