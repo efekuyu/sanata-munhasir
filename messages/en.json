@@ -134,52 +134,75 @@
     }
   },
   "about": {
-    "hero": {
-      "eyebrow": "Our Story",
-      "title": "An Ebru Journey\nfrom Tradition to Future",
-      "subtitle": "A living art practice from Meram, Konya, reaching the world."
-    },
-    "instructor": {
-      "eyebrow": "Instructor",
-      "name": "Sema Baranok Yılmaz",
-      "bio": "Born in Konya, Sema Baranok Yılmaz has been learning and teaching the subtleties of Ebru art for over 19 years. Preserving traditional techniques while developing contemporary interpretations, she has passed on this ancient art to hundreds of students. Her works have appeared in exhibitions at home and abroad, and she is recognised as a living practitioner of the Ebru tradition.",
-      "credentials": [
-        "19+ years of Ebru practice",
-        "Hundreds of graduates",
-        "National and international exhibitions",
-        "School and institutional workshops"
-      ],
-      "yearsLabel": "Years' Experience"
-    },
-    "philosophy": {
-      "eyebrow": "Our Approach",
-      "title": "Our Artistic Philosophy",
-      "body": "Our aim in teaching Ebru is not merely to pass on technique — it is to share the art of listening to the language of water, of waiting patiently, and of releasing the outcome. We open space for each student to find their own voice.",
-      "values": [
-        { "title": "Fidelity to Tradition", "desc": "We teach centuries-old Ottoman Ebru techniques with faithful attention to their origins." },
-        { "title": "Individual Journey", "desc": "Each student advances at their own rhythm, in their own direction. There is no comparison." },
-        { "title": "Patience & Stillness", "desc": "Ebru is not for the hurried. Each session is a practice in meditation." },
-        { "title": "Living Tradition", "desc": "Bringing ancient wisdom into the modern world is the studio's founding purpose." }
-      ]
-    },
-    "atelier": {
-      "eyebrow": "The Studio",
-      "title": "Together with Poyraz and Pera",
-      "body": "Our studio in the Melikşah Quarter is a warm working space equipped with kitre trays, specialist Ebru pigments, poyraz brushes, and traditional materials. Our two beloved residents — Poyraz the parrot and Pera the fish — are the quiet witnesses of every lesson.",
-      "cta": "Visit the Studio"
-    },
-    "teaching": {
-      "eyebrow": "Teaching Approach",
-      "title": "Language before technique",
-      "body": "In our lessons, we first teach students to observe the behaviour of water. Understanding how pigments spread across the surface, feeling the correct brush pressure, listening to the rhythm of comb movement — these come before technique. Theory and practice are interwoven in every lesson.",
-      "steps": [
-        { "num": "01", "title": "Materials and preparation", "desc": "Meeting the kitre, pigments, and tray." },
-        { "num": "02", "title": "The language of water", "desc": "Observing surface tension and pigment behaviour." },
-        { "num": "03", "title": "First patterns", "desc": "First attempts with Battal and combed Ebru." },
-        { "num": "04", "title": "Deepening", "desc": "Floral, shawl, and advanced techniques." }
-      ]
-    }
+  "hero": {
+    "eyebrow": "Our Story",
+    "title": "From Tradition to the Present\nAn Ebru Journey",
+    "subtitle": "Rooted in Konya Meram, this journey reflects a timeless art form shaped on water, quietly extending into the present."
   },
+  "instructor": {
+    "eyebrow": "Instructor",
+    "name": "Sema Baranok Yılmaz",
+    "bio": "",
+    "credentials": [],
+    "yearsLabel": "Years of Experience"
+  },
+  "philosophy": {
+    "eyebrow": "Our Approach",
+    "title": "Artistic Philosophy",
+    "body": "Our aim in teaching Ebru is not only to pass on technique, but to help students understand the language of water, move with patience, and experience the process itself. We create space for each student to develop their own authentic expression.",
+    "values": [
+      {
+        "title": "Respect for Tradition",
+        "desc": "We preserve the core techniques of Ebru while interpreting them through a contemporary perspective."
+      },
+      {
+        "title": "Individual Journey",
+        "desc": "Each student progresses at their own pace, following their own path. There is no comparison."
+      },
+      {
+        "title": "Patience and Stillness",
+        "desc": "Ebru cannot be rushed. Each piece emerges through attention, rhythm, and quiet focus."
+      },
+      {
+        "title": "Living Tradition",
+        "desc": "We carry forward a traditional art form, allowing it to evolve within the present."
+      }
+    ]
+  },
+  "atelier": {
+    "eyebrow": "The Atelier",
+    "title": "The Atelier Experience",
+    "body": "Our atelier is a calm and focused working space, equipped with traditional tools, natural pigments and the Ebru tank. Here, not only the artwork but also the perception of time begins to shift.\n\nPoyraz and Pera, the two distinctive residents of the atelier, add their own character to the space — sometimes quietly accompanying, sometimes becoming the centre of attention.",
+    "cta": "Explore the Atelier"
+  },
+  "teaching": {
+    "eyebrow": "Teaching Approach",
+    "title": "Before Technique, Understanding",
+    "body": "In our lessons, we begin by observing the behaviour of water. Understanding how pigments move across the surface, feeling the pressure of the brush, and sensing the rhythm of movement — these come before technique. Theory and practice evolve together in every session.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Materials & Preparation",
+        "desc": "Introduction to the tank, pigments, and materials."
+      },
+      {
+        "num": "02",
+        "title": "The Language of Water",
+        "desc": "Observing surface tension and pigment movement."
+      },
+      {
+        "num": "03",
+        "title": "First Patterns",
+        "desc": "Creating initial designs using Battal and comb techniques."
+      },
+      {
+        "num": "04",
+        "title": "Deepening Practice",
+        "desc": "Floral motifs and advanced compositions."
+      }
+    ]
+  }
+},
   "courses": {
     "hero": {
       "eyebrow": "Classes",
