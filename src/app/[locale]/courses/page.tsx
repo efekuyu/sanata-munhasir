@@ -3,6 +3,24 @@ import Container from '@/components/ui/Container';
 import { Link } from '@/i18n/routing';
 import ScrollReveal from '@/components/ui/ScrollReveal';
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const isTr = locale === 'tr';
+
+  return {
+    title: isTr
+      ? 'Konya Ebru Kursu ve Online Ebru Dersleri'
+      : 'Ebru Art Classes and Online Turkish Marbling Lessons',
+    description: isTr
+      ? 'Konya Meram’da başlangıç ve ileri seviye ebru dersleri, online ebru eğitimleri ve workshop seçenekleri. Türkiye genelinden öğrenciler için ebru sanatı eğitimi.'
+      : 'Beginner and advanced Ebru art classes, online Turkish marbling lessons and workshops from Konya, Turkey.',
+  };
+}
+
 const WA_NUMBER = '905336531433';
 
 function Rule({ width = 'w-8' }: { width?: string }) {
@@ -58,6 +76,21 @@ export default function CoursesPage() {
         </Container>
       </section>
 
+            {/* ── SEO INTRO ───────────────────────────────── */}
+      <section style={{ paddingTop: '1rem', paddingBottom: '2.5rem', background: '#FFFFFF' }}>
+        <Container>
+          <div className="max-w-2xl mx-auto text-center">
+            <p
+              className="text-foreground-muted"
+              style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 2.0 }}
+            >
+              {locale === 'tr'
+                ? 'Atölye Sanata Münhasır, Konya Meram’da başlangıç ve ileri seviye ebru dersleri, birebir eğitimler, online ebru dersleri ve workshop seçenekleri sunar. Türkiye genelinden öğrenciler için çevrimiçi ders imkânı ile İstanbul, Ankara, İzmir, Antalya ve farklı şehirlerden ebru sanatını öğrenmek isteyenlere ulaşır.'
+                : 'Atölye Sanata Münhasır offers beginner and advanced Ebru classes, private lessons, online Ebru sessions and workshops from Konya, Turkey. Through online training, students from different cities and countries can learn Turkish marbling with a guided and personal approach.'}
+            </p>
+          </div>
+        </Container>
+      </section>
 
       {/* ── HOW WE WORK ──────────────────────────────── */}
       <section style={{ paddingTop: '3.5rem', paddingBottom: '3.5rem' }}>
