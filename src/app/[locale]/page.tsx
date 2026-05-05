@@ -184,6 +184,28 @@ export default function HomePage() {
         </Container>
       </section>
 
+        {/* SEO TEXT BLOCK */}
+<section style={{ paddingTop: '2rem', paddingBottom: '2rem', background: '#FFFFFF' }}>
+  <Container>
+    <div className="max-w-xl mx-auto text-center">
+
+      <p
+        className="text-foreground-muted"
+        style={{
+          fontSize: '0.85rem',
+          fontWeight: 300,
+          lineHeight: 2.0,
+          letterSpacing: '0.01em'
+        }}
+      >
+        {locale === 'tr'
+          ? 'Ebru sanatı, suyun yüzeyinde boyalarla desenler oluşturarak yapılan geleneksel bir Türk sanatıdır. Atölye Sanata Münhasır, Konya Meram’da ebru dersleri, workshoplar ve online eğitimler sunarak bu sanatı hem yerel hem de Türkiye genelinde yaygınlaştırmayı amaçlar.'
+          : 'Ebru art, also known as Turkish marbling, is a traditional art form created by forming patterns on water using special pigments. Atölye Sanata Münhasır offers Ebru classes, workshops, and online training from Konya, reaching students both locally and internationally.'}
+      </p>
+
+    </div>
+  </Container>
+</section>
 
       {/* ══════════════════════════════════════════════════════════
           STUDIO INTRO — split layout — ALT bg
