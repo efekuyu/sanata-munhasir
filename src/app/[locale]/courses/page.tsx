@@ -85,8 +85,8 @@ export default function CoursesPage() {
               style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 2.0 }}
             >
               {locale === 'tr'
-                ? 'Atölye Sanata Münhasır, Konya Meram’da başlangıç ve ileri seviye ebru dersleri, birebir eğitimler, online ebru dersleri ve workshop seçenekleri sunar. Türkiye genelinden öğrenciler için çevrimiçi ders imkânı ile İstanbul, Ankara, İzmir, Antalya ve farklı şehirlerden ebru sanatını öğrenmek isteyenlere ulaşır.'
-                : 'Atölye Sanata Münhasır offers beginner and advanced Ebru classes, private lessons, online Ebru sessions and workshops from Konya, Turkey. Through online training, students from different cities and countries can learn Turkish marbling with a guided and personal approach.'}
+  ? 'Atölye Sanata Münhasır, Konya Meram’da başlangıç ve ileri seviye ebru dersleri, atölye çalışmaları ve çevrimiçi eğitim seçenekleri sunar. Farklı şehirlerden ve ülkelerden katılımcılarla yürütülen programlarla, ebru sanatını bulunduğunuz yerden deneyimlemek mümkündür.'
+  : 'Atölye Sanata Münhasır offers beginner and advanced Ebru classes, atelier sessions, and online programmes based in Konya, Turkey. Participants from different cities and countries can experience the practice of Ebru within their own environment through guided learning.'}
             </p>
           </div>
         </Container>
