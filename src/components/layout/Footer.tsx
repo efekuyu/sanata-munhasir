@@ -68,8 +68,8 @@ export default function Footer() {
             </div>
             <p className="text-sm leading-relaxed text-foreground-muted mb-5" style={{ fontWeight: 300, maxWidth: '220px' }}>
               {locale === 'tr'
-                ? 'Geleneksel Türk ebru sanatını çağdaş bir yaklaşımla yaşatan; Konya\'dan dünyaya açılan zarif bir sanat atölyesi.'
-                : 'A refined art atelier preserving Turkish marbling through a contemporary approach, from Konya to the world.'}
+                ? 'Ebru sanatını köklerinden beslenerek, çağdaş bir yaklaşımla sürdüren bir atölye.'
+                : 'An atelier that draws from the roots of Ebru while carrying it forward through a contemporary approach.'}
             </p>
             <div className="flex items-center gap-2">
               <a
@@ -171,8 +171,8 @@ export default function Footer() {
                 </svg>
                 <p>
                   {locale === 'tr'
-                    ? 'Paz–Cum 09:00–18:00'
-                    : 'Sun–Fri 09:00–18:00'}
+                    ? 'Pazartesi–Cumartesi 10:00–19:00'
+                    : 'Monday-Saturday 10:00–19:00'}
                 </p>
               </div>
             </div>
