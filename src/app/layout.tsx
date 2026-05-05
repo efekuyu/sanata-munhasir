@@ -44,6 +44,7 @@ export const metadata: Metadata = {
       { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
 
       { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico?v=4' },
 
     ],
 
