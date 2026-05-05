@@ -87,51 +87,30 @@ export default function AboutPage() {
             <div className="relative">
               <ArtFrame ratio="3/4" />
               {/* Credential badge */}
-              <div className="absolute -bottom-5 -right-2 lg:-right-5 bg-surface rounded-sm border border-border p-5"
-                style={{ boxShadow: 'var(--shadow-md)' }}>
-                <p className="font-serif text-3xl text-accent" style={{ fontWeight: 400 }}>19+</p>
-                <p className="text-xs text-foreground-muted mt-0.5" style={{ fontWeight: 400 }}>
-                  {t('instructor.yearsLabel')}
-                </p>
-              </div>
             </div>
 
             {/* Bio */}
             <div>
-              <h2 className="text-heading-1 text-foreground mb-3"
-                style={{ fontStyle: 'italic' }}>
-                {t('instructor.name')}
-              </h2>
               <div
   className="text-foreground-muted mb-8 space-y-4"
   style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 2.0, letterSpacing: '0.006em' }}
 >
   {locale === 'tr' ? (
     <>
-      <p>Sema Baranok Yılmaz, Ebru Sanatı'na 2007 yılında Destegül Güzel Sanatlar Merkezi’nde, Sadreddin Özçimi’den aldığı Geleneksel Türk Sanatları eğitimi ile adım atmıştır.</p>
+      <p><strong>Sema Baranok Yılmaz</strong>, Ebru Sanatı'na 2007 yılında Destegül Güzel Sanatlar Merkezi’nde, Sadreddin Özçimi’den aldığı Geleneksel Türk Sanatları eğitimi ile adım atmıştır.</p>
       <p>2011 yılında Fevzi Günüç’ten Hüsn-i Hat dersleri alarak sanat yolculuğunu farklı bir boyuta taşımıştır.</p>
       <p>Destegül Güzel Sanatlar Merkezi’nde eğitmen olarak devam eden sanatçı, 2017 yılında icazetini almış; 2021 yılı Ocak ayında Atölye Sanata Münhasır’ı kurmuştur.</p>
       <p>Bugün Konya Meram’daki atölyesinde yüz yüze dersler, online eğitimler, sergiler ve workshoplar ile ebru sanatını aktarmaya devam etmektedir.</p>
     </>
   ) : (
     <>
-      <p>Sema Baranok Yılmaz began her journey in Ebru art in 2007 at Destegül Fine Arts Centre, studying traditional Turkish arts under Sadreddin Özçimi.</p>
+      <p><strong>Sema Baranok Yılmaz</strong> began her journey in Ebru art in 2007 at Destegül Fine Arts Centre, studying traditional Turkish arts under Sadreddin Özçimi.</p>
       <p>In 2011, she expanded her artistic perspective by studying Hüsn-i Hat, Islamic calligraphy, with Fevzi Günüç.</p>
       <p>She later continued as an instructor at Destegül Fine Arts Centre, received her traditional certification in 2017, and founded Atölye Sanata Münhasır in January 2021.</p>
       <p>Today, she continues to teach Ebru through in-person classes in Konya Meram, online lessons, exhibitions and workshops.</p>
     </>
   )}
 </div>
-              <ul className="space-y-3 mb-10">
-                {credentials.map((c: string, i: number) => (
-                  <li key={i} className="flex items-center gap-3 text-foreground-muted"
-                    style={{ fontSize: '0.83rem', fontWeight: 400 }}>
-                    <span className="w-1 h-1 rounded-full flex-shrink-0"
-                      style={{ background: 'var(--accent)', opacity: 0.7 }} />
-                    {c}
-                  </li>
-                ))}
-              </ul>
               <Link href="/enrollment"
                 className="inline-flex items-center px-7 py-3 rounded-sm bg-accent text-white hover:bg-accent-hover transition-all duration-300"
                 style={{ fontSize: '0.8rem', letterSpacing: '0.06em' }}>
