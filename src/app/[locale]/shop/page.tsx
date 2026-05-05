@@ -1,6 +1,24 @@
 import { useTranslations, useLocale } from 'next-intl';
 import Container from '@/components/ui/Container';
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const isTr = locale === 'tr';
+
+  return {
+    title: isTr
+      ? 'Ebru Eserleri ve Sanat Malzemeleri'
+      : 'Ebru Artworks and Marbling Materials',
+    description: isTr
+      ? 'Atölye Sanata Münhasır’ın özgün ebru eserlerini, baskılarını ve seçilmiş ebru sanatı malzemelerini keşfedin.'
+      : 'Explore original Ebru artworks, prints and selected Turkish marbling materials by Atölye Sanata Münhasır.',
+  };
+}
+
 const WA_NUMBER = '905336531433';
 
 function Label({ children }: { children: React.ReactNode }) {

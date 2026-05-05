@@ -3,6 +3,24 @@ import Container from '@/components/ui/Container';
 import { Link } from '@/i18n/routing';
 import ScrollReveal from '@/components/ui/ScrollReveal';
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const isTr = locale === 'tr';
+
+  return {
+    title: isTr
+      ? 'Konya Ebru Sanatı Atölyesi ve Hikâyemiz'
+      : 'About Our Ebru Art Atelier in Konya',
+    description: isTr
+      ? 'Atölye Sanata Münhasır’ın Konya Meram’daki ebru sanatı yolculuğunu, geleneksel Türk ebru sanatına yaklaşımını ve eğitim anlayışını keşfedin.'
+      : 'Discover Atölye Sanata Münhasır, an Ebru art atelier in Konya offering Turkish marbling classes, workshops and a refined approach to traditional art.',
+  };
+}
+
 const WA_NUMBER = '905336531433';
 
 function Rule({ width = 'w-8' }: { width?: string }) {
