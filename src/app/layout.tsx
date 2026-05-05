@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    'Konya Meram’da geleneksel Türk ebru sanatı dersleri, online ebru eğitimleri, workshoplar ve özgün ebru eserleri sunan Atölye Sanata Münhasır; İstanbul, Ankara, İzmir, Antalya ve Türkiye genelinden öğrenciler için online ders seçenekleri sunar.',
+    'Konya Meram’da ebru sanatı dersleri, atölye çalışmaları ve çevrimiçi eğitimler sunan Atölye Sanata Münhasır; geleneksel ebru sanatını çağdaş bir yaklaşımla deneyimleme imkânı sağlar.',
 
   keywords: [
     'Konya ebru kursu',
@@ -21,10 +21,6 @@ export const metadata: Metadata = {
     'ebru kursu',
     'ebru dersi',
     'online ebru dersi',
-    'İstanbul online ebru dersi',
-    'Ankara ebru workshop',
-    'İzmir ebru kursu',
-    'Antalya sanat workshop',
     'Turkish marbling',
     'Ebru art classes',
     'online Ebru art class',
@@ -42,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Atölye Sanata Münhasır',
     description:
-      'Konya Meram’da geleneksel Türk ebru sanatı dersleri, online eğitimler, workshoplar ve özgün ebru eserleri.',
+      'Konya Meram’da ebru sanatı dersleri, atölye çalışmaları ve çevrimiçi eğitimler.',
     url: siteUrl,
     siteName: 'Atölye Sanata Münhasır',
     images: [
@@ -61,15 +57,17 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Atölye Sanata Münhasır',
     description:
-      'Konya Meram’da geleneksel Türk ebru sanatı dersleri, online eğitimler, workshoplar ve özgün ebru eserleri.',
+      'Konya Meram’da ebru sanatı dersleri ve atölye çalışmaları.',
     images: ['https://www.sanatamunhasir.com/og-image.jpg'],
   },
 
   icons: {
     icon: [
+      { url: '/favicon.ico' },
       { url: '/favicon.svg?v=5', type: 'image/svg+xml' },
       { url: '/favicon-96x96.png?v=5', sizes: '96x96', type: 'image/png' },
     ],
+    shortcut: ['/favicon.ico'],
     apple: [
       { url: '/apple-touch-icon.png?v=5', sizes: '180x180' },
     ],
@@ -88,7 +86,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <html lang="tr">
       <body>{children}</body>
     </html>
   );
