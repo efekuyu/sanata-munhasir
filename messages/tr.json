@@ -402,11 +402,11 @@
     "hero": {
       "eyebrow": "Mağaza",
       "title": "Ebru Eserleri",
-      "subtitle": "Özgün Ebru baskıları ve başlangıç malzeme setleri için Shopier mağazamızı ziyaret edin."
+      "subtitle": "Atölyemizde üretilen özgün ebru eserlerinden oluşan seçkiyi keşfedebilirsiniz."
     },
     "redirect": {
-      "title": "Shopier Mağazamız",
-      "body": "Tüm ürünlerimiz ve özgün Ebru eserlerimiz Shopier platformunda yer almaktadır. Satın almak, sipariş vermek veya toplu alım hakkında bilgi almak için aşağıdaki butona tıklayın veya WhatsApp ile bize yazın.",
+      "title": "Ebru Eserleri Koleksiyonu",
+      "body": "Atölyemizde üretilen özgün ebru eserleri ve seçili çalışmalar, Shopier üzerinden sunulmaktadır. Satın alma, sipariş veya özel talepler için aşağıdaki bağlantıyı kullanabilir ya da bizimle doğrudan iletişime geçebilirsiniz.",
       "cta": "Mağazayı Ziyaret Et",
       "whatsapp": "WhatsApp ile Sorun"
     }
@@ -423,28 +423,28 @@
         "key": "what-is-ebru",
         "title": "Ebru Sanatı Nedir?",
         "excerpt": "Su üzerinde boya ve tarak hareketleriyle oluşturulan geleneksel Türk kağıt süsleme sanatı Ebru'nun köklerine ve tekniklerine dair bir giriş.",
-        "date": "2025-04-01",
+        "date": "2026-04-01",
         "category": "Tarih"
       },
       {
         "key": "ebru-konya",
         "title": "Konya'da Ebru Eğitimi",
         "excerpt": "Mevlâna'nın şehrinde geleneksel sanatların yaşatılması. Konya'daki Ebru pratiğinin tarihi ve günümüzdeki yeri.",
-        "date": "2025-03-15",
+        "date": "2026-03-15",
         "category": "Atölye"
       },
       {
         "key": "online-ebru",
         "title": "Online Ebru Dersi Mümkün mü?",
         "excerpt": "Dokunuşa dayalı bir sanatı dijital ortamda öğretmek — zorluklar, çözümler ve uzaktan Ebru deneyimi.",
-        "date": "2025-02-28",
+        "date": "2026-02-28",
         "category": "Eğitim"
       },
       {
         "key": "where-to-start",
         "title": "Ebru Öğrenmeye Nereden Başlanır?",
         "excerpt": "Malzemeler, beklentiler ve ilk adımlar. Ebru'ya yeni başlayanlar için kapsamlı bir rehber.",
-        "date": "2025-02-01",
+        "date": "2026-02-01",
         "category": "Başlangıç"
       }
     ]

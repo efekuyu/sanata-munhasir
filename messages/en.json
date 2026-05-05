@@ -399,54 +399,54 @@
     }
   },
   "shop": {
-    "hero": {
-      "eyebrow": "Shop",
-      "title": "Ebru Artworks",
-      "subtitle": "Visit our Shopier store for original Ebru prints and starter material sets."
-    },
-    "redirect": {
-      "title": "Our Shopier Store",
-      "body": "All our products and original Ebru artworks are listed on the Shopier platform. Click the button below to browse, or write to us on WhatsApp for bulk orders and enquiries.",
-      "cta": "Visit the Store",
-      "whatsapp": "Enquire via WhatsApp"
-    }
+  "hero": {
+    "eyebrow": "Collection",
+    "title": "Ebru Artworks",
+    "subtitle": "Discover a selection of original Ebru works created in our atelier."
   },
-  "artNotes": {
-    "hero": {
-      "eyebrow": "Art Notes",
-      "title": "Thoughts on Ebru",
-      "subtitle": "Traces of art, history, and studio life."
-    },
-    "readMore": "Read more →",
-    "posts": [
-      {
-        "key": "what-is-ebru",
-        "title": "What Is Ebru Art?",
-        "excerpt": "An introduction to the roots and techniques of Ebru — the traditional Turkish art of marbling paper with pigment and comb on water.",
-        "date": "2025-04-01",
-        "category": "History"
-      },
-      {
-        "key": "ebru-konya",
-        "title": "Learning Ebru in Konya",
-        "excerpt": "The preservation of traditional arts in the city of Mevlâna. The history and present-day significance of Ebru practice in Konya.",
-        "date": "2025-03-15",
-        "category": "Studio"
-      },
-      {
-        "key": "online-ebru",
-        "title": "Is Online Ebru Teaching Possible?",
-        "excerpt": "Teaching a tactile art in a digital environment — challenges, solutions, and the experience of remote Ebru learning.",
-        "date": "2025-02-28",
-        "category": "Education"
-      },
-      {
-        "key": "where-to-start",
-        "title": "Where Do I Begin with Ebru?",
-        "excerpt": "Materials, expectations, and first steps. A comprehensive guide for those new to Ebru.",
-        "date": "2025-02-01",
-        "category": "Beginner"
-      }
-    ]
+  "redirect": {
+    "title": "Ebru Artworks Collection",
+    "body": "A curated selection of original Ebru works created in our atelier is presented online. For acquisitions, commissions, or further information, you may use the link below or contact us directly.",
+    "cta": "View the Collection",
+    "whatsapp": "Get in Touch"
   }
+},
+  "artNotes": {
+  "hero": {
+    "eyebrow": "Art Notes",
+    "title": "Notes on\nEbru",
+    "subtitle": "Writings on Ebru, atelier practice, and traditional making processes."
+  },
+  "readMore": "Read More →",
+  "posts": [
+    {
+      "key": "what-is-ebru",
+      "title": "What is Ebru Art?",
+      "excerpt": "A brief introduction to the origins, materials, and fundamental techniques of Ebru, where pigments form patterns on the surface of water.",
+      "date": "2026-04-01",
+      "category": "History"
+    },
+    {
+      "key": "ebru-konya",
+      "title": "Ebru Practice in Konya",
+      "excerpt": "The continuation of traditional arts in Konya, and the place of Ebru within the city's cultural and artistic context.",
+      "date": "2026-03-15",
+      "category": "Atelier"
+    },
+    {
+      "key": "online-ebru",
+      "title": "Can Ebru Be Taught Online?",
+      "excerpt": "Exploring how a tactile art can be experienced in a digital setting — challenges, approaches, and the nature of remote practice.",
+      "date": "2026-02-28",
+      "category": "Education"
+    },
+    {
+      "key": "where-to-start",
+      "title": "Where to Begin with Ebru",
+      "excerpt": "Materials, expectations, and first steps — a considered starting point for those new to Ebru.",
+      "date": "2026-02-01",
+      "category": "Beginner"
+    }
+  ]
+}
 }
