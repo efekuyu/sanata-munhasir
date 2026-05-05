@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: 'Atölye Sanata Münhasır',
     images: [
       {
-        url: '/og-image.jpg',
+        url: 'https://www.sanatamunhasir.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Atölye Sanata Münhasır',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: 'Atölye Sanata Münhasır',
     description:
       'Geleneksel Türk ebru sanatı dersleri, workshoplar ve özgün ebru eserleri.',
-    images: ['/og-image.jpg'],
+    images: ['https://www.sanatamunhasir.com/og-image.jpg'],
   },
 
   icons: {
