@@ -229,7 +229,19 @@ export default function HomePage() {
           <ScrollReveal>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center" style={{ maxWidth: '960px', margin: '0 auto' }}>
             {/* Image side */}
-            <ArtFrame ratio="4/5" index={1} />
+            <div
+  className="relative overflow-hidden rounded-sm"
+  style={{
+    aspectRatio: '4/5',
+    boxShadow: '0 16px 36px rgba(0,0,0,0.06)',
+  }}
+>
+  <img
+    src="/images/home/ebru-2.JPG"
+    alt={locale === 'tr' ? 'Atölye Sanata Münhasır ebru atölyesi' : 'Atölye Sanata Münhasır Ebru atelier'}
+    className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-[1.02]"
+  />
+</div>
 
             {/* Text side */}
             <div>
