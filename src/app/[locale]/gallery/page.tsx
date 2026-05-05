@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import Container from '@/components/ui/Container';
+import UpperText from '@/components/UpperText';
 
 function Label({ children }: { children: React.ReactNode }) {
   return <p className="text-label" style={{ letterSpacing: '0.28em' }}>{children}</p>;
@@ -85,7 +86,7 @@ export default function GalleryPage() {
                     : 'text-foreground-muted border-border hover:border-border-light hover:text-foreground-muted'
                 }`}
                 style={{ background: category === cat ? 'var(--accent-light)' : 'var(--surface)' }}>
-                {t(`categories.${cat}`)}
+                <UpperText>{t(`categories.${cat}`)}</UpperText>
               </button>
             ))}
           </div>
@@ -111,7 +112,7 @@ export default function GalleryPage() {
                         </p>
                         <p className="text-white/60 mt-1"
                           style={{ fontSize: '0.7rem', letterSpacing: '0.12em', textTransform: 'uppercase' }}>
-                          {t(`categories.${item.category}`)}
+                          <UpperText>{t(`categories.${item.category}`)}</UpperText>
                         </p>
                       </div>
                     </div>
@@ -145,7 +146,7 @@ export default function GalleryPage() {
               onClick={() => setLightbox(null)}
               className="absolute -top-10 right-0 text-white/60 hover:text-white transition-colors text-xs tracking-[0.14em] uppercase"
               style={{ fontWeight: 400 }}>
-              {t('lightbox.close')} ✕
+              <UpperText>{t('lightbox.close')}</UpperText> ✕
             </button>
 
             {/* Image */}
@@ -163,19 +164,19 @@ export default function GalleryPage() {
                 </p>
                 <p className="text-white/40 mt-1"
                   style={{ fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase' }}>
-                  {t(`categories.${currentLightbox.category}`)}
+                  <UpperText>{t(`categories.${currentLightbox.category}`)}</UpperText>
                 </p>
               </div>
               <div className="flex items-center gap-5">
                 <button onClick={() => navLightbox(-1)}
                   className="text-white/40 hover:text-white transition-colors text-xs tracking-[0.10em] uppercase"
                   style={{ fontWeight: 400 }}>
-                  ← {t('lightbox.prev')}
+                  ← <UpperText>{t('lightbox.prev')}</UpperText>
                 </button>
                 <button onClick={() => navLightbox(1)}
                   className="text-white/40 hover:text-white transition-colors text-xs tracking-[0.10em] uppercase"
                   style={{ fontWeight: 400 }}>
-                  {t('lightbox.next')} →
+                  <UpperText>{t('lightbox.next')}</UpperText> →
                 </button>
               </div>
             </div>

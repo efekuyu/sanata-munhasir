@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import Container from '@/components/ui/Container';
+import UpperText from '@/components/UpperText';
 
 const WA_NUMBER = '905336531433';
 
@@ -59,7 +60,9 @@ const handleSubmit = async (ev: React.FormEvent) => {
       name: form.name,
       email: form.email,
       phone: form.phone,
-      interest: form.courseType,
+      locale,
+      interestKey: form.courseType,
+      interest: form.courseType ? t(`newStudent.form.courseTypes.${form.courseType}`) : '',
       message: `
 Şehir: ${form.city}
 
@@ -108,7 +111,7 @@ ${form.message}
     <form onSubmit={handleSubmit} className="space-y-5">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2">{t('newStudent.form.name')}</label>
+          <label className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2"><UpperText>{t('newStudent.form.name')}</UpperText></label>
           <input type="text" name="name" value={form.name} onChange={handleChange} className={inputClass(errors.name)} />
           {errors.name && <p className="mt-1 text-xs text-red-500">{errors.name}</p>}
         </div>
@@ -198,6 +201,7 @@ const handleSubmit = async (ev: React.FormEvent) => {
       name: form.name,
       email: form.email,
       phone: form.phone,
+      locale,
       preferredDate: form.preferredDate,
       preferredTime: form.preferredTime,
       note: form.note,
@@ -360,7 +364,9 @@ export default function EnrollmentPage() {
                       : 'text-foreground-muted hover:text-foreground'
                   }`}
                   style={{ background: tab === k ? 'var(--accent)' : 'var(--surface)' }}>
-                  {t(`tabs.${k === 'new' ? 'newStudent' : 'existingStudent'}`)}
+                  <UpperText>
+  {t(`tabs.${k === 'new' ? 'newStudent' : 'existingStudent'}`)}
+</UpperText>
                 </button>
               ))}
             </div>

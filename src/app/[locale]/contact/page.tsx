@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import Container from '@/components/ui/Container';
+import UpperText from '@/components/UpperText';
 
 function Label({ children }: { children: React.ReactNode }) {
   return <p className="text-label" style={{ letterSpacing: '0.28em' }}>{children}</p>;
@@ -194,7 +195,7 @@ export default function ContactPage() {
                       className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2"
                       style={{ fontWeight: 400 }}
                     >
-                      {t('form.name')}
+                      <UpperText>{t('form.name')}</UpperText>
                     </label>
 
                     <input
@@ -214,7 +215,7 @@ export default function ContactPage() {
                         className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2"
                         style={{ fontWeight: 400 }}
                       >
-                        {t('form.phone')}
+                        <UpperText>{t('form.phone')}</UpperText>
                       </label>
 
                       <input
@@ -231,7 +232,7 @@ export default function ContactPage() {
                         className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2"
                         style={{ fontWeight: 400 }}
                       >
-                        {t('form.email')}
+                        <UpperText>{t('form.email')}</UpperText>
                       </label>
 
                       <input
@@ -251,7 +252,7 @@ export default function ContactPage() {
                       className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2"
                       style={{ fontWeight: 400 }}
                     >
-                      {t('form.interest')}
+                      <UpperText>{t('form.interest')}</UpperText>
                     </label>
 
                     <div className="relative">
@@ -283,7 +284,7 @@ export default function ContactPage() {
                       className="block text-xs tracking-[0.10em] uppercase text-foreground-muted mb-2"
                       style={{ fontWeight: 400 }}
                     >
-                      {t('form.message')}
+                      <UpperText>{t('form.message')}</UpperText>
                     </label>
 
                     <textarea
@@ -308,7 +309,9 @@ export default function ContactPage() {
                     className="w-full py-3.5 rounded-sm bg-accent text-white font-medium hover:bg-accent-hover disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-250 shadow-[var(--shadow-sm)]"
                     style={{ fontSize: '0.8rem', letterSpacing: '0.06em' }}
                   >
-                    {submitting ? t('form.submitting') : t('form.submit')}
+                    <UpperText>
+  {submitting ? t('form.submitting') : t('form.submit')}
+</UpperText>
                   </button>
                 </form>
               )}
