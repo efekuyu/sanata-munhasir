@@ -84,8 +84,18 @@ export default function AboutPage() {
           <ScrollReveal>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-center" style={{ maxWidth: '940px', margin: '0 auto' }}>
             {/* Portrait */}
-            <div className="relative">
-              <ArtFrame ratio="3/4" />
+<div
+  className="relative overflow-hidden rounded-sm"
+  style={{
+    aspectRatio: '3/4',
+    boxShadow: '0 12px 32px rgba(0,0,0,0.08)'
+  }}
+>
+  <img
+    src="/images/about/sema.jpeg"
+    alt="Sema Baranok Yılmaz"
+    className="w-full h-full object-cover object-center"
+  />
               {/* Credential badge */}
             </div>
 
