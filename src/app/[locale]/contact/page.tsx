@@ -81,17 +81,19 @@ export default function ContactPage() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          name: form.name,
-          phone: form.phone,
-          email: form.email,
-          message: form.message,
-          interest: form.interest
-            ? t(`form.interests.${form.interest}`)
-            : locale === 'tr'
-              ? 'Belirtilmedi'
-              : 'Not specified',
-          formType: locale === 'tr' ? 'İletişim Formu' : 'Contact Form',
-        }),
+  name: form.name,
+  phone: form.phone,
+  email: form.email,
+  locale,
+  interestKey: form.interest,
+  message: form.message,
+  interest: form.interest
+    ? t(`form.interests.${form.interest}`)
+    : locale === 'tr'
+      ? 'Belirtilmedi'
+      : 'Not specified',
+  formType: locale === 'tr' ? 'İletişim Formu' : 'Contact Form',
+}),
       });
 
       if (!response.ok) {

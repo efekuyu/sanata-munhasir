@@ -57,20 +57,16 @@ const handleSubmit = async (ev: React.FormEvent) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      name: form.name,
-      email: form.email,
-      phone: form.phone,
-      locale,
-      interestKey: form.courseType,
-      interest: form.courseType ? t(`newStudent.form.courseTypes.${form.courseType}`) : '',
-      message: `
-Şehir: ${form.city}
-
-Mesaj:
-${form.message}
-      `,
-      formType: 'Yeni Öğrenci Kaydı',
-    }),
+  name: form.name,
+  email: form.email,
+  phone: form.phone,
+  city: form.city,
+  locale,
+  interestKey: form.courseType,
+  interest: form.courseType ? t(`newStudent.form.courseTypes.${form.courseType}`) : '',
+  message: form.message || 'Mesaj belirtilmedi',
+  formType: 'Yeni Öğrenci Kaydı',
+}),
   });
 
   setSubmitting(false);
@@ -198,22 +194,16 @@ const handleSubmit = async (ev: React.FormEvent) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      name: form.name,
-      email: form.email,
-      phone: form.phone,
-      locale,
-      preferredDate: form.preferredDate,
-      preferredTime: form.preferredTime,
-      note: form.note,
-      message: `
-Tercih edilen tarih: ${form.preferredDate}
-Saat: ${form.preferredTime}
-
-Not:
-${form.note}
-      `,
-      formType: 'Mevcut Öğrenci Randevu',
-    }),
+  name: form.name,
+  email: form.email,
+  phone: form.phone,
+  locale,
+  preferredDate: form.preferredDate,
+  preferredTime: form.preferredTime,
+  note: form.note,
+  message: form.note || 'Not belirtilmedi',
+  formType: 'Mevcut Öğrenci Randevu',
+}),
   });
 
   setSubmitting(false);

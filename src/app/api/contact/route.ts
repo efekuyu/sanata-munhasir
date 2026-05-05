@@ -21,12 +21,50 @@ export async function POST(request: Request) {
     const name = body.name || 'İsimsiz';
     const email = body.email || '';
     const phone = body.phone || 'Telefon belirtilmedi';
-    const interest = body.interest || 'Belirtilmedi';
-    const message = body.message || 'Mesaj yok';
+const city = body.city || '';
+const interest = body.interest || 'Belirtilmedi';
+const message = body.message || 'Mesaj yok';
     const formType = body.formType || 'Website Formu';
     const preferredDate = body.preferredDate || '';
-const preferredTime = body.preferredTime || '';
-const note = body.note || '';
+    const preferredTime = body.preferredTime || '';
+    const note = body.note || '';
+    const locale = body.locale || 'tr';
+    const isEnglish = locale === 'en';
+    const interestKey = body.interestKey || '';
+
+    const interestLabelsTR: Record<string, string> = {
+      beginner: 'Başlangıç Seviyesi',
+      advanced: 'İleri Seviye',
+      onlinePrivate: 'Online Özel Ders',
+      onlineGroup: 'Online Grup Ders',
+      workshop: 'Atölye / Workshop',
+    };
+
+    const interestLabelsEN: Record<string, string> = {
+      beginner: 'Beginner Level',
+      advanced: 'Advanced Level',
+      onlinePrivate: 'Online Private Lesson',
+      onlineGroup: 'Online Group Class',
+      workshop: 'Workshop',
+    };
+
+    const adminInterest = interestLabelsTR[interestKey] || interest || 'Belirtilmedi';
+    const userInterest = isEnglish
+      ? interestLabelsEN[interestKey] || interest || 'Not specified'
+      : interestLabelsTR[interestKey] || interest || 'Belirtilmedi';
+
+    const adminFormType =
+      formType === 'Yeni Öğrenci Kaydı'
+        ? 'Yeni Öğrenci Kaydı'
+        : formType === 'Mevcut Öğrenci Randevu'
+          ? 'Mevcut Öğrenci Randevu'
+          : formType;
+
+    const userFormType = isEnglish
+      ? formType === 'Mevcut Öğrenci Randevu'
+        ? 'Appointment Request'
+        : 'Enrolment Enquiry'
+      : adminFormType;
 
     const now = new Intl.DateTimeFormat('tr-TR', {
       dateStyle: 'long',
@@ -39,25 +77,35 @@ const note = body.note || '';
     const phoneUrl = cleanPhone ? `tel:+${cleanPhone}` : '';
     const emailUrl = isValidEmail(email) ? `mailto:${email}` : '';
 
+    const languageNotice = isEnglish
+      ? `
+        <div style="background:#fff7e6; border:1px solid #eadfca; border-radius:8px; padding:14px; margin-bottom:22px; color:#5f4b24; font-size:14px;">
+          <strong>Dikkat:</strong> Bu form İngilizce sayfadan gönderildi.
+        </div>
+      `
+      : '';
+
     await getResend().emails.send({
       from: 'Atölye Sanata Münhasır <info@sanatamunhasir.com>',
       to: ['info@sanatamunhasir.com'],
       ...(isValidEmail(email) ? { replyTo: email } : {}),
-      subject: `${formType} - ${name}`,
+      subject: `${isEnglish ? '⚠️ İngilizce Sayfa - ' : ''}${adminFormType} - ${name}`,
       html: `
         <div style="font-family: Arial, Helvetica, sans-serif; background:#f7f4ee; padding:36px;">
           <div style="max-width:620px; margin:0 auto; background:#ffffff; border:1px solid #eadfca; border-radius:12px; overflow:hidden;">
-
             <div style="padding:28px 30px; background:#111111; color:#ffffff;">
               <div style="font-family: Georgia, 'Times New Roman', serif; font-size:22px; line-height:1.3;">
                 Atölye Sanata Münhasır
               </div>
               <div style="margin-top:9px; color:#d8c39a; font-size:12px; letter-spacing:1.5px; text-transform:uppercase;">
-                ${formType}
+                ${adminFormType}
               </div>
             </div>
 
             <div style="padding:30px;">
+              ${languageNotice}
+              <div style="padding:30px;">
+
               <div style="margin-bottom:26px;">
                 <div style="color:#9a8a6a; font-size:12px; letter-spacing:1.3px; text-transform:uppercase; margin-bottom:12px;">
                   Mesaj
@@ -82,9 +130,14 @@ const note = body.note || '';
                   <td style="padding:9px 0; color:#9a8a6a;">Telefon</td>
                   <td style="padding:9px 0;">${phone}</td>
                 </tr>
+      <tr>
+        <td style="padding:9px 0; color:#9a8a6a;">Şehir</td>
+        <td style="padding:9px 0;">${city}</td>
+      </tr>
+
                 <tr>
                   <td style="padding:9px 0; color:#9a8a6a;">İlgi Alanı</td>
-                  <td style="padding:9px 0;">${interest}</td>
+                  <td style="padding:9px 0;">${adminInterest}</td>
                 </tr>
                 <tr>
                   <td style="padding:9px 0; color:#9a8a6a;">Gönderim Tarihi</td>
@@ -104,13 +157,11 @@ const note = body.note || '';
                     ? `<a href="${emailUrl}" style="display:inline-block; margin:0 8px 10px 0; padding:11px 15px; background:#111111; color:#ffffff; text-decoration:none; border-radius:6px; font-size:13px;">E-posta ile Yanıtla</a>`
                     : ''
                 }
-
                 ${
                   phoneUrl
                     ? `<a href="${phoneUrl}" style="display:inline-block; margin:0 8px 10px 0; padding:11px 15px; background:#fbfaf7; color:#111111; text-decoration:none; border:1px solid #eadfca; border-radius:6px; font-size:13px;">Telefonla Ara</a>`
                     : ''
                 }
-
                 ${
                   whatsappUrl
                     ? `<a href="${whatsappUrl}" style="display:inline-block; margin:0 8px 10px 0; padding:11px 15px; background:#fbfaf7; color:#111111; text-decoration:none; border:1px solid #eadfca; border-radius:6px; font-size:13px;">WhatsApp’tan Yaz</a>`
@@ -127,15 +178,17 @@ const note = body.note || '';
       `,
     });
 
-        if (isValidEmail(email)) {
+    if (isValidEmail(email)) {
       await getResend().emails.send({
         from: 'Atölye Sanata Münhasır <info@sanatamunhasir.com>',
         to: [email],
-        subject: formType === 'Mevcut Öğrenci Randevu'
-
-    ? 'Randevu Talebiniz Alındı - Atölye Sanata Münhasır'
-
-    : `${formType} talebiniz alındı`,
+        subject: isEnglish
+          ? formType === 'Mevcut Öğrenci Randevu'
+            ? 'Your appointment request has been received - Atölye Sanata Münhasır'
+            : 'Your enrolment enquiry has been received - Atölye Sanata Münhasır'
+          : formType === 'Mevcut Öğrenci Randevu'
+            ? 'Randevu Talebiniz Alındı - Atölye Sanata Münhasır'
+            : `${adminFormType} talebiniz alındı`,
         html: `
           <div style="font-family: Arial, Helvetica, sans-serif; background:#f7f4ee; padding:36px;">
             <div style="max-width:620px; margin:0 auto; background:#ffffff; border:1px solid #eadfca; border-radius:12px; overflow:hidden;">
@@ -144,38 +197,47 @@ const note = body.note || '';
                   Atölye Sanata Münhasır
                 </div>
                 <div style="margin-top:9px; color:#d8c39a; font-size:12px; letter-spacing:1.5px; text-transform:uppercase;">
-                  Talebiniz Alındı
+                  ${isEnglish ? 'Enquiry Received' : 'Talebiniz Alındı'}
                 </div>
               </div>
 
               <div style="padding:30px; color:#222; font-size:15px; line-height:1.8;">
-                <p style="margin-top:0;">Merhaba ${name},</p>
-
-                <p>
-                  ${formType} talebiniz başarıyla tarafımıza ulaştı.
-                  En kısa sürede sizinle iletişime geçeceğiz.
+                <p style="margin-top:0;">
+                  ${isEnglish ? `Hello ${name},` : `Merhaba ${name},`}
                 </p>
 
-                <div style="height:1px; background:#eadfca; margin:26px 0;"></div>
-                
+                <p>
+                  ${
+                    isEnglish
+                      ? `Your ${formType === 'Mevcut Öğrenci Randevu' ? 'appointment request' : 'enrolment enquiry'} has been received successfully. We will contact you as soon as possible.`
+                      : `${adminFormType} talebiniz başarıyla tarafımıza ulaştı. En kısa sürede sizinle iletişime geçeceğiz.`
+                  }
+                </p>
+
+                ${
+                  formType === 'Mevcut Öğrenci Randevu'
+                    ? `
                       <div style="background:#fbfaf7; border:1px solid #eadfca; border-radius:10px; padding:18px; margin:22px 0;">
-
-        <div style="color:#9a8a6a; font-size:12px; letter-spacing:1.3px; text-transform:uppercase; margin-bottom:12px;">
-
-          Randevu Talebi
-
-        </div>
-
-        <p style="margin:0 0 8px;"><strong>Tarih:</strong> ${preferredDate || 'Belirtilmedi'}</p>
-
-        <p style="margin:0 0 8px;"><strong>Saat:</strong> ${preferredTime || 'Belirtilmedi'}</p>
-
-        <p style="margin:0;"><strong>Not:</strong> ${note || 'Not belirtilmedi'}</p>
-
-      </div>
+                        <div style="color:#9a8a6a; font-size:12px; letter-spacing:1.3px; text-transform:uppercase; margin-bottom:12px;">
+                          ${isEnglish ? 'Appointment Request' : 'Randevu Talebi'}
+                        </div>
+                        <p style="margin:0 0 8px;"><strong>${isEnglish ? 'Date' : 'Tarih'}:</strong> ${preferredDate || (isEnglish ? 'Not specified' : 'Belirtilmedi')}</p>
+                        <p style="margin:0 0 8px;"><strong>${isEnglish ? 'Time' : 'Saat'}:</strong> ${preferredTime || (isEnglish ? 'Not specified' : 'Belirtilmedi')}</p>
+                        <p style="margin:0;"><strong>${isEnglish ? 'Note' : 'Not'}:</strong> ${note || (isEnglish ? 'No note provided' : 'Not belirtilmedi')}</p>
+                      </div>
+                    `
+                    : `
+                      <div style="background:#fbfaf7; border:1px solid #eadfca; border-radius:10px; padding:18px; margin:22px 0;">
+                        <div style="color:#9a8a6a; font-size:12px; letter-spacing:1.3px; text-transform:uppercase; margin-bottom:12px;">
+                          ${isEnglish ? 'Enrolment Details' : 'Kayıt Detayları'}
+                        </div>
+                        <p style="margin:0;"><strong>${isEnglish ? 'Area of Interest' : 'İlgi Alanı'}:</strong> ${userInterest}</p>
+                      </div>
+                    `
+                }
 
                 <p style="margin-bottom:8px; color:#9a8a6a; font-size:12px; letter-spacing:1.3px; text-transform:uppercase;">
-                  Gönderdiğiniz mesaj
+                  ${isEnglish ? 'Your Message' : 'Gönderdiğiniz mesaj'}
                 </p>
 
                 <div style="background:#fbfaf7; border:1px solid #eadfca; border-radius:8px; padding:16px;">
@@ -188,7 +250,11 @@ const note = body.note || '';
               </div>
 
               <div style="padding:16px 30px; background:#fbfaf7; border-top:1px solid #eadfca; color:#9a8a6a; font-size:12px;">
-                Bu otomatik bilgilendirme mesajıdır · www.sanatamunhasir.com
+                ${
+                  isEnglish
+                    ? 'This is an automated confirmation email · www.sanatamunhasir.com'
+                    : 'Bu otomatik bilgilendirme mesajıdır · www.sanatamunhasir.com'
+                }
               </div>
             </div>
           </div>
