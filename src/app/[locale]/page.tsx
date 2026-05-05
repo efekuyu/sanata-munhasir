@@ -432,7 +432,7 @@ export default function HomePage() {
             </div>
             <h2 className="text-heading-1 text-foreground"
               style={{ fontStyle: 'italic', letterSpacing: '0.018em' }}>
-              {locale === 'tr' ? 'Ebru Eserleri & Malzemeler' : 'Ebru Works & Materials'}
+              {locale === 'tr' ? 'Ebru Eserleri' : 'Ebru Works & Materials'}
             </h2>
             <p className="text-foreground-muted mt-4 max-w-md mx-auto"
               style={{ fontSize: '0.875rem', fontWeight: 400, lineHeight: 2.1 }}>

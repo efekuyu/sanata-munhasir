@@ -11,8 +11,8 @@ export async function generateMetadata({
 
   return {
     title: isTr
-      ? 'Ebru Eserleri ve Sanat Malzemeleri'
-      : 'Ebru Artworks and Marbling Materials',
+      ? 'Ebru Eserleri'
+      : 'Ebru Artworks',
     description: isTr
       ? 'Atölye Sanata Münhasır’ın özgün ebru eserlerini, baskılarını ve seçilmiş ebru sanatı malzemelerini keşfedin.'
       : 'Explore original Ebru artworks, prints and selected Turkish marbling materials by Atölye Sanata Münhasır.',
