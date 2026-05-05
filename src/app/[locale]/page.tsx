@@ -188,25 +188,24 @@ export default function HomePage() {
   <div className="w-8 h-px" style={{ background: 'rgba(0,0,0,0.08)' }} />
 </div>
 
-        {/* SEO TEXT BLOCK */}
-<section style={{ paddingTop: '1rem', paddingBottom: '1.5rem', background: '#FFFFFF' }}>
+{/* SEO TEXT BLOCK */}
+<section style={{ paddingTop: '0.5rem', paddingBottom: '2.75rem' }}>
   <Container>
-    <div className="max-w-xl mx-auto text-center">
-
+    <div className="mx-auto text-center" style={{ maxWidth: '520px' }}>
       <p
         className="text-foreground-muted"
         style={{
-          fontSize: '0.85rem',
+          fontSize: '0.82rem',
           fontWeight: 300,
-          lineHeight: 2.0,
-          letterSpacing: '0.01em'
+          lineHeight: 2.15,
+          letterSpacing: '0.012em',
+          opacity: 0.85
         }}
       >
         {locale === 'tr'
-          ? 'Ebru sanatı, suyun yüzeyinde boyalarla desenler oluşturarak yapılan geleneksel bir Türk sanatıdır. Atölye Sanata Münhasır, Konya Meram’da ebru dersleri, workshoplar ve online eğitimler sunarak bu sanatı hem yerel hem de Türkiye genelinde yaygınlaştırmayı amaçlar.'
-          : 'Ebru art, also known as Turkish marbling, is a traditional art form created by forming patterns on water using special pigments. Atölye Sanata Münhasır offers Ebru classes, workshops, and online training from Konya, reaching students both locally and internationally.'}
+          ? 'Ebru, suyun yüzeyinde renk, hareket ve zamanla şekillenen köklü bir sanat formudur. Atölye Sanata Münhasır’da bu geleneği, Konya Meram’daki atölye dersleri ve çevrimiçi eğitimlerle bugünün ritmine taşıyoruz.'
+          : 'Ebru is a rooted art form shaped through colour, movement, and time on the surface of water. At Atölye Sanata Münhasır, we carry this tradition into the present through atelier classes in Konya Meram and online learning.'}
       </p>
-
     </div>
   </Container>
 </section>
