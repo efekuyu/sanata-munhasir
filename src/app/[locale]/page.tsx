@@ -2,6 +2,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import Container from '@/components/ui/Container';
 import { Link } from '@/i18n/routing';
 import ScrollReveal from '@/components/ui/ScrollReveal';
+import Script from 'next/script';
 
 const WA_NUMBER = '905336531433';
 const IG_HANDLE = 'sanatamunhasir';
@@ -97,9 +98,6 @@ export default function HomePage() {
     partA: { label: string; title: string; body: string; items: string[]; cta: string };
     partB: { label: string; title: string; body: string; cta: string };
   };
-
-  /* Instagram placeholder grid — 9 frames */
-  const igFrames = Array.from({ length: 9 }, (_, i) => i + 1);
 
   return (
     <>
@@ -532,16 +530,15 @@ export default function HomePage() {
             </a>
           </div>
 
-          <div className="grid grid-cols-3 sm:grid-cols-9 gap-1.5">
-            {igFrames.map((n) => (
-              <a key={n} href={`https://instagram.com/${IG_HANDLE}`} target="_blank" rel="noopener noreferrer"
-                className="overflow-hidden aspect-square rounded-sm block cursor-pointer">
-                <div className="art-placeholder w-full h-full transition-transform duration-300 ease-out hover:scale-[1.03]">
-                  <div className="art-swirl" />
-                </div>
-              </a>
-            ))}
-          </div>
+<Script
+  src="https://elfsightcdn.com/platform.js"
+  strategy="lazyOnload"
+/>
+
+<div
+  className="elfsight-app-e6406ad8-d94b-4c90-b9b6-5c5b43afad4a"
+  data-elfsight-app-lazy
+/>
           </ScrollReveal>
         </Container>
       </section>
