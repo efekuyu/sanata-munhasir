@@ -361,3 +361,13 @@ a, button { cursor: pointer; }
 ::-webkit-scrollbar-track        { background: var(--surface-alt); }
 ::-webkit-scrollbar-thumb        { background: var(--warm-grey); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover  { background: var(--foreground-ultra); }
+
+/* Elfsight branding gizle */
+.elfsight-app-e6406ad8-d94b-4c90-b9b6-5c5b43afad4a a[href*="elfsight"] {
+  display: none !important;
+}
+
+/* backup selector */
+.elfsight-app-e6406ad8-d94b-4c90-b9b6-5c5b43afad4a div[class*="copyright"] {
+  display: none !important;
+}
