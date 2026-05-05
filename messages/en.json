@@ -344,7 +344,7 @@
     "hero": {
       "eyebrow": "Enrolment",
       "title": "Begin your Ebru\njourney today",
-      "subtitle": "Use the form below for new student enrolment or to book a lesson if you are already a student."
+      "subtitle": "Use the form below to create a new enrolment or to manage your existing lesson schedule."
     },
     "tabs": {
       "newStudent": "New Student",
@@ -363,7 +363,7 @@
         "courseTypes": {
           "beginner": "Beginner Studio (In-Person)",
           "advanced": "Advanced Studio (In-Person)",
-          "onlinePrivate": "Online Private",
+          "onlinePrivate": "Online",
           "onlineGroup": "Online Group",
           "workshop": "Workshop / Event"
         },
@@ -385,7 +385,7 @@
         "note": "Note (optional)",
         "submit": "Submit Booking Request",
         "submitting": "Submitting...",
-        "success": "Your booking request has been received! We will call to confirm.",
+        "success": "Your booking request has been received!",
         "error": "An error occurred. Please write to us on WhatsApp."
       }
     },

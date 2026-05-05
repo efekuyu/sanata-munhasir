@@ -344,7 +344,7 @@
     "hero": {
       "eyebrow": "Ders Kaydı",
       "title": "Ebru yolculuğunuza\nbugün başlayın",
-      "subtitle": "Yeni öğrenci kaydı veya mevcut öğrenci ders randevusu için aşağıdaki formu kullanın."
+      "subtitle": "Yeni kayıt oluşturmak veya mevcut ders planlamalarınızı düzenlemek için aşağıdaki formu kullanabilirsiniz."
     },
     "tabs": {
       "newStudent": "Yeni Öğrenci",
@@ -363,7 +363,7 @@
         "courseTypes": {
           "beginner": "Başlangıç Atölyesi (Yüz Yüze)",
           "advanced": "İleri Seviye (Yüz Yüze)",
-          "onlinePrivate": "Online Birebir",
+          "onlinePrivate": "Online",
           "onlineGroup": "Online Grup",
           "workshop": "Workshop / Etkinlik"
         },
@@ -385,7 +385,7 @@
         "note": "Not (isteğe bağlı)",
         "submit": "Randevu Talebi Gönder",
         "submitting": "Gönderiliyor...",
-        "success": "Randevu talebiniz alındı! Onay için sizi arayacağız.",
+        "success": "Randevu talebiniz alındı!",
         "error": "Bir hata oluştu. Lütfen WhatsApp ile yazın."
       }
     },
