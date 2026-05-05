@@ -535,10 +535,17 @@ export default function HomePage() {
   strategy="lazyOnload"
 />
 
-<div
-  className="elfsight-app-e6406ad8-d94b-4c90-b9b6-5c5b43afad4a"
-  data-elfsight-app-lazy
-/>
+<div className="relative overflow-hidden pb-0">
+  <div
+    className="elfsight-app-e6406ad8-d94b-4c90-b9b6-5c5b43afad4a"
+    data-elfsight-app-lazy
+  />
+
+  <div
+    aria-hidden="true"
+    className="pointer-events-none absolute left-1/2 bottom-0 h-10 w-80 -translate-x-1/2 bg-white"
+  />
+</div>
           </ScrollReveal>
         </Container>
       </section>
