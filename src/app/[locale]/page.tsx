@@ -154,9 +154,19 @@ export default function HomePage() {
             </div>
 
             {/* Right — art image (55%, dominant) */}
-            <div className="relative overflow-hidden">
-              <ArtFrame ratio="4/5" index={1} className="w-full" />
-            </div>
+            <div
+  className="relative overflow-hidden rounded-sm"
+  style={{
+    aspectRatio: '4/5',
+    boxShadow: '0 20px 40px rgba(0,0,0,0.07)',
+  }}
+>
+  <img
+    src="/images/home/ebru-1.JPG"
+    alt={locale === 'tr' ? 'Ebru sanatı çalışması' : 'Ebru art work in progress'}
+    className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-[1.02]"
+  />
+</div>
           </div>
         </Container>
       </section>
