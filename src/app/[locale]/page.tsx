@@ -428,7 +428,7 @@ export default function HomePage() {
   style={{ aspectRatio: i === 1 ? '4/5' : '3/4' }}
 >
   <img
-    src={`/images/home/gallery-${i + 1}.jpg`}
+    src={`/images/home/gallery-${i + 1}.jpeg`}
     alt={col.label}
     className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-[1.03]"
   />
@@ -480,7 +480,13 @@ export default function HomePage() {
             ] as { tr: string; en: string }[]).map((item, i) => (
               <div key={i}
                 className="group rounded-sm border border-border overflow-hidden transition-all duration-300 hover:-translate-y-[2px] hover:shadow-lg">
-                <div className="aspect-[4/3] bg-surface-alt" />
+                <div className="aspect-[4/3] bg-surface-alt overflow-hidden">
+  <img
+    src={`/images/home/shop-${i + 1}.jpeg`}
+    alt={locale === 'tr' ? item.tr : item.en}
+    className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
+  />
+</div>
                 <div className="p-4 text-center">
                   <p className="text-sm text-foreground" style={{ fontWeight: 400 }}>
                     {locale === 'tr' ? item.tr : item.en}
