@@ -5,14 +5,44 @@ const siteUrl = 'https://www.sanatamunhasir.com';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
-  title: 'Atölye Sanata Münhasır | Ebru Sanatı Dersleri ve Workshoplar',
+  title: {
+    default: 'Atölye Sanata Münhasır | Konya Ebru Sanatı Dersleri ve Workshoplar',
+    template: '%s | Atölye Sanata Münhasır',
+  },
+
   description:
-    'Atölye Sanata Münhasır, geleneksel Türk ebru sanatı dersleri, workshoplar ve özgün ebru eserleri sunan bir sanat atölyesidir.',
+    'Konya Meram’da geleneksel Türk ebru sanatı dersleri, online ebru eğitimleri, workshoplar ve özgün ebru eserleri sunan Atölye Sanata Münhasır; İstanbul, Ankara, İzmir, Antalya ve Türkiye genelinden öğrenciler için online ders seçenekleri sunar.',
+
+  keywords: [
+    'Konya ebru kursu',
+    'Konya ebru dersi',
+    'Meram sanat atölyesi',
+    'ebru sanatı',
+    'ebru kursu',
+    'ebru dersi',
+    'online ebru dersi',
+    'İstanbul online ebru dersi',
+    'Ankara ebru workshop',
+    'İzmir ebru kursu',
+    'Antalya sanat workshop',
+    'Turkish marbling',
+    'Ebru art classes',
+    'online Ebru art class',
+    'Turkish marbling workshop',
+    'Atölye Sanata Münhasır',
+  ],
+
+  authors: [{ name: 'Atölye Sanata Münhasır' }],
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 
   openGraph: {
     title: 'Atölye Sanata Münhasır',
     description:
-      'Geleneksel Türk ebru sanatı dersleri, workshoplar ve özgün ebru eserleri.',
+      'Konya Meram’da geleneksel Türk ebru sanatı dersleri, online eğitimler, workshoplar ve özgün ebru eserleri.',
     url: siteUrl,
     siteName: 'Atölye Sanata Münhasır',
     images: [
@@ -20,7 +50,7 @@ export const metadata: Metadata = {
         url: 'https://www.sanatamunhasir.com/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Atölye Sanata Münhasır',
+        alt: 'Atölye Sanata Münhasır Ebru Sanatı Atölyesi',
       },
     ],
     locale: 'tr_TR',
@@ -31,39 +61,25 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Atölye Sanata Münhasır',
     description:
-      'Geleneksel Türk ebru sanatı dersleri, workshoplar ve özgün ebru eserleri.',
+      'Konya Meram’da geleneksel Türk ebru sanatı dersleri, online eğitimler, workshoplar ve özgün ebru eserleri.',
     images: ['https://www.sanatamunhasir.com/og-image.jpg'],
   },
 
   icons: {
-
     icon: [
-
-      { url: '/favicon.ico' },
-
-      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
-
-      { url: '/favicon.svg', type: 'image/svg+xml' },
-      { url: '/favicon.ico?v=4' },
-
+      { url: '/favicon.svg?v=5', type: 'image/svg+xml' },
+      { url: '/favicon-96x96.png?v=5', sizes: '96x96', type: 'image/png' },
     ],
-
     apple: [
-
-      { url: '/apple-touch-icon.png', sizes: '180x180' },
-
+      { url: '/apple-touch-icon.png?v=5', sizes: '180x180' },
     ],
-
   },
 
   manifest: '/site.webmanifest',
 
   other: {
-
     'apple-mobile-web-app-title': 'Atölye Sanata Münhasır',
-
   },
-
 };
 
 export default function RootLayout({
