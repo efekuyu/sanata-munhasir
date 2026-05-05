@@ -542,9 +542,9 @@ export default function HomePage() {
   />
 
   <div
-    aria-hidden="true"
-    className="pointer-events-none absolute left-1/2 bottom-0 h-10 w-80 -translate-x-1/2 bg-white"
-  />
+  aria-hidden="true"
+  className="pointer-events-auto cursor-default absolute left-1/2 bottom-0 h-14 w-80 -translate-x-1/2 bg-white"
+/>
 </div>
           </ScrollReveal>
         </Container>
