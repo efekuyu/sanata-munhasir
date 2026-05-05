@@ -114,7 +114,7 @@ export default function AboutPage() {
               <Link href="/enrollment"
                 className="inline-flex items-center px-7 py-3 rounded-sm bg-accent text-white hover:bg-accent-hover transition-all duration-300"
                 style={{ fontSize: '0.8rem', letterSpacing: '0.06em' }}>
-                {locale === 'tr' ? 'Derse Başla' : 'Start Learning'}
+                {locale === 'tr' ? 'Ebru Yolculuğuna Başla' : 'Start Your Ebru Journey'}
               </Link>
             </div>
           </div>
