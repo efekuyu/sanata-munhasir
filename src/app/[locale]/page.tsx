@@ -428,7 +428,7 @@ export default function HomePage() {
   style={{ aspectRatio: i === 1 ? '4/5' : '3/4' }}
 >
   <img
-    src={`/images/home/gallery-${i + 1}.jpeg`}
+    src={`/images/home/gallery-${i + 1}.jpg`}
     alt={col.label}
     className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-[1.03]"
   />
@@ -482,7 +482,7 @@ export default function HomePage() {
                 className="group rounded-sm border border-border overflow-hidden transition-all duration-300 hover:-translate-y-[2px] hover:shadow-lg">
                 <div className="aspect-[4/3] bg-surface-alt overflow-hidden">
   <img
-    src={`/images/home/shop-${i + 1}.jpeg`}
+    src={`/images/home/shop-${i + 1}.jpg`}
     alt={locale === 'tr' ? item.tr : item.en}
     className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
   />
