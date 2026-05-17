@@ -92,7 +92,7 @@ export default function AboutPage() {
   }}
 >
   <img
-    src="/images/about/sema.jpeg"
+    src="/images/about/sema.jpg"
     alt="Sema Baranok Yılmaz"
     className="w-full h-full object-cover object-center"
   />
@@ -252,7 +252,19 @@ export default function AboutPage() {
             </div>
 
             {/* Image */}
-            <ArtFrame ratio="1/1" className="lg:order-2" />
+            <div
+  className="relative overflow-hidden rounded-sm lg:order-2"
+  style={{
+    aspectRatio: '1/1',
+    boxShadow: '0 16px 36px rgba(0,0,0,0.06)',
+  }}
+>
+  <img
+    src="/images/about/poyraz-pera.jpg"
+    alt={locale === 'tr' ? 'Atölye Sanata Münhasır atölye ortamı' : 'Atölye Sanata Münhasır atelier space'}
+    className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-[1.02]"
+  />
+</div>
           </div>
           </ScrollReveal>
         </Container>
