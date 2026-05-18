@@ -26,17 +26,30 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL(siteUrl),
+
     verification: {
       google: 'XBoRIizj0OYxFbHruEVwfIhO2leAQyxa32wfkxlzB20',
     },
+
     title: isTr
       ? 'Atölye Sanata Münhasır | Ebru Sanatı, Dersler ve Workshoplar'
       : 'Atölye Sanata Münhasır | Turkish Marbling Classes and Workshops',
+
     description: isTr ? descriptionTr : descriptionEn,
+
+    alternates: {
+      canonical: isTr ? '/tr' : '/en',
+      languages: {
+        tr: '/tr',
+        en: '/en',
+        'x-default': '/',
+      },
+    },
+
     openGraph: {
       title: 'Atölye Sanata Münhasır',
       description: isTr ? descriptionTr : descriptionEn,
-      url: siteUrl,
+      url: isTr ? `${siteUrl}/tr` : `${siteUrl}/en`,
       siteName: 'Atölye Sanata Münhasır',
       images: [
         {
@@ -49,6 +62,7 @@ export async function generateMetadata({
       locale: isTr ? 'tr_TR' : 'en_GB',
       type: 'website',
     },
+
     twitter: {
       card: 'summary_large_image',
       title: 'Atölye Sanata Münhasır',
@@ -78,11 +92,15 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <NextIntlClientProvider messages={messages}>
-      <Navbar />
-      <main className="flex-1 pt-[68px]">{children}</main>
-      <Footer />
-      <WhatsAppButton />
-    </NextIntlClientProvider>
+    <html lang={locale}>
+      <body>
+        <NextIntlClientProvider messages={messages}>
+          <Navbar />
+          <main className="flex-1 pt-[68px]">{children}</main>
+          <Footer />
+          <WhatsAppButton />
+        </NextIntlClientProvider>
+      </body>
+    </html>
   );
 }
