@@ -16,18 +16,27 @@ function Rule({ width = 'w-8' }: { width?: string }) {
 
 /* Gallery items — placeholder data */
 const ITEMS = [
-  { id: 1, category: 'master',  ratio: '3/4',  title: { tr: 'Bülbül Yuvası', en: 'Nightingale Nest' } },
-  { id: 2, category: 'master',  ratio: '1/1',  title: { tr: 'Hatip Ebru', en: 'Hatip Ebru' } },
-  { id: 3, category: 'student', ratio: '4/5',  title: { tr: 'İlk Çalışma', en: 'First Work' } },
-  { id: 4, category: 'master',  ratio: '3/4',  title: { tr: 'Taraklı Ebru', en: 'Combed Ebru' } },
-  { id: 5, category: 'student', ratio: '1/1',  title: { tr: 'Battal Ebru', en: 'Battal Ebru' } },
-  { id: 6, category: 'atelier', ratio: '4/5',  title: { tr: 'Kitre Teknesi', en: 'Kitre Tray' } },
-  { id: 7, category: 'master',  ratio: '1/1',  title: { tr: 'Şal Ebru', en: 'Shawl Ebru' } },
-  { id: 8, category: 'atelier', ratio: '3/4',  title: { tr: 'Atölye', en: 'The Studio' } },
-  { id: 9, category: 'student', ratio: '4/5',  title: { tr: 'Çiçekli Ebru', en: 'Floral Ebru' } },
-  { id: 10, category: 'master', ratio: '3/4',  title: { tr: 'Gelgit Ebru', en: 'Tide Ebru' } },
-  { id: 11, category: 'atelier', ratio: '1/1', title: { tr: 'Poyraz', en: 'Poyraz' } },
-  { id: 12, category: 'atelier', ratio: '4/5', title: { tr: 'Pera', en: 'Pera' } },
+  // ── MASTER WORKS ─────────────────
+  { id: 1, category: 'master', ratio: '3/4', title: { tr: 'Usta Eseri I', en: 'Master Work I' }, image: '/images/gallery/master-1.jpg' },
+  { id: 2, category: 'master', ratio: '1/1', title: { tr: 'Usta Eseri II', en: 'Master Work II' }, image: '/images/gallery/master-2.jpg' },
+  { id: 3, category: 'master', ratio: '4/5', title: { tr: 'Usta Eseri III', en: 'Master Work III' }, image: '/images/gallery/master-3.jpg' },
+  { id: 4, category: 'master', ratio: '3/4', title: { tr: 'Usta Eseri IV', en: 'Master Work IV' }, image: '/images/gallery/master-4.jpg' },
+  { id: 5, category: 'master', ratio: '1/1', title: { tr: 'Usta Eseri V', en: 'Master Work V' }, image: '/images/gallery/master-5.jpg' },
+  { id: 6, category: 'master', ratio: '4/5', title: { tr: 'Usta Eseri VI', en: 'Master Work VI' }, image: '/images/gallery/master-6.jpg' },
+
+  // ── ATELIER LIFE ─────────────────
+  { id: 8, category: 'atelier', ratio: '4/5', title: { tr: 'Atölye Yaşamı I', en: 'Atelier Life I' }, image: '/images/gallery/atelier-1.jpg' },
+  { id: 9, category: 'atelier', ratio: '3/4', title: { tr: 'Atölye Yaşamı II', en: 'Atelier Life II' }, image: '/images/gallery/atelier-2.jpg' },
+  { id: 10, category: 'atelier', ratio: '1/1', title: { tr: 'Atölye Yaşamı III', en: 'Atelier Life III' }, image: '/images/gallery/atelier-3.jpg' },
+  { id: 11, category: 'atelier', ratio: '4/5', title: { tr: 'Atölye Yaşamı IV', en: 'Atelier Life IV' }, image: '/images/gallery/atelier-4.jpg' },
+  { id: 12, category: 'atelier', ratio: '3/4', title: { tr: 'Atölye Yaşamı V', en: 'Atelier Life V' }, image: '/images/gallery/atelier-5.jpg' },
+  { id: 13, category: 'atelier', ratio: '1/1', title: { tr: 'Atölye Yaşamı VI', en: 'Atelier Life VI' }, image: '/images/gallery/atelier-6.jpg' },
+  { id: 14, category: 'atelier', ratio: '4/5', title: { tr: 'Atölye Yaşamı VII', en: 'Atelier Life VII' }, image: '/images/gallery/atelier-7.jpg' },
+  { id: 15, category: 'atelier', ratio: '3/4', title: { tr: 'Atölye Yaşamı VIII', en: 'Atelier Life VIII' }, image: '/images/gallery/atelier-8.jpg' },
+  { id: 16, category: 'atelier', ratio: '1/1', title: { tr: 'Atölye Yaşamı IX', en: 'Atelier Life IX' }, image: '/images/gallery/atelier-9.jpg' },
+  { id: 17, category: 'atelier', ratio: '4/5', title: { tr: 'Atölye Yaşamı X', en: 'Atelier Life X' }, image: '/images/gallery/atelier-10.jpg' },
+  { id: 18, category: 'atelier', ratio: '3/4', title: { tr: 'Atölye Yaşamı XI', en: 'Atelier Life XI' }, image: '/images/gallery/atelier-11.jpg' },
+  { id: 19, category: 'atelier', ratio: '1/1', title: { tr: 'Atölye Yaşamı XII', en: 'Atelier Life XII' }, image: '/images/gallery/atelier-12.jpg' },
 ];
 
 export default function GalleryPage() {
@@ -36,8 +45,8 @@ export default function GalleryPage() {
   const [category, setCategory] = useState('all');
   const [lightbox, setLightbox] = useState<number | null>(null);
 
-  const categories = ['all', 'student', 'master', 'atelier'];
-  const filtered = category === 'all' ? ITEMS : ITEMS.filter(i => i.category === category);
+const categories = ['all', 'master', 'atelier'];
+const filtered = category === 'all' ? ITEMS : ITEMS.filter(i => i.category === category);
 
   const currentLightbox = lightbox !== null ? ITEMS.find(i => i.id === lightbox) : null;
   const currentIdx = currentLightbox ? filtered.findIndex(i => i.id === currentLightbox.id) : -1;
@@ -99,12 +108,14 @@ export default function GalleryPage() {
                 onClick={() => setLightbox(item.id)}>
                 <div className="overflow-hidden rounded-sm"
                   style={{ aspectRatio: item.ratio }}>
-                  <div className="art-placeholder w-full h-full transition-transform duration-300 ease-out group-hover:scale-[1.03]">
-                    <div className="art-swirl" />
-                    <div className="absolute inset-4 border rounded-sm"
-                      style={{ borderColor: 'rgba(255,255,255,0.07)' }} />
-                    {/* Hover overlay */}
-                    <div className="absolute inset-0 bg-foreground/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
+                    <div className="relative w-full h-full transition-transform duration-300 ease-out group-hover:scale-[1.03]">
+                    <img
+                    src={item.image}
+                    alt={item.title[locale]}
+                    className="w-full h-full object-cover object-center"
+                    />
+
+                    <div className="absolute inset-0 bg-foreground/45 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
                       <div>
                         <p className="text-white font-serif"
                           style={{ fontSize: '1rem', fontWeight: 300 }}>
@@ -140,7 +151,7 @@ export default function GalleryPage() {
           className="fixed inset-0 z-[100] flex items-center justify-center"
           style={{ background: 'rgba(26,23,20,0.92)', backdropFilter: 'blur(8px)' }}
           onClick={() => setLightbox(null)}>
-          <div className="relative w-full max-w-2xl mx-4" onClick={(e) => e.stopPropagation()}>
+          <div className="relative mx-4 w-[min(92vw,900px)]" onClick={(e) => e.stopPropagation()}>
             {/* Close */}
             <button
               onClick={() => setLightbox(null)}
@@ -150,10 +161,13 @@ export default function GalleryPage() {
             </button>
 
             {/* Image */}
-            <div className="art-placeholder rounded-sm overflow-hidden"
-              style={{ aspectRatio: currentLightbox.ratio }}>
-              <div className="art-swirl" />
-            </div>
+<div className="rounded-sm overflow-hidden flex items-center justify-center">
+  <img
+    src={currentLightbox.image}
+    alt={currentLightbox.title[locale]}
+    className="block max-w-full max-h-[78vh] w-auto h-auto"
+  />
+</div>
 
             {/* Caption */}
             <div className="mt-5 flex items-end justify-between">

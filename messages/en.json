@@ -99,7 +99,6 @@
     "title": "Traces from the atelier",
     "viewAll": "View Full Gallery",
     "collections": [
-      { "key": "student", "label": "Student Works" },
       { "key": "master", "label": "Master Works" },
       { "key": "atelier", "label": "Atelier Life" }
     ]
